@@ -9,6 +9,9 @@ visited_positions = day_nine.get_visited_positions_length()
 print(f'visited positions: {visited_positions}')
 
 
+
 def print_map():
     position_map = day_nine.build_map()
     print(position_map)
+
+print_map()

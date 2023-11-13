@@ -9,11 +9,14 @@ class Knot:
         self._x = x
         self._y = y
 
-    def difference_to(self, other: "Knot") -> str:
+    def directions_to(self, other: Knot) -> str:
         horizontal = 'R' if other.get_x() > self._x else 'L' if other.get_x() < self._x else ''
         vertical = 'U' if other.get_y() > self._y else 'D' if other.get_y() < self._y else ''
 
         return horizontal + vertical
+
+    def distance_to(self, other: Knot):
+        pass
 
     def go_up(self) -> None:
         self._y += 1

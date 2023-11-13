@@ -35,7 +35,7 @@ class DayNine:
             for _ in range(steps):
                 self._move(self.head, direction)
 
-                head_directions = self.tail.difference_to(self.head)
+                head_directions = self.tail.directions_to(self.head)
                 for head_direction in head_directions:
                     self._move(self.tail, head_direction)
 
