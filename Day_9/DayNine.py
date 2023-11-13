@@ -11,21 +11,21 @@ from Day_9.Knot import Knot
 
 
 class DayNine:
-    filename: str
-    head: Knot
-    tail: Knot
+    knots: List[Knot]
     visited_positions: List[Tuple[int, int]]
 
-    def __init__(self, filename: str, knot_count: int):
-        self.filename = filename
-        self.head = Knot(0, 0)
-        self.tail = Knot(0, 0)
+    def __init__(self, knot_count: int):
         self.visited_positions = []
+        self.knots = []
 
-        self.visited_positions.append(self.tail.get_coordinates())
+        for _ in range(knot_count):
+            self.knots.append(Knot(0, 0))
 
-    def get_input(self) -> List[str]:
-        with open(self.filename, 'r') as file:
+        self.visited_positions.append(self.knots[-1].get_coordinates())
+
+    @staticmethod
+    def get_input(filename: str) -> List[str]:
+        with open(filename, 'r') as file:
             return file.readlines()
 
     def execute_instructions(self, instructions: List[str]):
@@ -33,16 +33,19 @@ class DayNine:
             direction, steps = self._format_line_to_instruction(instruction_line)
 
             for _ in range(steps):
-                self._move(self.head, direction)
+                self._move(self.knots[0], direction)
 
-                if self.tail.distance_greater_than_one(self.head):
-                    head_directions = self.tail.directions_to(self.head)
-                    for head_direction in head_directions:
-                        self._move(self.tail, head_direction)
+                for current_tail_index in range(1, len(self.knots)):
+                    current_tail = self.knots[current_tail_index]
+                    current_head = self.knots[current_tail_index-1]
+                    if current_tail.distance_greater_than_one(current_head):
+                        head_directions = current_tail.directions_to(current_head)
+                        for head_direction in head_directions:
+                            self._move(current_tail, head_direction)
 
-                    tail_coordinates = self.tail.get_coordinates()
-                    if not self._position_already_visited(tail_coordinates):
-                        self.visited_positions.append(tail_coordinates)
+                tail_coordinates = self.knots[-1].get_coordinates()
+                if not self._position_already_visited(tail_coordinates):
+                    self.visited_positions.append(tail_coordinates)
 
     def _position_already_visited(self, position: Tuple[int, int]) -> bool:
         for visited_position in self.visited_positions:
@@ -51,8 +54,8 @@ class DayNine:
 
         return False
 
-    def get_visited_positions_length(self) -> int:
-        return len(self.visited_positions)
+    def get_visited_positions_length(self) -> List[Tuple[int, int]]:
+        return self.visited_positions
 
     @staticmethod
     def _move(knot: Knot, direction: str):
