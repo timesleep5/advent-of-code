@@ -16,7 +16,7 @@ class DayNine:
     tail: Knot
     visited_positions: List[Tuple[int, int]]
 
-    def __init__(self, filename: str):
+    def __init__(self, filename: str, knot_count: int):
         self.filename = filename
         self.head = Knot(0, 0)
         self.tail = Knot(0, 0)
@@ -35,13 +35,14 @@ class DayNine:
             for _ in range(steps):
                 self._move(self.head, direction)
 
-                head_directions = self.tail.directions_to(self.head)
-                for head_direction in head_directions:
-                    self._move(self.tail, head_direction)
+                if self.tail.distance_greater_than_one(self.head):
+                    head_directions = self.tail.directions_to(self.head)
+                    for head_direction in head_directions:
+                        self._move(self.tail, head_direction)
 
-                tail_coordinates = self.tail.get_coordinates()
-                if not self._position_already_visited(tail_coordinates):
-                    self.visited_positions.append(tail_coordinates)
+                    tail_coordinates = self.tail.get_coordinates()
+                    if not self._position_already_visited(tail_coordinates):
+                        self.visited_positions.append(tail_coordinates)
 
     def _position_already_visited(self, position: Tuple[int, int]) -> bool:
         for visited_position in self.visited_positions:

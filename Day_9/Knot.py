@@ -1,4 +1,4 @@
-from typing import List, Tuple
+from typing import Tuple
 
 
 class Knot:
@@ -9,14 +9,14 @@ class Knot:
         self._x = x
         self._y = y
 
-    def directions_to(self, other: Knot) -> str:
+    def directions_to(self, other: "Knot") -> str:
         horizontal = 'R' if other.get_x() > self._x else 'L' if other.get_x() < self._x else ''
         vertical = 'U' if other.get_y() > self._y else 'D' if other.get_y() < self._y else ''
 
         return horizontal + vertical
 
-    def distance_to(self, other: Knot):
-        pass
+    def distance_greater_than_one(self, other: "Knot"):
+        return abs(self._x - other.get_x()) > 1 or abs(self._y - other.get_y()) > 1
 
     def go_up(self) -> None:
         self._y += 1
