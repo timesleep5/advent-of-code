@@ -7,13 +7,15 @@ class Monkey:
     name: str
     items: List[int]
     operation_details: Tuple[str, int]
+    boredom_factor: int
     test_parameter: int
     throw_decision: dict[bool: "Monkey"]
 
     inspection_counter: int
 
-    def __init__(self, instruction: List[str]):
+    def __init__(self, instruction: List[str], boredom_factor: int):
         self.instruction = instruction
+        self.boredom_factor = boredom_factor
         self.name = self.determine_name()
         self.items = self.determine_items()
         self.operation_details = self.determine_operation_parameter()
@@ -51,12 +53,13 @@ class Monkey:
             case _:
                 print(f'error: wrong operator: {operator}')
 
-    @staticmethod
-    def get_bored(item: int) -> int:
-        return int(item / 3)
+    def get_bored(self, item: int) -> int:
+        return item // self.boredom_factor
 
     def test_item(self, item: int) -> bool:
         return item % self.test_parameter == 0
+
+    # Constructor
 
     def determine_name(self) -> str:
         return self.instruction[0].removesuffix(':')
@@ -85,6 +88,8 @@ class Monkey:
     def determine_false_throw_decision(self) -> str:
         return 'Monkey ' + self.instruction[5].split(' ')[-1]
 
+    # Setter
+
     def set_true_throw_decision(self, monkey: "Monkey") -> None:
         self.throw_decision[True] = monkey
 
@@ -93,6 +98,8 @@ class Monkey:
 
     def add_item(self, item: int) -> None:
         self.items.append(item)
+
+    # Override
 
     def to_string(self) -> str:
         return f'name: {self.name}\n' \

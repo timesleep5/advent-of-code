@@ -5,12 +5,14 @@ from Day_11.Monkey import Monkey
 
 class DayEleven:
     round_count: int
+    monkey_boredom_factor: int
 
     monkeys: List[Monkey]
     monkey_inspection_counters: dict[str: int]
 
-    def __init__(self, round_count: int):
+    def __init__(self, round_count: int, monkey_boredom_factor: int):
         self.round_count = round_count
+        self.monkey_boredom_factor = monkey_boredom_factor
 
         self.monkeys = []
         self.monkey_inspection_counters = {}
@@ -23,7 +25,7 @@ class DayEleven:
     def declare_monkeys(self, instructions: List[str]) -> None:
         for instruction in instructions:
             instruction = instruction.split('\n')
-            self.monkeys.append(Monkey(instruction))
+            self.monkeys.append(Monkey(instruction, self.monkey_boredom_factor))
 
     def set_throw_decisions(self) -> None:
         for monkey in self.monkeys:
@@ -31,7 +33,6 @@ class DayEleven:
             for destination_monkey in self.monkeys:
                 if destination_monkey.name == true_destination_name:
                     monkey.set_true_throw_decision(destination_monkey)
-                    print(monkey.name, '->', destination_monkey.name)
                     break
 
         for monkey in self.monkeys:
@@ -39,13 +40,12 @@ class DayEleven:
             for destination_monkey in self.monkeys:
                 if destination_monkey.name == false_destination_name:
                     monkey.set_false_throw_decision(destination_monkey)
-                    print(monkey.name, '->', destination_monkey.name)
-
                     break
 
     def execute_rounds(self) -> None:
-        for _ in range(self.round_count):
+        for round_index in range(self.round_count):
             self.round()
+            print(round_index, round_index/self.round_count, '%')
 
     def round(self) -> None:
         for monkey in self.monkeys:
