@@ -19,4 +19,4 @@ print(f'Sum of critical values: {critical_value_sum}')
 # Part 2
 message = day_ten.get_message()
 
-print(f'Message:\n{message}')
+print(f'\nMessage:\n{message}')
