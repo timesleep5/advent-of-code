@@ -6,19 +6,22 @@ class Monkey:
 
     name: str
     items: List[int]
-    operation_details: Tuple[str, int]
+    operator: str
+    operation_parameter: int
     boredom_factor: int
+    boredom_operator: str
     test_parameter: int
     throw_decision: dict[bool: "Monkey"]
 
     inspection_counter: int
 
-    def __init__(self, instruction: List[str], boredom_factor: int):
+    def __init__(self, instruction: List[str], boredom_operator: str, boredom_factor: int):
         self.instruction = instruction
         self.boredom_factor = boredom_factor
+        self.boredom_operator = boredom_operator
         self.name = self.determine_name()
         self.items = self.determine_items()
-        self.operation_details = self.determine_operation_parameter()
+        self.operator, self.operation_parameter = self.determine_operation_details()
         self.test_parameter = self.determine_test_parameter()
 
         self.throw_decision = {}
@@ -35,26 +38,28 @@ class Monkey:
             destination_monkey = self.throw_decision[test_result]
             destination_monkey.add_item(item)
 
-            self.inspection_counter += 1
-
+        self.inspection_counter += len(self.items)
         self.items = []
 
     def do_operation(self, item: int):
-        operator = self.operation_details[0]
-        operation_parameter = self.operation_details[1]
-
-        match operator:
+        match self.operator:
             case '+':
-                return item + operation_parameter
+                return item + self.operation_parameter
             case '*':
-                return item * operation_parameter
+                return item * self.operation_parameter
             case '**':
-                return item ** operation_parameter
+                return item ** self.operation_parameter
             case _:
-                print(f'error: wrong operator: {operator}')
+                print(f'error: wrong operator: {self.operator}')
 
     def get_bored(self, item: int) -> int:
-        return item // self.boredom_factor
+        match self.boredom_operator:
+            case '//':
+                return item // self.boredom_factor
+            case '%':
+                return item % self.boredom_factor
+            case _:
+                print(f'error: wrong operator: {self.boredom_operator}')
 
     def test_item(self, item: int) -> bool:
         return item % self.test_parameter == 0
@@ -71,7 +76,7 @@ class Monkey:
 
         return item_int_list
 
-    def determine_operation_parameter(self) -> Tuple[str, int]:
+    def determine_operation_details(self) -> Tuple[str, int]:
         if self.instruction[2].split(' ')[-1] == 'old':
             return '**', 2
         else:
@@ -104,7 +109,7 @@ class Monkey:
     def to_string(self) -> str:
         return f'name: {self.name}\n' \
                f'items: {self.items}\n' \
-               f'operation details: {self.operation_details}\n' \
+               f'operation details: ({self.operator}, {self.operation_parameter})\n' \
                f'test param: {self.test_parameter}\n' \
                f'true dest: {self.throw_decision[True].name}\n' \
                f'false dest: {self.throw_decision[False].name}\n'
