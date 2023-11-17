@@ -84,7 +84,7 @@ class DaySeven:
     def calculate_dir_sizes(self, directory: dict):
         dir_size = 0
 
-        for entry in directory['content'].values():
+        for entry in directory['content']._values():
             if entry['type'] == FILETYPE.FILE:
                 dir_size += entry['size']
             else:
@@ -97,7 +97,7 @@ class DaySeven:
     def calculate_sum_of_directory_sizes_smaller_100_000(self, directory: dict) -> int:
         overall_dir_size_of_over_100_000 = 0
 
-        for entry in directory['content'].values():
+        for entry in directory['content']._values():
             if entry['type'] == FILETYPE.DIRECTORY:
                 overall_dir_size_of_over_100_000 += self.calculate_sum_of_directory_sizes_smaller_100_000(entry)
 
@@ -113,7 +113,7 @@ class DaySeven:
     def find_smallest_dir_to_delete_recursive(self, directory: dict, closest_size_param: int, minimum_size_to_delete: int) -> int:
         closest_size = closest_size_param
 
-        for entry in directory['content'].values():
+        for entry in directory['content']._values():
             if entry['type'] == FILETYPE.DIRECTORY:
                 closest_size = self.find_smallest_dir_to_delete_recursive(entry, closest_size, minimum_size_to_delete)
 
@@ -135,7 +135,7 @@ class DaySeven:
 
     def list_directory_sizes(self, directory: dict, directory_list):
 
-        for entry in directory['content'].values():
+        for entry in directory['content']._values():
             if entry['type'] == FILETYPE.DIRECTORY:
                 directory_list = self.list_directory_sizes(entry, directory_list)
 
