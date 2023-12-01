@@ -1,0 +1,2013 @@
+Container is created:
+"{1: '', 2: '', 3: '', 4: '', 5: '', 6: '', 7: '', 8: '', 9: ''}"
+Container is filled:
+"{1: 'NBDTVGZJ', 2: 'SRMDWPF', 3: 'VCRSZ', 4: 'RTJZPHG', 5: 'TCJNDZQF', 6: 'NVPWGSFM', 7: 'GCVBPQ', 8: 'ZBPN', 9: 'WPJ'}"
+
+Line "move 2 from 4 to 6"
+has this result:
+{1: 'NBDTVGZJ', 2: 'SRMDWPF', 3: 'VCRSZ', 4: 'RTJZP', 5: 'TCJNDZQF', 6: 'NVPWGSFMGH', 7: 'GCVBPQ', 8: 'ZBPN', 9: 'WPJ'}
+
+Line "move 1 from 9 to 5"
+has this result:
+{1: 'NBDTVGZJ', 2: 'SRMDWPF', 3: 'VCRSZ', 4: 'RTJZP', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQ', 8: 'ZBPN', 9: 'WP'}
+
+Line "move 3 from 2 to 4"
+has this result:
+{1: 'NBDTVGZJ', 2: 'SRMD', 3: 'VCRSZ', 4: 'RTJZPFPW', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQ', 8: 'ZBPN', 9: 'WP'}
+
+Line "move 8 from 4 to 7"
+has this result:
+{1: 'NBDTVGZJ', 2: 'SRMD', 3: 'VCRSZ', 4: '', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZJTR', 8: 'ZBPN', 9: 'WP'}
+
+Line "move 2 from 9 to 7"
+has this result:
+{1: 'NBDTVGZJ', 2: 'SRMD', 3: 'VCRSZ', 4: '', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZJTRPW', 8: 'ZBPN', 9: ''}
+
+Line "move 3 from 8 to 3"
+has this result:
+{1: 'NBDTVGZJ', 2: 'SRMD', 3: 'VCRSZNPB', 4: '', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZJTRPW', 8: 'Z', 9: ''}
+
+Line "move 2 from 1 to 2"
+has this result:
+{1: 'NBDTVG', 2: 'SRMDJZ', 3: 'VCRSZNPB', 4: '', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZJTRPW', 8: 'Z', 9: ''}
+
+Line "move 5 from 7 to 9"
+has this result:
+{1: 'NBDTVG', 2: 'SRMDJZ', 3: 'VCRSZNPB', 4: '', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZ', 8: 'Z', 9: 'WPRTJ'}
+
+Line "move 1 from 9 to 4"
+has this result:
+{1: 'NBDTVG', 2: 'SRMDJZ', 3: 'VCRSZNPB', 4: 'J', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZ', 8: 'Z', 9: 'WPRT'}
+
+Line "move 1 from 8 to 3"
+has this result:
+{1: 'NBDTVG', 2: 'SRMDJZ', 3: 'VCRSZNPBZ', 4: 'J', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZ', 8: '', 9: 'WPRT'}
+
+Line "move 1 from 3 to 4"
+has this result:
+{1: 'NBDTVG', 2: 'SRMDJZ', 3: 'VCRSZNPB', 4: 'JZ', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZ', 8: '', 9: 'WPRT'}
+
+Line "move 2 from 4 to 9"
+has this result:
+{1: 'NBDTVG', 2: 'SRMDJZ', 3: 'VCRSZNPB', 4: '', 5: 'TCJNDZQFJ', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZ', 8: '', 9: 'WPRTZJ'}
+
+Line "move 7 from 3 to 5"
+has this result:
+{1: 'NBDTVG', 2: 'SRMDJZ', 3: 'V', 4: '', 5: 'TCJNDZQFJBPNZSRC', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZ', 8: '', 9: 'WPRTZJ'}
+
+Line "move 6 from 1 to 8"
+has this result:
+{1: '', 2: 'SRMDJZ', 3: 'V', 4: '', 5: 'TCJNDZQFJBPNZSRC', 6: 'NVPWGSFMGH', 7: 'GCVBPQWPFPZ', 8: 'GVTDBN', 9: 'WPRTZJ'}
+
+Line "move 11 from 7 to 9"
+has this result:
+{1: '', 2: 'SRMDJZ', 3: 'V', 4: '', 5: 'TCJNDZQFJBPNZSRC', 6: 'NVPWGSFMGH', 7: '', 8: 'GVTDBN', 9: 'WPRTZJZPFPWQPBVCG'}
+
+Line "move 12 from 5 to 3"
+has this result:
+{1: '', 2: 'SRMDJZ', 3: 'VCRSZNPBJFQZD', 4: '', 5: 'TCJN', 6: 'NVPWGSFMGH', 7: '', 8: 'GVTDBN', 9: 'WPRTZJZPFPWQPBVCG'}
+
+Line "move 6 from 6 to 9"
+has this result:
+{1: '', 2: 'SRMDJZ', 3: 'VCRSZNPBJFQZD', 4: '', 5: 'TCJN', 6: 'NVPW', 7: '', 8: 'GVTDBN', 9: 'WPRTZJZPFPWQPBVCGHGMFSG'}
+
+Line "move 3 from 3 to 8"
+has this result:
+{1: '', 2: 'SRMDJZ', 3: 'VCRSZNPBJF', 4: '', 5: 'TCJN', 6: 'NVPW', 7: '', 8: 'GVTDBNDZQ', 9: 'WPRTZJZPFPWQPBVCGHGMFSG'}
+
+Line "move 4 from 2 to 7"
+has this result:
+{1: '', 2: 'SR', 3: 'VCRSZNPBJF', 4: '', 5: 'TCJN', 6: 'NVPW', 7: 'ZJDM', 8: 'GVTDBNDZQ', 9: 'WPRTZJZPFPWQPBVCGHGMFSG'}
+
+Line "move 3 from 5 to 7"
+has this result:
+{1: '', 2: 'SR', 3: 'VCRSZNPBJF', 4: '', 5: 'T', 6: 'NVPW', 7: 'ZJDMNJC', 8: 'GVTDBNDZQ', 9: 'WPRTZJZPFPWQPBVCGHGMFSG'}
+
+Line "move 1 from 5 to 7"
+has this result:
+{1: '', 2: 'SR', 3: 'VCRSZNPBJF', 4: '', 5: '', 6: 'NVPW', 7: 'ZJDMNJCT', 8: 'GVTDBNDZQ', 9: 'WPRTZJZPFPWQPBVCGHGMFSG'}
+
+Line "move 2 from 2 to 5"
+has this result:
+{1: '', 2: '', 3: 'VCRSZNPBJF', 4: '', 5: 'RS', 6: 'NVPW', 7: 'ZJDMNJCT', 8: 'GVTDBNDZQ', 9: 'WPRTZJZPFPWQPBVCGHGMFSG'}
+
+Line "move 1 from 5 to 2"
+has this result:
+{1: '', 2: 'S', 3: 'VCRSZNPBJF', 4: '', 5: 'R', 6: 'NVPW', 7: 'ZJDMNJCT', 8: 'GVTDBNDZQ', 9: 'WPRTZJZPFPWQPBVCGHGMFSG'}
+
+Line "move 5 from 8 to 9"
+has this result:
+{1: '', 2: 'S', 3: 'VCRSZNPBJF', 4: '', 5: 'R', 6: 'NVPW', 7: 'ZJDMNJCT', 8: 'GVTD', 9: 'WPRTZJZPFPWQPBVCGHGMFSGQZDNB'}
+
+Line "move 7 from 7 to 2"
+has this result:
+{1: '', 2: 'STCJNMDJ', 3: 'VCRSZNPBJF', 4: '', 5: 'R', 6: 'NVPW', 7: 'Z', 8: 'GVTD', 9: 'WPRTZJZPFPWQPBVCGHGMFSGQZDNB'}
+
+Line "move 3 from 8 to 7"
+has this result:
+{1: '', 2: 'STCJNMDJ', 3: 'VCRSZNPBJF', 4: '', 5: 'R', 6: 'NVPW', 7: 'ZDTV', 8: 'G', 9: 'WPRTZJZPFPWQPBVCGHGMFSGQZDNB'}
+
+Line "move 1 from 8 to 9"
+has this result:
+{1: '', 2: 'STCJNMDJ', 3: 'VCRSZNPBJF', 4: '', 5: 'R', 6: 'NVPW', 7: 'ZDTV', 8: '', 9: 'WPRTZJZPFPWQPBVCGHGMFSGQZDNBG'}
+
+Line "move 4 from 3 to 6"
+has this result:
+{1: '', 2: 'STCJNMDJ', 3: 'VCRSZN', 4: '', 5: 'R', 6: 'NVPWFJBP', 7: 'ZDTV', 8: '', 9: 'WPRTZJZPFPWQPBVCGHGMFSGQZDNBG'}
+
+Line "move 1 from 5 to 1"
+has this result:
+{1: 'R', 2: 'STCJNMDJ', 3: 'VCRSZN', 4: '', 5: '', 6: 'NVPWFJBP', 7: 'ZDTV', 8: '', 9: 'WPRTZJZPFPWQPBVCGHGMFSGQZDNBG'}
+
+Line "move 9 from 9 to 6"
+has this result:
+{1: 'R', 2: 'STCJNMDJ', 3: 'VCRSZN', 4: '', 5: '', 6: 'NVPWFJBPGBNDZQGSF', 7: 'ZDTV', 8: '', 9: 'WPRTZJZPFPWQPBVCGHGM'}
+
+Line "move 7 from 9 to 6"
+has this result:
+{1: 'R', 2: 'STCJNMDJ', 3: 'VCRSZN', 4: '', 5: '', 6: 'NVPWFJBPGBNDZQGSFMGHGCVB', 7: 'ZDTV', 8: '', 9: 'WPRTZJZPFPWQP'}
+
+Line "move 20 from 6 to 5"
+has this result:
+{1: 'R', 2: 'STCJNMDJ', 3: 'VCRSZN', 4: '', 5: 'BVCGHGMFSGQZDNBGPBJF', 6: 'NVPW', 7: 'ZDTV', 8: '', 9: 'WPRTZJZPFPWQP'}
+
+Line "move 12 from 9 to 8"
+has this result:
+{1: 'R', 2: 'STCJNMDJ', 3: 'VCRSZN', 4: '', 5: 'BVCGHGMFSGQZDNBGPBJF', 6: 'NVPW', 7: 'ZDTV', 8: 'PQWPFPZJZTRP', 9: 'W'}
+
+Line "move 5 from 5 to 1"
+has this result:
+{1: 'RFJBPG', 2: 'STCJNMDJ', 3: 'VCRSZN', 4: '', 5: 'BVCGHGMFSGQZDNB', 6: 'NVPW', 7: 'ZDTV', 8: 'PQWPFPZJZTRP', 9: 'W'}
+
+Line "move 3 from 7 to 4"
+has this result:
+{1: 'RFJBPG', 2: 'STCJNMDJ', 3: 'VCRSZN', 4: 'VTD', 5: 'BVCGHGMFSGQZDNB', 6: 'NVPW', 7: 'Z', 8: 'PQWPFPZJZTRP', 9: 'W'}
+
+Line "move 6 from 2 to 7"
+has this result:
+{1: 'RFJBPG', 2: 'ST', 3: 'VCRSZN', 4: 'VTD', 5: 'BVCGHGMFSGQZDNB', 6: 'NVPW', 7: 'ZJDMNJC', 8: 'PQWPFPZJZTRP', 9: 'W'}
+
+Line "move 2 from 3 to 1"
+has this result:
+{1: 'RFJBPGNZ', 2: 'ST', 3: 'VCRS', 4: 'VTD', 5: 'BVCGHGMFSGQZDNB', 6: 'NVPW', 7: 'ZJDMNJC', 8: 'PQWPFPZJZTRP', 9: 'W'}
+
+Line "move 4 from 3 to 8"
+has this result:
+{1: 'RFJBPGNZ', 2: 'ST', 3: '', 4: 'VTD', 5: 'BVCGHGMFSGQZDNB', 6: 'NVPW', 7: 'ZJDMNJC', 8: 'PQWPFPZJZTRPSRCV', 9: 'W'}
+
+Line "move 1 from 4 to 1"
+has this result:
+{1: 'RFJBPGNZD', 2: 'ST', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNB', 6: 'NVPW', 7: 'ZJDMNJC', 8: 'PQWPFPZJZTRPSRCV', 9: 'W'}
+
+Line "move 7 from 7 to 5"
+has this result:
+{1: 'RFJBPGNZD', 2: 'ST', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZ', 6: 'NVPW', 7: '', 8: 'PQWPFPZJZTRPSRCV', 9: 'W'}
+
+Line "move 4 from 8 to 2"
+has this result:
+{1: 'RFJBPGNZD', 2: 'STVCRS', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZ', 6: 'NVPW', 7: '', 8: 'PQWPFPZJZTRP', 9: 'W'}
+
+Line "move 3 from 6 to 2"
+has this result:
+{1: 'RFJBPGNZD', 2: 'STVCRSWPV', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZ', 6: 'N', 7: '', 8: 'PQWPFPZJZTRP', 9: 'W'}
+
+Line "move 3 from 2 to 9"
+has this result:
+{1: 'RFJBPGNZD', 2: 'STVCRS', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZ', 6: 'N', 7: '', 8: 'PQWPFPZJZTRP', 9: 'WVPW'}
+
+Line "move 4 from 1 to 7"
+has this result:
+{1: 'RFJBP', 2: 'STVCRS', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZ', 6: 'N', 7: 'DZNG', 8: 'PQWPFPZJZTRP', 9: 'WVPW'}
+
+Line "move 2 from 1 to 2"
+has this result:
+{1: 'RFJ', 2: 'STVCRSPB', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZ', 6: 'N', 7: 'DZNG', 8: 'PQWPFPZJZTRP', 9: 'WVPW'}
+
+Line "move 3 from 9 to 5"
+has this result:
+{1: 'RFJ', 2: 'STVCRSPB', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZWPV', 6: 'N', 7: 'DZNG', 8: 'PQWPFPZJZTRP', 9: 'W'}
+
+Line "move 11 from 8 to 5"
+has this result:
+{1: 'RFJ', 2: 'STVCRSPB', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZWPVPRTZJZPFPWQ', 6: 'N', 7: 'DZNG', 8: 'P', 9: 'W'}
+
+Line "move 1 from 6 to 9"
+has this result:
+{1: 'RFJ', 2: 'STVCRSPB', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZWPVPRTZJZPFPWQ', 6: '', 7: 'DZNG', 8: 'P', 9: 'WN'}
+
+Line "move 1 from 8 to 5"
+has this result:
+{1: 'RFJ', 2: 'STVCRSPB', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZWPVPRTZJZPFPWQP', 6: '', 7: 'DZNG', 8: '', 9: 'WN'}
+
+Line "move 1 from 1 to 2"
+has this result:
+{1: 'RF', 2: 'STVCRSPBJ', 3: '', 4: 'VT', 5: 'BVCGHGMFSGQZDNBCJNMDJZWPVPRTZJZPFPWQP', 6: '', 7: 'DZNG', 8: '', 9: 'WN'}
+
+Line "move 24 from 5 to 4"
+has this result:
+{1: 'RF', 2: 'STVCRSPBJ', 3: '', 4: 'VTPQWPFPZJZTRPVPWZJDMNJCBN', 5: 'BVCGHGMFSGQZD', 6: '', 7: 'DZNG', 8: '', 9: 'WN'}
+
+Line "move 2 from 1 to 6"
+has this result:
+{1: '', 2: 'STVCRSPBJ', 3: '', 4: 'VTPQWPFPZJZTRPVPWZJDMNJCBN', 5: 'BVCGHGMFSGQZD', 6: 'FR', 7: 'DZNG', 8: '', 9: 'WN'}
+
+Line "move 11 from 5 to 4"
+has this result:
+{1: '', 2: 'STVCRSPBJ', 3: '', 4: 'VTPQWPFPZJZTRPVPWZJDMNJCBNDZQGSFMGHGC', 5: 'BV', 6: 'FR', 7: 'DZNG', 8: '', 9: 'WN'}
+
+Line "move 2 from 7 to 9"
+has this result:
+{1: '', 2: 'STVCRSPBJ', 3: '', 4: 'VTPQWPFPZJZTRPVPWZJDMNJCBNDZQGSFMGHGC', 5: 'BV', 6: 'FR', 7: 'DZ', 8: '', 9: 'WNGN'}
+
+Line "move 1 from 6 to 2"
+has this result:
+{1: '', 2: 'STVCRSPBJR', 3: '', 4: 'VTPQWPFPZJZTRPVPWZJDMNJCBNDZQGSFMGHGC', 5: 'BV', 6: 'F', 7: 'DZ', 8: '', 9: 'WNGN'}
+
+Line "move 4 from 2 to 1"
+has this result:
+{1: 'RJBP', 2: 'STVCRS', 3: '', 4: 'VTPQWPFPZJZTRPVPWZJDMNJCBNDZQGSFMGHGC', 5: 'BV', 6: 'F', 7: 'DZ', 8: '', 9: 'WNGN'}
+
+Line "move 28 from 4 to 2"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCGHGMFSGQZDNBCJNMDJZWPVPRTZJ', 3: '', 4: 'VTPQWPFPZ', 5: 'BV', 6: 'F', 7: 'DZ', 8: '', 9: 'WNGN'}
+
+Line "move 1 from 7 to 8"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCGHGMFSGQZDNBCJNMDJZWPVPRTZJ', 3: '', 4: 'VTPQWPFPZ', 5: 'BV', 6: 'F', 7: 'D', 8: 'Z', 9: 'WNGN'}
+
+Line "move 9 from 2 to 5"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCGHGMFSGQZDNBCJNMDJ', 3: '', 4: 'VTPQWPFPZ', 5: 'BVJZTRPVPWZ', 6: 'F', 7: 'D', 8: 'Z', 9: 'WNGN'}
+
+Line "move 2 from 9 to 6"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCGHGMFSGQZDNBCJNMDJ', 3: '', 4: 'VTPQWPFPZ', 5: 'BVJZTRPVPWZ', 6: 'FNG', 7: 'D', 8: 'Z', 9: 'WN'}
+
+Line "move 4 from 4 to 2"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCGHGMFSGQZDNBCJNMDJZPFP', 3: '', 4: 'VTPQW', 5: 'BVJZTRPVPWZ', 6: 'FNG', 7: 'D', 8: 'Z', 9: 'WN'}
+
+Line "move 1 from 7 to 4"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCGHGMFSGQZDNBCJNMDJZPFP', 3: '', 4: 'VTPQWD', 5: 'BVJZTRPVPWZ', 6: 'FNG', 7: '', 8: 'Z', 9: 'WN'}
+
+Line "move 3 from 4 to 7"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCGHGMFSGQZDNBCJNMDJZPFP', 3: '', 4: 'VTP', 5: 'BVJZTRPVPWZ', 6: 'FNG', 7: 'DWQ', 8: 'Z', 9: 'WN'}
+
+Line "move 1 from 6 to 9"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCGHGMFSGQZDNBCJNMDJZPFP', 3: '', 4: 'VTP', 5: 'BVJZTRPVPWZ', 6: 'FN', 7: 'DWQ', 8: 'Z', 9: 'WNG'}
+
+Line "move 21 from 2 to 3"
+has this result:
+{1: 'RJBP', 2: 'STVCRSCG', 3: 'PFPZJDMNJCBNDZQGSFMGH', 4: 'VTP', 5: 'BVJZTRPVPWZ', 6: 'FN', 7: 'DWQ', 8: 'Z', 9: 'WNG'}
+
+Line "move 3 from 1 to 6"
+has this result:
+{1: 'R', 2: 'STVCRSCG', 3: 'PFPZJDMNJCBNDZQGSFMGH', 4: 'VTP', 5: 'BVJZTRPVPWZ', 6: 'FNPBJ', 7: 'DWQ', 8: 'Z', 9: 'WNG'}
+
+Line "move 5 from 6 to 2"
+has this result:
+{1: 'R', 2: 'STVCRSCGJBPNF', 3: 'PFPZJDMNJCBNDZQGSFMGH', 4: 'VTP', 5: 'BVJZTRPVPWZ', 6: '', 7: 'DWQ', 8: 'Z', 9: 'WNG'}
+
+Line "move 7 from 2 to 3"
+has this result:
+{1: 'R', 2: 'STVCRS', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGC', 4: 'VTP', 5: 'BVJZTRPVPWZ', 6: '', 7: 'DWQ', 8: 'Z', 9: 'WNG'}
+
+Line "move 1 from 9 to 3"
+has this result:
+{1: 'R', 2: 'STVCRS', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTP', 5: 'BVJZTRPVPWZ', 6: '', 7: 'DWQ', 8: 'Z', 9: 'WN'}
+
+Line "move 1 from 8 to 4"
+has this result:
+{1: 'R', 2: 'STVCRS', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTPZ', 5: 'BVJZTRPVPWZ', 6: '', 7: 'DWQ', 8: '', 9: 'WN'}
+
+Line "move 1 from 7 to 8"
+has this result:
+{1: 'R', 2: 'STVCRS', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTPZ', 5: 'BVJZTRPVPWZ', 6: '', 7: 'DW', 8: 'Q', 9: 'WN'}
+
+Line "move 3 from 5 to 8"
+has this result:
+{1: 'R', 2: 'STVCRS', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTPZ', 5: 'BVJZTRPV', 6: '', 7: 'DW', 8: 'QZWP', 9: 'WN'}
+
+Line "move 1 from 1 to 7"
+has this result:
+{1: '', 2: 'STVCRS', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTPZ', 5: 'BVJZTRPV', 6: '', 7: 'DWR', 8: 'QZWP', 9: 'WN'}
+
+Line "move 2 from 7 to 9"
+has this result:
+{1: '', 2: 'STVCRS', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTPZ', 5: 'BVJZTRPV', 6: '', 7: 'D', 8: 'QZWP', 9: 'WNRW'}
+
+Line "move 2 from 8 to 4"
+has this result:
+{1: '', 2: 'STVCRS', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTPZPW', 5: 'BVJZTRPV', 6: '', 7: 'D', 8: 'QZ', 9: 'WNRW'}
+
+Line "move 1 from 9 to 2"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTPZPW', 5: 'BVJZTRPV', 6: '', 7: 'D', 8: 'QZ', 9: 'WNR'}
+
+Line "move 1 from 8 to 6"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFPZJDMNJCBNDZQGSFMGHFNPBJGCG', 4: 'VTPZPW', 5: 'BVJZTRPV', 6: 'Z', 7: 'D', 8: 'Q', 9: 'WNR'}
+
+Line "move 11 from 3 to 4"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFPZJDMNJCBNDZQGSF', 4: 'VTPZPWGCGJBPNFHGM', 5: 'BVJZTRPV', 6: 'Z', 7: 'D', 8: 'Q', 9: 'WNR'}
+
+Line "move 1 from 7 to 8"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFPZJDMNJCBNDZQGSF', 4: 'VTPZPWGCGJBPNFHGM', 5: 'BVJZTRPV', 6: 'Z', 7: '', 8: 'QD', 9: 'WNR'}
+
+Line "move 6 from 5 to 9"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFPZJDMNJCBNDZQGSF', 4: 'VTPZPWGCGJBPNFHGM', 5: 'BV', 6: 'Z', 7: '', 8: 'QD', 9: 'WNRVPRTZJ'}
+
+Line "move 2 from 8 to 7"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFPZJDMNJCBNDZQGSF', 4: 'VTPZPWGCGJBPNFHGM', 5: 'BV', 6: 'Z', 7: 'DQ', 8: '', 9: 'WNRVPRTZJ'}
+
+Line "move 1 from 6 to 5"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFPZJDMNJCBNDZQGSF', 4: 'VTPZPWGCGJBPNFHGM', 5: 'BVZ', 6: '', 7: 'DQ', 8: '', 9: 'WNRVPRTZJ'}
+
+Line "move 7 from 3 to 8"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFPZJDMNJCB', 4: 'VTPZPWGCGJBPNFHGM', 5: 'BVZ', 6: '', 7: 'DQ', 8: 'FSGQZDN', 9: 'WNRVPRTZJ'}
+
+Line "move 9 from 3 to 6"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PF', 4: 'VTPZPWGCGJBPNFHGM', 5: 'BVZ', 6: 'BCJNMDJZP', 7: 'DQ', 8: 'FSGQZDN', 9: 'WNRVPRTZJ'}
+
+Line "move 1 from 8 to 3"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFN', 4: 'VTPZPWGCGJBPNFHGM', 5: 'BVZ', 6: 'BCJNMDJZP', 7: 'DQ', 8: 'FSGQZD', 9: 'WNRVPRTZJ'}
+
+Line "move 1 from 7 to 4"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'PFN', 4: 'VTPZPWGCGJBPNFHGMQ', 5: 'BVZ', 6: 'BCJNMDJZP', 7: 'D', 8: 'FSGQZD', 9: 'WNRVPRTZJ'}
+
+Line "move 2 from 3 to 5"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'P', 4: 'VTPZPWGCGJBPNFHGMQ', 5: 'BVZNF', 6: 'BCJNMDJZP', 7: 'D', 8: 'FSGQZD', 9: 'WNRVPRTZJ'}
+
+Line "move 4 from 5 to 7"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'P', 4: 'VTPZPWGCGJBPNFHGMQ', 5: 'B', 6: 'BCJNMDJZP', 7: 'DFNZV', 8: 'FSGQZD', 9: 'WNRVPRTZJ'}
+
+Line "move 4 from 6 to 8"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'P', 4: 'VTPZPWGCGJBPNFHGMQ', 5: 'B', 6: 'BCJNM', 7: 'DFNZV', 8: 'FSGQZDPZJD', 9: 'WNRVPRTZJ'}
+
+Line "move 2 from 7 to 9"
+has this result:
+{1: '', 2: 'STVCRSW', 3: 'P', 4: 'VTPZPWGCGJBPNFHGMQ', 5: 'B', 6: 'BCJNM', 7: 'DFN', 8: 'FSGQZDPZJD', 9: 'WNRVPRTZJVZ'}
+
+Line "move 11 from 4 to 2"
+has this result:
+{1: '', 2: 'STVCRSWQMGHFNPBJGC', 3: 'P', 4: 'VTPZPWG', 5: 'B', 6: 'BCJNM', 7: 'DFN', 8: 'FSGQZDPZJD', 9: 'WNRVPRTZJVZ'}
+
+Line "move 1 from 4 to 2"
+has this result:
+{1: '', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'P', 4: 'VTPZPW', 5: 'B', 6: 'BCJNM', 7: 'DFN', 8: 'FSGQZDPZJD', 9: 'WNRVPRTZJVZ'}
+
+Line "move 6 from 8 to 9"
+has this result:
+{1: '', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'P', 4: 'VTPZPW', 5: 'B', 6: 'BCJNM', 7: 'DFN', 8: 'FSGQ', 9: 'WNRVPRTZJVZDJZPDZ'}
+
+Line "move 1 from 7 to 1"
+has this result:
+{1: 'N', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'P', 4: 'VTPZPW', 5: 'B', 6: 'BCJNM', 7: 'DF', 8: 'FSGQ', 9: 'WNRVPRTZJVZDJZPDZ'}
+
+Line "move 1 from 3 to 7"
+has this result:
+{1: 'N', 2: 'STVCRSWQMGHFNPBJGCG', 3: '', 4: 'VTPZPW', 5: 'B', 6: 'BCJNM', 7: 'DFP', 8: 'FSGQ', 9: 'WNRVPRTZJVZDJZPDZ'}
+
+Line "move 3 from 7 to 8"
+has this result:
+{1: 'N', 2: 'STVCRSWQMGHFNPBJGCG', 3: '', 4: 'VTPZPW', 5: 'B', 6: 'BCJNM', 7: '', 8: 'FSGQPFD', 9: 'WNRVPRTZJVZDJZPDZ'}
+
+Line "move 6 from 8 to 9"
+has this result:
+{1: 'N', 2: 'STVCRSWQMGHFNPBJGCG', 3: '', 4: 'VTPZPW', 5: 'B', 6: 'BCJNM', 7: '', 8: 'F', 9: 'WNRVPRTZJVZDJZPDZDFPQGS'}
+
+Line "move 6 from 4 to 8"
+has this result:
+{1: 'N', 2: 'STVCRSWQMGHFNPBJGCG', 3: '', 4: '', 5: 'B', 6: 'BCJNM', 7: '', 8: 'FWPZPTV', 9: 'WNRVPRTZJVZDJZPDZDFPQGS'}
+
+Line "move 18 from 9 to 3"
+has this result:
+{1: 'N', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQPFDZDPZJDZVJZTR', 4: '', 5: 'B', 6: 'BCJNM', 7: '', 8: 'FWPZPTV', 9: 'WNRVP'}
+
+Line "move 1 from 5 to 8"
+has this result:
+{1: 'N', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQPFDZDPZJDZVJZTR', 4: '', 5: '', 6: 'BCJNM', 7: '', 8: 'FWPZPTVB', 9: 'WNRVP'}
+
+Line "move 5 from 6 to 5"
+has this result:
+{1: 'N', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQPFDZDPZJDZVJZTR', 4: '', 5: 'MNJCB', 6: '', 7: '', 8: 'FWPZPTVB', 9: 'WNRVP'}
+
+Line "move 6 from 8 to 1"
+has this result:
+{1: 'NBVTPZP', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQPFDZDPZJDZVJZTR', 4: '', 5: 'MNJCB', 6: '', 7: '', 8: 'FW', 9: 'WNRVP'}
+
+Line "move 3 from 5 to 4"
+has this result:
+{1: 'NBVTPZP', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQPFDZDPZJDZVJZTR', 4: 'BCJ', 5: 'MN', 6: '', 7: '', 8: 'FW', 9: 'WNRVP'}
+
+Line "move 1 from 9 to 8"
+has this result:
+{1: 'NBVTPZP', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQPFDZDPZJDZVJZTR', 4: 'BCJ', 5: 'MN', 6: '', 7: '', 8: 'FWP', 9: 'WNRV'}
+
+Line "move 3 from 4 to 8"
+has this result:
+{1: 'NBVTPZP', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQPFDZDPZJDZVJZTR', 4: '', 5: 'MN', 6: '', 7: '', 8: 'FWPJCB', 9: 'WNRV'}
+
+Line "move 15 from 3 to 6"
+has this result:
+{1: 'NBVTPZP', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQ', 4: '', 5: 'MN', 6: 'RTZJVZDJZPDZDFP', 7: '', 8: 'FWPJCB', 9: 'WNRV'}
+
+Line "move 2 from 5 to 9"
+has this result:
+{1: 'NBVTPZP', 2: 'STVCRSWQMGHFNPBJGCG', 3: 'SGQ', 4: '', 5: '', 6: 'RTZJVZDJZPDZDFP', 7: '', 8: 'FWPJCB', 9: 'WNRVNM'}
+
+Line "move 3 from 3 to 1"
+has this result:
+{1: 'NBVTPZPQGS', 2: 'STVCRSWQMGHFNPBJGCG', 3: '', 4: '', 5: '', 6: 'RTZJVZDJZPDZDFP', 7: '', 8: 'FWPJCB', 9: 'WNRVNM'}
+
+Line "move 9 from 6 to 4"
+has this result:
+{1: 'NBVTPZPQGS', 2: 'STVCRSWQMGHFNPBJGCG', 3: '', 4: 'PFDZDPZJD', 5: '', 6: 'RTZJVZ', 7: '', 8: 'FWPJCB', 9: 'WNRVNM'}
+
+Line "move 2 from 1 to 5"
+has this result:
+{1: 'NBVTPZPQ', 2: 'STVCRSWQMGHFNPBJGCG', 3: '', 4: 'PFDZDPZJD', 5: 'SG', 6: 'RTZJVZ', 7: '', 8: 'FWPJCB', 9: 'WNRVNM'}
+
+Line "move 2 from 5 to 8"
+has this result:
+{1: 'NBVTPZPQ', 2: 'STVCRSWQMGHFNPBJGCG', 3: '', 4: 'PFDZDPZJD', 5: '', 6: 'RTZJVZ', 7: '', 8: 'FWPJCBGS', 9: 'WNRVNM'}
+
+Line "move 6 from 4 to 2"
+has this result:
+{1: 'NBVTPZPQ', 2: 'STVCRSWQMGHFNPBJGCGDJZPDZ', 3: '', 4: 'PFD', 5: '', 6: 'RTZJVZ', 7: '', 8: 'FWPJCBGS', 9: 'WNRVNM'}
+
+Line "move 6 from 1 to 6"
+has this result:
+{1: 'NB', 2: 'STVCRSWQMGHFNPBJGCGDJZPDZ', 3: '', 4: 'PFD', 5: '', 6: 'RTZJVZQPZPTV', 7: '', 8: 'FWPJCBGS', 9: 'WNRVNM'}
+
+Line "move 3 from 4 to 6"
+has this result:
+{1: 'NB', 2: 'STVCRSWQMGHFNPBJGCGDJZPDZ', 3: '', 4: '', 5: '', 6: 'RTZJVZQPZPTVDFP', 7: '', 8: 'FWPJCBGS', 9: 'WNRVNM'}
+
+Line "move 6 from 9 to 1"
+has this result:
+{1: 'NBMNVRNW', 2: 'STVCRSWQMGHFNPBJGCGDJZPDZ', 3: '', 4: '', 5: '', 6: 'RTZJVZQPZPTVDFP', 7: '', 8: 'FWPJCBGS', 9: ''}
+
+Line "move 4 from 2 to 1"
+has this result:
+{1: 'NBMNVRNWZDPZ', 2: 'STVCRSWQMGHFNPBJGCGDJ', 3: '', 4: '', 5: '', 6: 'RTZJVZQPZPTVDFP', 7: '', 8: 'FWPJCBGS', 9: ''}
+
+Line "move 7 from 8 to 1"
+has this result:
+{1: 'NBMNVRNWZDPZSGBCJPW', 2: 'STVCRSWQMGHFNPBJGCGDJ', 3: '', 4: '', 5: '', 6: 'RTZJVZQPZPTVDFP', 7: '', 8: 'F', 9: ''}
+
+Line "move 1 from 6 to 7"
+has this result:
+{1: 'NBMNVRNWZDPZSGBCJPW', 2: 'STVCRSWQMGHFNPBJGCGDJ', 3: '', 4: '', 5: '', 6: 'RTZJVZQPZPTVDF', 7: 'P', 8: 'F', 9: ''}
+
+Line "move 17 from 1 to 5"
+has this result:
+{1: 'NB', 2: 'STVCRSWQMGHFNPBJGCGDJ', 3: '', 4: '', 5: 'WPJCBGSZPDZWNRVNM', 6: 'RTZJVZQPZPTVDF', 7: 'P', 8: 'F', 9: ''}
+
+Line "move 1 from 7 to 1"
+has this result:
+{1: 'NBP', 2: 'STVCRSWQMGHFNPBJGCGDJ', 3: '', 4: '', 5: 'WPJCBGSZPDZWNRVNM', 6: 'RTZJVZQPZPTVDF', 7: '', 8: 'F', 9: ''}
+
+Line "move 5 from 2 to 1"
+has this result:
+{1: 'NBPJDGCG', 2: 'STVCRSWQMGHFNPBJ', 3: '', 4: '', 5: 'WPJCBGSZPDZWNRVNM', 6: 'RTZJVZQPZPTVDF', 7: '', 8: 'F', 9: ''}
+
+Line "move 1 from 8 to 6"
+has this result:
+{1: 'NBPJDGCG', 2: 'STVCRSWQMGHFNPBJ', 3: '', 4: '', 5: 'WPJCBGSZPDZWNRVNM', 6: 'RTZJVZQPZPTVDFF', 7: '', 8: '', 9: ''}
+
+Line "move 11 from 6 to 4"
+has this result:
+{1: 'NBPJDGCG', 2: 'STVCRSWQMGHFNPBJ', 3: '', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWNRVNM', 6: 'RTZJ', 7: '', 8: '', 9: ''}
+
+Line "move 2 from 2 to 3"
+has this result:
+{1: 'NBPJDGCG', 2: 'STVCRSWQMGHFNP', 3: 'JB', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWNRVNM', 6: 'RTZJ', 7: '', 8: '', 9: ''}
+
+Line "move 3 from 1 to 8"
+has this result:
+{1: 'NBPJD', 2: 'STVCRSWQMGHFNP', 3: 'JB', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWNRVNM', 6: 'RTZJ', 7: '', 8: 'GCG', 9: ''}
+
+Line "move 7 from 2 to 5"
+has this result:
+{1: 'NBPJD', 2: 'STVCRSW', 3: 'JB', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWNRVNMPNFHGMQ', 6: 'RTZJ', 7: '', 8: 'GCG', 9: ''}
+
+Line "move 4 from 6 to 7"
+has this result:
+{1: 'NBPJD', 2: 'STVCRSW', 3: 'JB', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWNRVNMPNFHGMQ', 6: '', 7: 'JZTR', 8: 'GCG', 9: ''}
+
+Line "move 4 from 1 to 5"
+has this result:
+{1: 'N', 2: 'STVCRSW', 3: 'JB', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWNRVNMPNFHGMQDJPB', 6: '', 7: 'JZTR', 8: 'GCG', 9: ''}
+
+Line "move 15 from 5 to 9"
+has this result:
+{1: 'N', 2: 'STVCRSW', 3: 'JB', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWN', 6: '', 7: 'JZTR', 8: 'GCG', 9: 'BPJDQMGHFNPMNVR'}
+
+Line "move 2 from 3 to 7"
+has this result:
+{1: 'N', 2: 'STVCRSW', 3: '', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWN', 6: '', 7: 'JZTRBJ', 8: 'GCG', 9: 'BPJDQMGHFNPMNVR'}
+
+Line "move 2 from 8 to 2"
+has this result:
+{1: 'N', 2: 'STVCRSWGC', 3: '', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWN', 6: '', 7: 'JZTRBJ', 8: 'G', 9: 'BPJDQMGHFNPMNVR'}
+
+Line "move 1 from 1 to 9"
+has this result:
+{1: '', 2: 'STVCRSWGC', 3: '', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWN', 6: '', 7: 'JZTRBJ', 8: 'G', 9: 'BPJDQMGHFNPMNVRN'}
+
+Line "move 6 from 2 to 6"
+has this result:
+{1: '', 2: 'STV', 3: '', 4: 'FFDVTPZPQZV', 5: 'WPJCBGSZPDZWN', 6: 'CGWSRC', 7: 'JZTRBJ', 8: 'G', 9: 'BPJDQMGHFNPMNVRN'}
+
+Line "move 7 from 5 to 6"
+has this result:
+{1: '', 2: 'STV', 3: '', 4: 'FFDVTPZPQZV', 5: 'WPJCBG', 6: 'CGWSRCNWZDPZS', 7: 'JZTRBJ', 8: 'G', 9: 'BPJDQMGHFNPMNVRN'}
+
+Line "move 5 from 7 to 3"
+has this result:
+{1: '', 2: 'STV', 3: 'JBRTZ', 4: 'FFDVTPZPQZV', 5: 'WPJCBG', 6: 'CGWSRCNWZDPZS', 7: 'J', 8: 'G', 9: 'BPJDQMGHFNPMNVRN'}
+
+Line "move 1 from 6 to 1"
+has this result:
+{1: 'S', 2: 'STV', 3: 'JBRTZ', 4: 'FFDVTPZPQZV', 5: 'WPJCBG', 6: 'CGWSRCNWZDPZ', 7: 'J', 8: 'G', 9: 'BPJDQMGHFNPMNVRN'}
+
+Line "move 2 from 3 to 4"
+has this result:
+{1: 'S', 2: 'STV', 3: 'JBR', 4: 'FFDVTPZPQZVZT', 5: 'WPJCBG', 6: 'CGWSRCNWZDPZ', 7: 'J', 8: 'G', 9: 'BPJDQMGHFNPMNVRN'}
+
+Line "move 1 from 3 to 4"
+has this result:
+{1: 'S', 2: 'STV', 3: 'JB', 4: 'FFDVTPZPQZVZTR', 5: 'WPJCBG', 6: 'CGWSRCNWZDPZ', 7: 'J', 8: 'G', 9: 'BPJDQMGHFNPMNVRN'}
+
+Line "move 5 from 6 to 4"
+has this result:
+{1: 'S', 2: 'STV', 3: 'JB', 4: 'FFDVTPZPQZVZTRZPDZW', 5: 'WPJCBG', 6: 'CGWSRCN', 7: 'J', 8: 'G', 9: 'BPJDQMGHFNPMNVRN'}
+
+Line "move 14 from 9 to 2"
+has this result:
+{1: 'S', 2: 'STVNRVNMPNFHGMQDJ', 3: 'JB', 4: 'FFDVTPZPQZVZTRZPDZW', 5: 'WPJCBG', 6: 'CGWSRCN', 7: 'J', 8: 'G', 9: 'BP'}
+
+Line "move 1 from 8 to 9"
+has this result:
+{1: 'S', 2: 'STVNRVNMPNFHGMQDJ', 3: 'JB', 4: 'FFDVTPZPQZVZTRZPDZW', 5: 'WPJCBG', 6: 'CGWSRCN', 7: 'J', 8: '', 9: 'BPG'}
+
+Line "move 1 from 7 to 8"
+has this result:
+{1: 'S', 2: 'STVNRVNMPNFHGMQDJ', 3: 'JB', 4: 'FFDVTPZPQZVZTRZPDZW', 5: 'WPJCBG', 6: 'CGWSRCN', 7: '', 8: 'J', 9: 'BPG'}
+
+Line "move 1 from 9 to 6"
+has this result:
+{1: 'S', 2: 'STVNRVNMPNFHGMQDJ', 3: 'JB', 4: 'FFDVTPZPQZVZTRZPDZW', 5: 'WPJCBG', 6: 'CGWSRCNG', 7: '', 8: 'J', 9: 'BP'}
+
+Line "move 2 from 9 to 5"
+has this result:
+{1: 'S', 2: 'STVNRVNMPNFHGMQDJ', 3: 'JB', 4: 'FFDVTPZPQZVZTRZPDZW', 5: 'WPJCBGPB', 6: 'CGWSRCNG', 7: '', 8: 'J', 9: ''}
+
+Line "move 1 from 1 to 2"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJS', 3: 'JB', 4: 'FFDVTPZPQZVZTRZPDZW', 5: 'WPJCBGPB', 6: 'CGWSRCNG', 7: '', 8: 'J', 9: ''}
+
+Line "move 7 from 6 to 9"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJS', 3: 'JB', 4: 'FFDVTPZPQZVZTRZPDZW', 5: 'WPJCBGPB', 6: 'C', 7: '', 8: 'J', 9: 'GNCRSWG'}
+
+Line "move 1 from 3 to 4"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJS', 3: 'J', 4: 'FFDVTPZPQZVZTRZPDZWB', 5: 'WPJCBGPB', 6: 'C', 7: '', 8: 'J', 9: 'GNCRSWG'}
+
+Line "move 8 from 5 to 2"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJSBPGBCJPW', 3: 'J', 4: 'FFDVTPZPQZVZTRZPDZWB', 5: '', 6: 'C', 7: '', 8: 'J', 9: 'GNCRSWG'}
+
+Line "move 1 from 6 to 7"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJSBPGBCJPW', 3: 'J', 4: 'FFDVTPZPQZVZTRZPDZWB', 5: '', 6: '', 7: 'C', 8: 'J', 9: 'GNCRSWG'}
+
+Line "move 1 from 7 to 4"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJSBPGBCJPW', 3: 'J', 4: 'FFDVTPZPQZVZTRZPDZWBC', 5: '', 6: '', 7: '', 8: 'J', 9: 'GNCRSWG'}
+
+Line "move 1 from 8 to 4"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJSBPGBCJPW', 3: 'J', 4: 'FFDVTPZPQZVZTRZPDZWBCJ', 5: '', 6: '', 7: '', 8: '', 9: 'GNCRSWG'}
+
+Line "move 1 from 3 to 9"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJSBPGBCJPW', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJ', 5: '', 6: '', 7: '', 8: '', 9: 'GNCRSWGJ'}
+
+Line "move 7 from 9 to 5"
+has this result:
+{1: '', 2: 'STVNRVNMPNFHGMQDJSBPGBCJPW', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJ', 5: 'JGWSRCN', 6: '', 7: '', 8: '', 9: 'G'}
+
+Line "move 1 from 9 to 1"
+has this result:
+{1: 'G', 2: 'STVNRVNMPNFHGMQDJSBPGBCJPW', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJ', 5: 'JGWSRCN', 6: '', 7: '', 8: '', 9: ''}
+
+Line "move 6 from 5 to 1"
+has this result:
+{1: 'GNCRSWG', 2: 'STVNRVNMPNFHGMQDJSBPGBCJPW', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJ', 5: 'J', 6: '', 7: '', 8: '', 9: ''}
+
+Line "move 8 from 2 to 4"
+has this result:
+{1: 'GNCRSWG', 2: 'STVNRVNMPNFHGMQDJS', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPB', 5: 'J', 6: '', 7: '', 8: '', 9: ''}
+
+Line "move 1 from 5 to 6"
+has this result:
+{1: 'GNCRSWG', 2: 'STVNRVNMPNFHGMQDJS', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPB', 5: '', 6: 'J', 7: '', 8: '', 9: ''}
+
+Line "move 1 from 6 to 7"
+has this result:
+{1: 'GNCRSWG', 2: 'STVNRVNMPNFHGMQDJS', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPB', 5: '', 6: '', 7: 'J', 8: '', 9: ''}
+
+Line "move 1 from 7 to 9"
+has this result:
+{1: 'GNCRSWG', 2: 'STVNRVNMPNFHGMQDJS', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPB', 5: '', 6: '', 7: '', 8: '', 9: 'J'}
+
+Line "move 7 from 2 to 9"
+has this result:
+{1: 'GNCRSWG', 2: 'STVNRVNMPNF', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPB', 5: '', 6: '', 7: '', 8: '', 9: 'JSJDQMGH'}
+
+Line "move 1 from 9 to 4"
+has this result:
+{1: 'GNCRSWG', 2: 'STVNRVNMPNF', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPBH', 5: '', 6: '', 7: '', 8: '', 9: 'JSJDQMG'}
+
+Line "move 3 from 9 to 1"
+has this result:
+{1: 'GNCRSWGGMQ', 2: 'STVNRVNMPNF', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPBH', 5: '', 6: '', 7: '', 8: '', 9: 'JSJD'}
+
+Line "move 1 from 9 to 6"
+has this result:
+{1: 'GNCRSWGGMQ', 2: 'STVNRVNMPNF', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPBH', 5: '', 6: 'D', 7: '', 8: '', 9: 'JSJ'}
+
+Line "move 11 from 2 to 8"
+has this result:
+{1: 'GNCRSWGGMQ', 2: '', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPBH', 5: '', 6: 'D', 7: '', 8: 'FNPMNVRNVTS', 9: 'JSJ'}
+
+Line "move 9 from 1 to 8"
+has this result:
+{1: 'G', 2: '', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPBH', 5: '', 6: 'D', 7: '', 8: 'FNPMNVRNVTSQMGGWSRCN', 9: 'JSJ'}
+
+Line "move 1 from 6 to 4"
+has this result:
+{1: 'G', 2: '', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPBHD', 5: '', 6: '', 7: '', 8: 'FNPMNVRNVTSQMGGWSRCN', 9: 'JSJ'}
+
+Line "move 1 from 1 to 9"
+has this result:
+{1: '', 2: '', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWBCJWPJCBGPBHD', 5: '', 6: '', 7: '', 8: 'FNPMNVRNVTSQMGGWSRCN', 9: 'JSJG'}
+
+Line "move 12 from 4 to 2"
+has this result:
+{1: '', 2: 'DHBPGBCJPWJC', 3: '', 4: 'FFDVTPZPQZVZTRZPDZWB', 5: '', 6: '', 7: '', 8: 'FNPMNVRNVTSQMGGWSRCN', 9: 'JSJG'}
+
+Line "move 4 from 9 to 3"
+has this result:
+{1: '', 2: 'DHBPGBCJPWJC', 3: 'GJSJ', 4: 'FFDVTPZPQZVZTRZPDZWB', 5: '', 6: '', 7: '', 8: 'FNPMNVRNVTSQMGGWSRCN', 9: ''}
+
+Line "move 3 from 4 to 6"
+has this result:
+{1: '', 2: 'DHBPGBCJPWJC', 3: 'GJSJ', 4: 'FFDVTPZPQZVZTRZPD', 5: '', 6: 'BWZ', 7: '', 8: 'FNPMNVRNVTSQMGGWSRCN', 9: ''}
+
+Line "move 9 from 8 to 6"
+has this result:
+{1: '', 2: 'DHBPGBCJPWJC', 3: 'GJSJ', 4: 'FFDVTPZPQZVZTRZPD', 5: '', 6: 'BWZNCRSWGGMQ', 7: '', 8: 'FNPMNVRNVTS', 9: ''}
+
+Line "move 12 from 4 to 9"
+has this result:
+{1: '', 2: 'DHBPGBCJPWJC', 3: 'GJSJ', 4: 'FFDVT', 5: '', 6: 'BWZNCRSWGGMQ', 7: '', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 8 from 6 to 3"
+has this result:
+{1: '', 2: 'DHBPGBCJPWJC', 3: 'GJSJQMGGWSRC', 4: 'FFDVT', 5: '', 6: 'BWZN', 7: '', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 8 from 2 to 7"
+has this result:
+{1: '', 2: 'DHBP', 3: 'GJSJQMGGWSRC', 4: 'FFDVT', 5: '', 6: 'BWZN', 7: 'CJWPJCBG', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 11 from 3 to 4"
+has this result:
+{1: '', 2: 'DHBP', 3: 'G', 4: 'FFDVTCRSWGGMQJSJ', 5: '', 6: 'BWZN', 7: 'CJWPJCBG', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 2 from 2 to 7"
+has this result:
+{1: '', 2: 'DH', 3: 'G', 4: 'FFDVTCRSWGGMQJSJ', 5: '', 6: 'BWZN', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 2 from 6 to 1"
+has this result:
+{1: 'NZ', 2: 'DH', 3: 'G', 4: 'FFDVTCRSWGGMQJSJ', 5: '', 6: 'BW', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 1 from 2 to 3"
+has this result:
+{1: 'NZ', 2: 'D', 3: 'GH', 4: 'FFDVTCRSWGGMQJSJ', 5: '', 6: 'BW', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 2 from 6 to 2"
+has this result:
+{1: 'NZ', 2: 'DWB', 3: 'GH', 4: 'FFDVTCRSWGGMQJSJ', 5: '', 6: '', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 3 from 2 to 6"
+has this result:
+{1: 'NZ', 2: '', 3: 'GH', 4: 'FFDVTCRSWGGMQJSJ', 5: '', 6: 'BWD', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 2 from 1 to 6"
+has this result:
+{1: '', 2: '', 3: 'GH', 4: 'FFDVTCRSWGGMQJSJ', 5: '', 6: 'BWDZN', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 1 from 6 to 1"
+has this result:
+{1: 'N', 2: '', 3: 'GH', 4: 'FFDVTCRSWGGMQJSJ', 5: '', 6: 'BWDZ', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 1 from 6 to 4"
+has this result:
+{1: 'N', 2: '', 3: 'GH', 4: 'FFDVTCRSWGGMQJSJZ', 5: '', 6: 'BWD', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 2 from 6 to 3"
+has this result:
+{1: 'N', 2: '', 3: 'GHDW', 4: 'FFDVTCRSWGGMQJSJZ', 5: '', 6: 'B', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 1 from 6 to 5"
+has this result:
+{1: 'N', 2: '', 3: 'GHDW', 4: 'FFDVTCRSWGGMQJSJZ', 5: 'B', 6: '', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTS', 9: 'DPZRTZVZQPZP'}
+
+Line "move 4 from 3 to 8"
+has this result:
+{1: 'N', 2: '', 3: '', 4: 'FFDVTCRSWGGMQJSJZ', 5: 'B', 6: '', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTSWDHG', 9: 'DPZRTZVZQPZP'}
+
+Line "move 12 from 4 to 5"
+has this result:
+{1: 'N', 2: '', 3: '', 4: 'FFDVT', 5: 'BZJSJQMGGWSRC', 6: '', 7: 'CJWPJCBGPB', 8: 'FNPMNVRNVTSWDHG', 9: 'DPZRTZVZQPZP'}
+
+Line "move 5 from 9 to 7"
+has this result:
+{1: 'N', 2: '', 3: '', 4: 'FFDVT', 5: 'BZJSJQMGGWSRC', 6: '', 7: 'CJWPJCBGPBPZPQZ', 8: 'FNPMNVRNVTSWDHG', 9: 'DPZRTZV'}
+
+Line "move 3 from 8 to 7"
+has this result:
+{1: 'N', 2: '', 3: '', 4: 'FFDVT', 5: 'BZJSJQMGGWSRC', 6: '', 7: 'CJWPJCBGPBPZPQZGHD', 8: 'FNPMNVRNVTSW', 9: 'DPZRTZV'}
+
+Line "move 1 from 9 to 1"
+has this result:
+{1: 'NV', 2: '', 3: '', 4: 'FFDVT', 5: 'BZJSJQMGGWSRC', 6: '', 7: 'CJWPJCBGPBPZPQZGHD', 8: 'FNPMNVRNVTSW', 9: 'DPZRTZ'}
+
+Line "move 3 from 8 to 2"
+has this result:
+{1: 'NV', 2: 'WST', 3: '', 4: 'FFDVT', 5: 'BZJSJQMGGWSRC', 6: '', 7: 'CJWPJCBGPBPZPQZGHD', 8: 'FNPMNVRNV', 9: 'DPZRTZ'}
+
+Line "move 13 from 5 to 6"
+has this result:
+{1: 'NV', 2: 'WST', 3: '', 4: 'FFDVT', 5: '', 6: 'CRSWGGMQJSJZB', 7: 'CJWPJCBGPBPZPQZGHD', 8: 'FNPMNVRNV', 9: 'DPZRTZ'}
+
+Line "move 1 from 2 to 9"
+has this result:
+{1: 'NV', 2: 'WS', 3: '', 4: 'FFDVT', 5: '', 6: 'CRSWGGMQJSJZB', 7: 'CJWPJCBGPBPZPQZGHD', 8: 'FNPMNVRNV', 9: 'DPZRTZT'}
+
+Line "move 13 from 6 to 7"
+has this result:
+{1: 'NV', 2: 'WS', 3: '', 4: 'FFDVT', 5: '', 6: '', 7: 'CJWPJCBGPBPZPQZGHDBZJSJQMGGWSRC', 8: 'FNPMNVRNV', 9: 'DPZRTZT'}
+
+Line "move 7 from 9 to 6"
+has this result:
+{1: 'NV', 2: 'WS', 3: '', 4: 'FFDVT', 5: '', 6: 'TZTRZPD', 7: 'CJWPJCBGPBPZPQZGHDBZJSJQMGGWSRC', 8: 'FNPMNVRNV', 9: ''}
+
+Line "move 2 from 4 to 6"
+has this result:
+{1: 'NV', 2: 'WS', 3: '', 4: 'FFD', 5: '', 6: 'TZTRZPDTV', 7: 'CJWPJCBGPBPZPQZGHDBZJSJQMGGWSRC', 8: 'FNPMNVRNV', 9: ''}
+
+Line "move 1 from 8 to 6"
+has this result:
+{1: 'NV', 2: 'WS', 3: '', 4: 'FFD', 5: '', 6: 'TZTRZPDTVV', 7: 'CJWPJCBGPBPZPQZGHDBZJSJQMGGWSRC', 8: 'FNPMNVRN', 9: ''}
+
+Line "move 1 from 1 to 6"
+has this result:
+{1: 'N', 2: 'WS', 3: '', 4: 'FFD', 5: '', 6: 'TZTRZPDTVVV', 7: 'CJWPJCBGPBPZPQZGHDBZJSJQMGGWSRC', 8: 'FNPMNVRN', 9: ''}
+
+Line "move 1 from 2 to 9"
+has this result:
+{1: 'N', 2: 'W', 3: '', 4: 'FFD', 5: '', 6: 'TZTRZPDTVVV', 7: 'CJWPJCBGPBPZPQZGHDBZJSJQMGGWSRC', 8: 'FNPMNVRN', 9: 'S'}
+
+Line "move 1 from 2 to 3"
+has this result:
+{1: 'N', 2: '', 3: 'W', 4: 'FFD', 5: '', 6: 'TZTRZPDTVVV', 7: 'CJWPJCBGPBPZPQZGHDBZJSJQMGGWSRC', 8: 'FNPMNVRN', 9: 'S'}
+
+Line "move 12 from 7 to 9"
+has this result:
+{1: 'N', 2: '', 3: 'W', 4: 'FFD', 5: '', 6: 'TZTRZPDTVVV', 7: 'CJWPJCBGPBPZPQZGHDB', 8: 'FNPMNVRN', 9: 'SCRSWGGMQJSJZ'}
+
+Line "move 7 from 8 to 4"
+has this result:
+{1: 'N', 2: '', 3: 'W', 4: 'FFDNRVNMPN', 5: '', 6: 'TZTRZPDTVVV', 7: 'CJWPJCBGPBPZPQZGHDB', 8: 'F', 9: 'SCRSWGGMQJSJZ'}
+
+Line "move 1 from 1 to 3"
+has this result:
+{1: '', 2: '', 3: 'WN', 4: 'FFDNRVNMPN', 5: '', 6: 'TZTRZPDTVVV', 7: 'CJWPJCBGPBPZPQZGHDB', 8: 'F', 9: 'SCRSWGGMQJSJZ'}
+
+Line "move 2 from 7 to 9"
+has this result:
+{1: '', 2: '', 3: 'WN', 4: 'FFDNRVNMPN', 5: '', 6: 'TZTRZPDTVVV', 7: 'CJWPJCBGPBPZPQZGH', 8: 'F', 9: 'SCRSWGGMQJSJZBD'}
+
+Line "move 15 from 7 to 4"
+has this result:
+{1: '', 2: '', 3: 'WN', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: '', 6: 'TZTRZPDTVVV', 7: 'CJ', 8: 'F', 9: 'SCRSWGGMQJSJZBD'}
+
+Line "move 8 from 6 to 3"
+has this result:
+{1: '', 2: '', 3: 'WNVVVTDPZR', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: '', 6: 'TZT', 7: 'CJ', 8: 'F', 9: 'SCRSWGGMQJSJZBD'}
+
+Line "move 1 from 8 to 9"
+has this result:
+{1: '', 2: '', 3: 'WNVVVTDPZR', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: '', 6: 'TZT', 7: 'CJ', 8: '', 9: 'SCRSWGGMQJSJZBDF'}
+
+Line "move 1 from 7 to 2"
+has this result:
+{1: '', 2: 'J', 3: 'WNVVVTDPZR', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: '', 6: 'TZT', 7: 'C', 8: '', 9: 'SCRSWGGMQJSJZBDF'}
+
+Line "move 10 from 3 to 5"
+has this result:
+{1: '', 2: 'J', 3: '', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: 'RZPDTVVVNW', 6: 'TZT', 7: 'C', 8: '', 9: 'SCRSWGGMQJSJZBDF'}
+
+Line "move 6 from 5 to 9"
+has this result:
+{1: '', 2: 'J', 3: '', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: 'RZPD', 6: 'TZT', 7: 'C', 8: '', 9: 'SCRSWGGMQJSJZBDFWNVVVT'}
+
+Line "move 1 from 2 to 8"
+has this result:
+{1: '', 2: '', 3: '', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: 'RZPD', 6: 'TZT', 7: 'C', 8: 'J', 9: 'SCRSWGGMQJSJZBDFWNVVVT'}
+
+Line "move 1 from 5 to 8"
+has this result:
+{1: '', 2: '', 3: '', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: 'RZP', 6: 'TZT', 7: 'C', 8: 'JD', 9: 'SCRSWGGMQJSJZBDFWNVVVT'}
+
+Line "move 2 from 8 to 9"
+has this result:
+{1: '', 2: '', 3: '', 4: 'FFDNRVNMPNHGZQPZPBPGBCJPW', 5: 'RZP', 6: 'TZT', 7: 'C', 8: '', 9: 'SCRSWGGMQJSJZBDFWNVVVTDJ'}
+
+Line "move 10 from 4 to 9"
+has this result:
+{1: '', 2: '', 3: '', 4: 'FFDNRVNMPNHGZQP', 5: 'RZP', 6: 'TZT', 7: 'C', 8: '', 9: 'SCRSWGGMQJSJZBDFWNVVVTDJWPJCBGPBPZ'}
+
+Line "move 20 from 9 to 6"
+has this result:
+{1: '', 2: '', 3: '', 4: 'FFDNRVNMPNHGZQP', 5: 'RZP', 6: 'TZTZPBPGBCJPWJDTVVVNWFD', 7: 'C', 8: '', 9: 'SCRSWGGMQJSJZB'}
+
+Line "move 1 from 7 to 6"
+has this result:
+{1: '', 2: '', 3: '', 4: 'FFDNRVNMPNHGZQP', 5: 'RZP', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: '', 8: '', 9: 'SCRSWGGMQJSJZB'}
+
+Line "move 4 from 9 to 3"
+has this result:
+{1: '', 2: '', 3: 'BZJS', 4: 'FFDNRVNMPNHGZQP', 5: 'RZP', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: '', 8: '', 9: 'SCRSWGGMQJ'}
+
+Line "move 1 from 5 to 9"
+has this result:
+{1: '', 2: '', 3: 'BZJS', 4: 'FFDNRVNMPNHGZQP', 5: 'RZ', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: '', 8: '', 9: 'SCRSWGGMQJP'}
+
+Line "move 4 from 4 to 9"
+has this result:
+{1: '', 2: '', 3: 'BZJS', 4: 'FFDNRVNMPNH', 5: 'RZ', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: '', 8: '', 9: 'SCRSWGGMQJPPQZG'}
+
+Line "move 8 from 9 to 7"
+has this result:
+{1: '', 2: '', 3: 'BZJS', 4: 'FFDNRVNMPNH', 5: 'RZ', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZQPPJQM', 8: '', 9: 'SCRSWGG'}
+
+Line "move 2 from 5 to 1"
+has this result:
+{1: 'ZR', 2: '', 3: 'BZJS', 4: 'FFDNRVNMPNH', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZQPPJQM', 8: '', 9: 'SCRSWGG'}
+
+Line "move 7 from 4 to 3"
+has this result:
+{1: 'ZR', 2: '', 3: 'BZJSHNPMNVR', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZQPPJQM', 8: '', 9: 'SCRSWGG'}
+
+Line "move 8 from 3 to 2"
+has this result:
+{1: 'ZR', 2: 'RVNMPNHS', 3: 'BZJ', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZQPPJQM', 8: '', 9: 'SCRSWGG'}
+
+Line "move 6 from 9 to 8"
+has this result:
+{1: 'ZR', 2: 'RVNMPNHS', 3: 'BZJ', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZQPPJQM', 8: 'GGWSRC', 9: 'S'}
+
+Line "move 1 from 3 to 7"
+has this result:
+{1: 'ZR', 2: 'RVNMPNHS', 3: 'BZ', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZQPPJQMJ', 8: 'GGWSRC', 9: 'S'}
+
+Line "move 1 from 3 to 1"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHS', 3: 'B', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZQPPJQMJ', 8: 'GGWSRC', 9: 'S'}
+
+Line "move 7 from 7 to 8"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHS', 3: 'B', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZ', 8: 'GGWSRCJMQJPPQ', 9: 'S'}
+
+Line "move 13 from 8 to 3"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHS', 3: 'BQPPJQMJCRSWGG', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZ', 8: '', 9: 'S'}
+
+Line "move 2 from 2 to 8"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPN', 3: 'BQPPJQMJCRSWGG', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZ', 8: 'SH', 9: 'S'}
+
+Line "move 1 from 8 to 2"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNH', 3: 'BQPPJQMJCRSWGG', 4: 'FFDN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZ', 8: 'S', 9: 'S'}
+
+Line "move 1 from 4 to 1"
+has this result:
+{1: 'ZRZN', 2: 'RVNMPNH', 3: 'BQPPJQMJCRSWGG', 4: 'FFD', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZ', 8: 'S', 9: 'S'}
+
+Line "move 1 from 1 to 8"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNH', 3: 'BQPPJQMJCRSWGG', 4: 'FFD', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZ', 8: 'SN', 9: 'S'}
+
+Line "move 2 from 8 to 2"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHNS', 3: 'BQPPJQMJCRSWGG', 4: 'FFD', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDC', 7: 'GZ', 8: '', 9: 'S'}
+
+Line "move 24 from 6 to 2"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHNSCDFWNVVVTDJWPJCBGPBPZTZT', 3: 'BQPPJQMJCRSWGG', 4: 'FFD', 5: '', 6: '', 7: 'GZ', 8: '', 9: 'S'}
+
+Line "move 2 from 7 to 8"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHNSCDFWNVVVTDJWPJCBGPBPZTZT', 3: 'BQPPJQMJCRSWGG', 4: 'FFD', 5: '', 6: '', 7: '', 8: 'ZG', 9: 'S'}
+
+Line "move 5 from 3 to 4"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHNSCDFWNVVVTDJWPJCBGPBPZTZT', 3: 'BQPPJQMJC', 4: 'FFDGGWSR', 5: '', 6: '', 7: '', 8: 'ZG', 9: 'S'}
+
+Line "move 25 from 2 to 6"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHN', 3: 'BQPPJQMJC', 4: 'FFDGGWSR', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDCS', 7: '', 8: 'ZG', 9: 'S'}
+
+Line "move 5 from 4 to 9"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHN', 3: 'BQPPJQMJC', 4: 'FFD', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDCS', 7: '', 8: 'ZG', 9: 'SRSWGG'}
+
+Line "move 2 from 8 to 7"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHN', 3: 'BQPPJQMJC', 4: 'FFD', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDCS', 7: 'GZ', 8: '', 9: 'SRSWGG'}
+
+Line "move 2 from 7 to 3"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHN', 3: 'BQPPJQMJCZG', 4: 'FFD', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNWFDCS', 7: '', 8: '', 9: 'SRSWGG'}
+
+Line "move 4 from 6 to 2"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHNSCDF', 3: 'BQPPJQMJCZG', 4: 'FFD', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVNW', 7: '', 8: '', 9: 'SRSWGG'}
+
+Line "move 2 from 6 to 4"
+has this result:
+{1: 'ZRZ', 2: 'RVNMPNHNSCDF', 3: 'BQPPJQMJCZG', 4: 'FFDWN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: '', 8: '', 9: 'SRSWGG'}
+
+Line "move 9 from 2 to 3"
+has this result:
+{1: 'ZRZ', 2: 'RVN', 3: 'BQPPJQMJCZGFDCSNHNPM', 4: 'FFDWN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: '', 8: '', 9: 'SRSWGG'}
+
+Line "move 11 from 3 to 7"
+has this result:
+{1: 'ZRZ', 2: 'RVN', 3: 'BQPPJQMJC', 4: 'FFDWN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: 'MPNHNSCDFGZ', 8: '', 9: 'SRSWGG'}
+
+Line "move 10 from 7 to 8"
+has this result:
+{1: 'ZRZ', 2: 'RVN', 3: 'BQPPJQMJC', 4: 'FFDWN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: 'M', 8: 'ZGFDCSNHNP', 9: 'SRSWGG'}
+
+Line "move 1 from 7 to 9"
+has this result:
+{1: 'ZRZ', 2: 'RVN', 3: 'BQPPJQMJC', 4: 'FFDWN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: '', 8: 'ZGFDCSNHNP', 9: 'SRSWGGM'}
+
+Line "move 3 from 2 to 4"
+has this result:
+{1: 'ZRZ', 2: '', 3: 'BQPPJQMJC', 4: 'FFDWNNVR', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: '', 8: 'ZGFDCSNHNP', 9: 'SRSWGGM'}
+
+Line "move 8 from 8 to 2"
+has this result:
+{1: 'ZRZ', 2: 'PNHNSCDF', 3: 'BQPPJQMJC', 4: 'FFDWNNVR', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: '', 8: 'ZG', 9: 'SRSWGGM'}
+
+Line "move 1 from 2 to 6"
+has this result:
+{1: 'ZRZ', 2: 'PNHNSCD', 3: 'BQPPJQMJC', 4: 'FFDWNNVR', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVF', 7: '', 8: 'ZG', 9: 'SRSWGGM'}
+
+Line "move 2 from 4 to 1"
+has this result:
+{1: 'ZRZRV', 2: 'PNHNSCD', 3: 'BQPPJQMJC', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVF', 7: '', 8: 'ZG', 9: 'SRSWGGM'}
+
+Line "move 1 from 8 to 2"
+has this result:
+{1: 'ZRZRV', 2: 'PNHNSCDG', 3: 'BQPPJQMJC', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVVF', 7: '', 8: 'Z', 9: 'SRSWGGM'}
+
+Line "move 1 from 6 to 9"
+has this result:
+{1: 'ZRZRV', 2: 'PNHNSCDG', 3: 'BQPPJQMJC', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: '', 8: 'Z', 9: 'SRSWGGMF'}
+
+Line "move 1 from 8 to 3"
+has this result:
+{1: 'ZRZRV', 2: 'PNHNSCDG', 3: 'BQPPJQMJCZ', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: '', 8: '', 9: 'SRSWGGMF'}
+
+Line "move 6 from 9 to 7"
+has this result:
+{1: 'ZRZRV', 2: 'PNHNSCDG', 3: 'BQPPJQMJCZ', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: 'FMGGWS', 8: '', 9: 'SR'}
+
+Line "move 2 from 9 to 1"
+has this result:
+{1: 'ZRZRVRS', 2: 'PNHNSCDG', 3: 'BQPPJQMJCZ', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBCJPWJDTVVV', 7: 'FMGGWS', 8: '', 9: ''}
+
+Line "move 9 from 6 to 8"
+has this result:
+{1: 'ZRZRVRS', 2: 'PNHNSCDG', 3: 'BQPPJQMJCZ', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBC', 7: 'FMGGWS', 8: 'VVVTDJWPJ', 9: ''}
+
+Line "move 7 from 2 to 3"
+has this result:
+{1: 'ZRZRVRS', 2: 'P', 3: 'BQPPJQMJCZGDCSNHN', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBC', 7: 'FMGGWS', 8: 'VVVTDJWPJ', 9: ''}
+
+Line "move 7 from 8 to 2"
+has this result:
+{1: 'ZRZRVRS', 2: 'PJPWJDTV', 3: 'BQPPJQMJCZGDCSNHN', 4: 'FFDWNN', 5: '', 6: 'TZTZPBPGBC', 7: 'FMGGWS', 8: 'VV', 9: ''}
+
+Line "move 10 from 6 to 8"
+has this result:
+{1: 'ZRZRVRS', 2: 'PJPWJDTV', 3: 'BQPPJQMJCZGDCSNHN', 4: 'FFDWNN', 5: '', 6: '', 7: 'FMGGWS', 8: 'VVCBGPBPZTZT', 9: ''}
+
+Line "move 7 from 1 to 2"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZ', 3: 'BQPPJQMJCZGDCSNHN', 4: 'FFDWNN', 5: '', 6: '', 7: 'FMGGWS', 8: 'VVCBGPBPZTZT', 9: ''}
+
+Line "move 9 from 3 to 2"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHNSCDGZC', 3: 'BQPPJQMJ', 4: 'FFDWNN', 5: '', 6: '', 7: 'FMGGWS', 8: 'VVCBGPBPZTZT', 9: ''}
+
+Line "move 5 from 3 to 8"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHNSCDGZC', 3: 'BQP', 4: 'FFDWNN', 5: '', 6: '', 7: 'FMGGWS', 8: 'VVCBGPBPZTZTJMQJP', 9: ''}
+
+Line "move 4 from 7 to 2"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHNSCDGZCSWGG', 3: 'BQP', 4: 'FFDWNN', 5: '', 6: '', 7: 'FM', 8: 'VVCBGPBPZTZTJMQJP', 9: ''}
+
+Line "move 2 from 3 to 2"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHNSCDGZCSWGGPQ', 3: 'B', 4: 'FFDWNN', 5: '', 6: '', 7: 'FM', 8: 'VVCBGPBPZTZTJMQJP', 9: ''}
+
+Line "move 12 from 2 to 3"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHN', 3: 'BQPGGWSCZGDCS', 4: 'FFDWNN', 5: '', 6: '', 7: 'FM', 8: 'VVCBGPBPZTZTJMQJP', 9: ''}
+
+Line "move 6 from 4 to 2"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHNNNWDFF', 3: 'BQPGGWSCZGDCS', 4: '', 5: '', 6: '', 7: 'FM', 8: 'VVCBGPBPZTZTJMQJP', 9: ''}
+
+Line "move 1 from 7 to 6"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHNNNWDFF', 3: 'BQPGGWSCZGDCS', 4: '', 5: '', 6: 'M', 7: 'F', 8: 'VVCBGPBPZTZTJMQJP', 9: ''}
+
+Line "move 5 from 3 to 5"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHNNNWDFF', 3: 'BQPGGWSC', 4: '', 5: 'SCDGZ', 6: 'M', 7: 'F', 8: 'VVCBGPBPZTZTJMQJP', 9: ''}
+
+Line "move 16 from 8 to 4"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVRZRZNHNNNWDFF', 3: 'BQPGGWSC', 4: 'PJQMJTZTZPBPGBCV', 5: 'SCDGZ', 6: 'M', 7: 'F', 8: 'V', 9: ''}
+
+Line "move 12 from 2 to 7"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSC', 4: 'PJQMJTZTZPBPGBCV', 5: 'SCDGZ', 6: 'M', 7: 'FFFDWNNNHNZRZ', 8: 'V', 9: ''}
+
+Line "move 5 from 5 to 7"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSC', 4: 'PJQMJTZTZPBPGBCV', 5: '', 6: 'M', 7: 'FFFDWNNNHNZRZZGDCS', 8: 'V', 9: ''}
+
+Line "move 1 from 8 to 3"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSCV', 4: 'PJQMJTZTZPBPGBCV', 5: '', 6: 'M', 7: 'FFFDWNNNHNZRZZGDCS', 8: '', 9: ''}
+
+Line "move 1 from 6 to 4"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSCV', 4: 'PJQMJTZTZPBPGBCVM', 5: '', 6: '', 7: 'FFFDWNNNHNZRZZGDCS', 8: '', 9: ''}
+
+Line "move 17 from 7 to 4"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSCV', 4: 'PJQMJTZTZPBPGBCVMSCDGZZRZNHNNNWDFF', 5: '', 6: '', 7: 'F', 8: '', 9: ''}
+
+Line "move 1 from 7 to 1"
+has this result:
+{1: 'F', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSCV', 4: 'PJQMJTZTZPBPGBCVMSCDGZZRZNHNNNWDFF', 5: '', 6: '', 7: '', 8: '', 9: ''}
+
+Line "move 1 from 1 to 9"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSCV', 4: 'PJQMJTZTZPBPGBCVMSCDGZZRZNHNNNWDFF', 5: '', 6: '', 7: '', 8: '', 9: 'F'}
+
+Line "move 1 from 9 to 5"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSCV', 4: 'PJQMJTZTZPBPGBCVMSCDGZZRZNHNNNWDFF', 5: 'F', 6: '', 7: '', 8: '', 9: ''}
+
+Line "move 11 from 4 to 9"
+has this result:
+{1: '', 2: 'PJPWJDTVSRVR', 3: 'BQPGGWSCV', 4: 'PJQMJTZTZPBPGBCVMSCDGZZ', 5: 'F', 6: '', 7: '', 8: '', 9: 'FFDWNNNHNZR'}
+
+Line "move 10 from 2 to 3"
+has this result:
+{1: '', 2: 'PJ', 3: 'BQPGGWSCVRVRSVTDJWP', 4: 'PJQMJTZTZPBPGBCVMSCDGZZ', 5: 'F', 6: '', 7: '', 8: '', 9: 'FFDWNNNHNZR'}
+
+Line "move 1 from 5 to 4"
+has this result:
+{1: '', 2: 'PJ', 3: 'BQPGGWSCVRVRSVTDJWP', 4: 'PJQMJTZTZPBPGBCVMSCDGZZF', 5: '', 6: '', 7: '', 8: '', 9: 'FFDWNNNHNZR'}
+
+Line "move 1 from 9 to 2"
+has this result:
+{1: '', 2: 'PJR', 3: 'BQPGGWSCVRVRSVTDJWP', 4: 'PJQMJTZTZPBPGBCVMSCDGZZF', 5: '', 6: '', 7: '', 8: '', 9: 'FFDWNNNHNZ'}
+
+Line "move 2 from 2 to 1"
+has this result:
+{1: 'RJ', 2: 'P', 3: 'BQPGGWSCVRVRSVTDJWP', 4: 'PJQMJTZTZPBPGBCVMSCDGZZF', 5: '', 6: '', 7: '', 8: '', 9: 'FFDWNNNHNZ'}
+
+Line "move 1 from 2 to 3"
+has this result:
+{1: 'RJ', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPP', 4: 'PJQMJTZTZPBPGBCVMSCDGZZF', 5: '', 6: '', 7: '', 8: '', 9: 'FFDWNNNHNZ'}
+
+Line "move 23 from 4 to 5"
+has this result:
+{1: 'RJ', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPP', 4: 'P', 5: 'FZZGDCSMVCBGPBPZTZTJMQJ', 6: '', 7: '', 8: '', 9: 'FFDWNNNHNZ'}
+
+Line "move 7 from 9 to 7"
+has this result:
+{1: 'RJ', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPP', 4: 'P', 5: 'FZZGDCSMVCBGPBPZTZTJMQJ', 6: '', 7: 'ZNHNNNW', 8: '', 9: 'FFD'}
+
+Line "move 3 from 9 to 1"
+has this result:
+{1: 'RJDFF', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPP', 4: 'P', 5: 'FZZGDCSMVCBGPBPZTZTJMQJ', 6: '', 7: 'ZNHNNNW', 8: '', 9: ''}
+
+Line "move 20 from 5 to 6"
+has this result:
+{1: 'RJDFF', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPP', 4: 'P', 5: 'FZZ', 6: 'JQMJTZTZPBPGBCVMSCDG', 7: 'ZNHNNNW', 8: '', 9: ''}
+
+Line "move 3 from 5 to 8"
+has this result:
+{1: 'RJDFF', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPP', 4: 'P', 5: '', 6: 'JQMJTZTZPBPGBCVMSCDG', 7: 'ZNHNNNW', 8: 'ZZF', 9: ''}
+
+Line "move 1 from 4 to 1"
+has this result:
+{1: 'RJDFFP', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPP', 4: '', 5: '', 6: 'JQMJTZTZPBPGBCVMSCDG', 7: 'ZNHNNNW', 8: 'ZZF', 9: ''}
+
+Line "move 2 from 8 to 3"
+has this result:
+{1: 'RJDFFP', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPPFZ', 4: '', 5: '', 6: 'JQMJTZTZPBPGBCVMSCDG', 7: 'ZNHNNNW', 8: 'Z', 9: ''}
+
+Line "move 4 from 6 to 4"
+has this result:
+{1: 'RJDFFP', 2: '', 3: 'BQPGGWSCVRVRSVTDJWPPFZ', 4: 'GDCS', 5: '', 6: 'JQMJTZTZPBPGBCVM', 7: 'ZNHNNNW', 8: 'Z', 9: ''}
+
+Line "move 7 from 7 to 2"
+has this result:
+{1: 'RJDFFP', 2: 'WNNNHNZ', 3: 'BQPGGWSCVRVRSVTDJWPPFZ', 4: 'GDCS', 5: '', 6: 'JQMJTZTZPBPGBCVM', 7: '', 8: 'Z', 9: ''}
+
+Line "move 1 from 8 to 4"
+has this result:
+{1: 'RJDFFP', 2: 'WNNNHNZ', 3: 'BQPGGWSCVRVRSVTDJWPPFZ', 4: 'GDCSZ', 5: '', 6: 'JQMJTZTZPBPGBCVM', 7: '', 8: '', 9: ''}
+
+Line "move 19 from 3 to 9"
+has this result:
+{1: 'RJDFFP', 2: 'WNNNHNZ', 3: 'BQP', 4: 'GDCSZ', 5: '', 6: 'JQMJTZTZPBPGBCVM', 7: '', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 5 from 1 to 7"
+has this result:
+{1: 'R', 2: 'WNNNHNZ', 3: 'BQP', 4: 'GDCSZ', 5: '', 6: 'JQMJTZTZPBPGBCVM', 7: 'PFFDJ', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 7 from 2 to 6"
+has this result:
+{1: 'R', 2: '', 3: 'BQP', 4: 'GDCSZ', 5: '', 6: 'JQMJTZTZPBPGBCVMZNHNNNW', 7: 'PFFDJ', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 3 from 7 to 5"
+has this result:
+{1: 'R', 2: '', 3: 'BQP', 4: 'GDCSZ', 5: 'JDF', 6: 'JQMJTZTZPBPGBCVMZNHNNNW', 7: 'PF', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 2 from 3 to 4"
+has this result:
+{1: 'R', 2: '', 3: 'B', 4: 'GDCSZPQ', 5: 'JDF', 6: 'JQMJTZTZPBPGBCVMZNHNNNW', 7: 'PF', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 1 from 5 to 4"
+has this result:
+{1: 'R', 2: '', 3: 'B', 4: 'GDCSZPQF', 5: 'JD', 6: 'JQMJTZTZPBPGBCVMZNHNNNW', 7: 'PF', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 1 from 1 to 4"
+has this result:
+{1: '', 2: '', 3: 'B', 4: 'GDCSZPQFR', 5: 'JD', 6: 'JQMJTZTZPBPGBCVMZNHNNNW', 7: 'PF', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 1 from 7 to 6"
+has this result:
+{1: '', 2: '', 3: 'B', 4: 'GDCSZPQFR', 5: 'JD', 6: 'JQMJTZTZPBPGBCVMZNHNNNWF', 7: 'P', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 13 from 6 to 7"
+has this result:
+{1: '', 2: '', 3: 'B', 4: 'GDCSZPQFR', 5: 'JD', 6: 'JQMJTZTZPBP', 7: 'PFWNNNHNZMVCBG', 8: '', 9: 'ZFPPWJDTVSRVRVCSWGG'}
+
+Line "move 6 from 9 to 3"
+has this result:
+{1: '', 2: '', 3: 'BGGWSCV', 4: 'GDCSZPQFR', 5: 'JD', 6: 'JQMJTZTZPBP', 7: 'PFWNNNHNZMVCBG', 8: '', 9: 'ZFPPWJDTVSRVR'}
+
+Line "move 1 from 3 to 5"
+has this result:
+{1: '', 2: '', 3: 'BGGWSC', 4: 'GDCSZPQFR', 5: 'JDV', 6: 'JQMJTZTZPBP', 7: 'PFWNNNHNZMVCBG', 8: '', 9: 'ZFPPWJDTVSRVR'}
+
+Line "move 2 from 3 to 4"
+has this result:
+{1: '', 2: '', 3: 'BGGW', 4: 'GDCSZPQFRCS', 5: 'JDV', 6: 'JQMJTZTZPBP', 7: 'PFWNNNHNZMVCBG', 8: '', 9: 'ZFPPWJDTVSRVR'}
+
+Line "move 2 from 6 to 2"
+has this result:
+{1: '', 2: 'PB', 3: 'BGGW', 4: 'GDCSZPQFRCS', 5: 'JDV', 6: 'JQMJTZTZP', 7: 'PFWNNNHNZMVCBG', 8: '', 9: 'ZFPPWJDTVSRVR'}
+
+Line "move 3 from 4 to 3"
+has this result:
+{1: '', 2: 'PB', 3: 'BGGWSCR', 4: 'GDCSZPQF', 5: 'JDV', 6: 'JQMJTZTZP', 7: 'PFWNNNHNZMVCBG', 8: '', 9: 'ZFPPWJDTVSRVR'}
+
+Line "move 8 from 9 to 1"
+has this result:
+{1: 'RVRSVTDJ', 2: 'PB', 3: 'BGGWSCR', 4: 'GDCSZPQF', 5: 'JDV', 6: 'JQMJTZTZP', 7: 'PFWNNNHNZMVCBG', 8: '', 9: 'ZFPPW'}
+
+Line "move 2 from 2 to 1"
+has this result:
+{1: 'RVRSVTDJBP', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQF', 5: 'JDV', 6: 'JQMJTZTZP', 7: 'PFWNNNHNZMVCBG', 8: '', 9: 'ZFPPW'}
+
+Line "move 8 from 6 to 7"
+has this result:
+{1: 'RVRSVTDJBP', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQF', 5: 'JDV', 6: 'J', 7: 'PFWNNNHNZMVCBGPZTZTJMQ', 8: '', 9: 'ZFPPW'}
+
+Line "move 2 from 9 to 4"
+has this result:
+{1: 'RVRSVTDJBP', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQFWP', 5: 'JDV', 6: 'J', 7: 'PFWNNNHNZMVCBGPZTZTJMQ', 8: '', 9: 'ZFP'}
+
+Line "move 20 from 7 to 1"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZNHNNNW', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQFWP', 5: 'JDV', 6: 'J', 7: 'PF', 8: '', 9: 'ZFP'}
+
+Line "move 2 from 7 to 5"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZNHNNNW', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQFWP', 5: 'JDVFP', 6: 'J', 7: '', 8: '', 9: 'ZFP'}
+
+Line "move 2 from 5 to 1"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZNHNNNWPF', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQFWP', 5: 'JDV', 6: 'J', 7: '', 8: '', 9: 'ZFP'}
+
+Line "move 8 from 1 to 8"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZ', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQFWP', 5: 'JDV', 6: 'J', 7: '', 8: 'FPWNNNHN', 9: 'ZFP'}
+
+Line "move 8 from 8 to 6"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZ', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQFWP', 5: 'JDV', 6: 'JNHNNNWPF', 7: '', 8: '', 9: 'ZFP'}
+
+Line "move 1 from 6 to 9"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZ', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQFWP', 5: 'JDV', 6: 'JNHNNNWP', 7: '', 8: '', 9: 'ZFPF'}
+
+Line "move 8 from 6 to 1"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZPWNNNHNJ', 2: '', 3: 'BGGWSCR', 4: 'GDCSZPQFWP', 5: 'JDV', 6: '', 7: '', 8: '', 9: 'ZFPF'}
+
+Line "move 1 from 5 to 3"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZPWNNNHNJ', 2: '', 3: 'BGGWSCRV', 4: 'GDCSZPQFWP', 5: 'JD', 6: '', 7: '', 8: '', 9: 'ZFPF'}
+
+Line "move 7 from 3 to 2"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZPWNNNHNJ', 2: 'VRCSWGG', 3: 'B', 4: 'GDCSZPQFWP', 5: 'JD', 6: '', 7: '', 8: '', 9: 'ZFPF'}
+
+Line "move 1 from 5 to 2"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZPWNNNHNJ', 2: 'VRCSWGGD', 3: 'B', 4: 'GDCSZPQFWP', 5: 'J', 6: '', 7: '', 8: '', 9: 'ZFPF'}
+
+Line "move 2 from 9 to 7"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZPWNNNHNJ', 2: 'VRCSWGGD', 3: 'B', 4: 'GDCSZPQFWP', 5: 'J', 6: '', 7: 'FP', 8: '', 9: 'ZF'}
+
+Line "move 1 from 5 to 8"
+has this result:
+{1: 'RVRSVTDJBPQMJTZTZPGBCVMZPWNNNHNJ', 2: 'VRCSWGGD', 3: 'B', 4: 'GDCSZPQFWP', 5: '', 6: '', 7: 'FP', 8: 'J', 9: 'ZF'}
+
+Line "move 18 from 1 to 4"
+has this result:
+{1: 'RVRSVTDJBPQMJT', 2: 'VRCSWGGD', 3: 'B', 4: 'GDCSZPQFWPJNHNNNWPZMVCBGPZTZ', 5: '', 6: '', 7: 'FP', 8: 'J', 9: 'ZF'}
+
+Line "move 1 from 8 to 9"
+has this result:
+{1: 'RVRSVTDJBPQMJT', 2: 'VRCSWGGD', 3: 'B', 4: 'GDCSZPQFWPJNHNNNWPZMVCBGPZTZ', 5: '', 6: '', 7: 'FP', 8: '', 9: 'ZFJ'}
+
+Line "move 3 from 2 to 3"
+has this result:
+{1: 'RVRSVTDJBPQMJT', 2: 'VRCSW', 3: 'BDGG', 4: 'GDCSZPQFWPJNHNNNWPZMVCBGPZTZ', 5: '', 6: '', 7: 'FP', 8: '', 9: 'ZFJ'}
+
+Line "move 2 from 7 to 4"
+has this result:
+{1: 'RVRSVTDJBPQMJT', 2: 'VRCSW', 3: 'BDGG', 4: 'GDCSZPQFWPJNHNNNWPZMVCBGPZTZPF', 5: '', 6: '', 7: '', 8: '', 9: 'ZFJ'}
+
+Line "move 5 from 2 to 4"
+has this result:
+{1: 'RVRSVTDJBPQMJT', 2: '', 3: 'BDGG', 4: 'GDCSZPQFWPJNHNNNWPZMVCBGPZTZPFWSCRV', 5: '', 6: '', 7: '', 8: '', 9: 'ZFJ'}
+
+Line "move 3 from 3 to 8"
+has this result:
+{1: 'RVRSVTDJBPQMJT', 2: '', 3: 'B', 4: 'GDCSZPQFWPJNHNNNWPZMVCBGPZTZPFWSCRV', 5: '', 6: '', 7: '', 8: 'GGD', 9: 'ZFJ'}
+
+Line "move 8 from 1 to 7"
+has this result:
+{1: 'RVRSVT', 2: '', 3: 'B', 4: 'GDCSZPQFWPJNHNNNWPZMVCBGPZTZPFWSCRV', 5: '', 6: '', 7: 'TJMQPBJD', 8: 'GGD', 9: 'ZFJ'}
+
+Line "move 2 from 9 to 2"
+has this result:
+{1: 'RVRSVT', 2: 'JF', 3: 'B', 4: 'GDCSZPQFWPJNHNNNWPZMVCBGPZTZPFWSCRV', 5: '', 6: '', 7: 'TJMQPBJD', 8: 'GGD', 9: 'Z'}
+
+Line "move 32 from 4 to 5"
+has this result:
+{1: 'RVRSVT', 2: 'JF', 3: 'B', 4: 'GDC', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZS', 6: '', 7: 'TJMQPBJD', 8: 'GGD', 9: 'Z'}
+
+Line "move 1 from 9 to 7"
+has this result:
+{1: 'RVRSVT', 2: 'JF', 3: 'B', 4: 'GDC', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZS', 6: '', 7: 'TJMQPBJDZ', 8: 'GGD', 9: ''}
+
+Line "move 1 from 2 to 1"
+has this result:
+{1: 'RVRSVTF', 2: 'J', 3: 'B', 4: 'GDC', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZS', 6: '', 7: 'TJMQPBJDZ', 8: 'GGD', 9: ''}
+
+Line "move 6 from 1 to 6"
+has this result:
+{1: 'R', 2: 'J', 3: 'B', 4: 'GDC', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZS', 6: 'FTVSRV', 7: 'TJMQPBJDZ', 8: 'GGD', 9: ''}
+
+Line "move 1 from 2 to 4"
+has this result:
+{1: 'R', 2: '', 3: 'B', 4: 'GDCJ', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZS', 6: 'FTVSRV', 7: 'TJMQPBJDZ', 8: 'GGD', 9: ''}
+
+Line "move 3 from 8 to 1"
+has this result:
+{1: 'RDGG', 2: '', 3: 'B', 4: 'GDCJ', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZS', 6: 'FTVSRV', 7: 'TJMQPBJDZ', 8: '', 9: ''}
+
+Line "move 3 from 6 to 5"
+has this result:
+{1: 'RDGG', 2: '', 3: 'B', 4: 'GDCJ', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZSVRS', 6: 'FTV', 7: 'TJMQPBJDZ', 8: '', 9: ''}
+
+Line "move 1 from 3 to 6"
+has this result:
+{1: 'RDGG', 2: '', 3: '', 4: 'GDCJ', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZSVRS', 6: 'FTVB', 7: 'TJMQPBJDZ', 8: '', 9: ''}
+
+Line "move 2 from 1 to 9"
+has this result:
+{1: 'RD', 2: '', 3: '', 4: 'GDCJ', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZSVRS', 6: 'FTVB', 7: 'TJMQPBJDZ', 8: '', 9: 'GG'}
+
+Line "move 4 from 4 to 7"
+has this result:
+{1: 'RD', 2: '', 3: '', 4: '', 5: 'VRCSWFPZTZPGBCVMZPWNNNHNJPWFQPZSVRS', 6: 'FTVB', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'GG'}
+
+Line "move 31 from 5 to 4"
+has this result:
+{1: 'RD', 2: '', 3: '', 4: 'SRVSZPQFWPJNHNNNWPZMVCBGPZTZPFW', 5: 'VRCS', 6: 'FTVB', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'GG'}
+
+Line "move 4 from 5 to 6"
+has this result:
+{1: 'RD', 2: '', 3: '', 4: 'SRVSZPQFWPJNHNNNWPZMVCBGPZTZPFW', 5: '', 6: 'FTVBSCRV', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'GG'}
+
+Line "move 1 from 6 to 1"
+has this result:
+{1: 'RDV', 2: '', 3: '', 4: 'SRVSZPQFWPJNHNNNWPZMVCBGPZTZPFW', 5: '', 6: 'FTVBSCR', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'GG'}
+
+Line "move 7 from 6 to 5"
+has this result:
+{1: 'RDV', 2: '', 3: '', 4: 'SRVSZPQFWPJNHNNNWPZMVCBGPZTZPFW', 5: 'RCSBVTF', 6: '', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'GG'}
+
+Line "move 1 from 9 to 4"
+has this result:
+{1: 'RDV', 2: '', 3: '', 4: 'SRVSZPQFWPJNHNNNWPZMVCBGPZTZPFWG', 5: 'RCSBVTF', 6: '', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'G'}
+
+Line "move 19 from 4 to 2"
+has this result:
+{1: 'RDV', 2: 'GWFPZTZPGBCVMZPWNNN', 3: '', 4: 'SRVSZPQFWPJNH', 5: 'RCSBVTF', 6: '', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'G'}
+
+Line "move 1 from 5 to 9"
+has this result:
+{1: 'RDV', 2: 'GWFPZTZPGBCVMZPWNNN', 3: '', 4: 'SRVSZPQFWPJNH', 5: 'RCSBVT', 6: '', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'GF'}
+
+Line "move 5 from 5 to 6"
+has this result:
+{1: 'RDV', 2: 'GWFPZTZPGBCVMZPWNNN', 3: '', 4: 'SRVSZPQFWPJNH', 5: 'R', 6: 'TVBSC', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'GF'}
+
+Line "move 3 from 4 to 2"
+has this result:
+{1: 'RDV', 2: 'GWFPZTZPGBCVMZPWNNNHNJ', 3: '', 4: 'SRVSZPQFWP', 5: 'R', 6: 'TVBSC', 7: 'TJMQPBJDZJCDG', 8: '', 9: 'GF'}
+
+Line "move 2 from 7 to 1"
+has this result:
+{1: 'RDVGD', 2: 'GWFPZTZPGBCVMZPWNNNHNJ', 3: '', 4: 'SRVSZPQFWP', 5: 'R', 6: 'TVBSC', 7: 'TJMQPBJDZJC', 8: '', 9: 'GF'}
+
+Line "move 4 from 7 to 8"
+has this result:
+{1: 'RDVGD', 2: 'GWFPZTZPGBCVMZPWNNNHNJ', 3: '', 4: 'SRVSZPQFWP', 5: 'R', 6: 'TVBSC', 7: 'TJMQPBJ', 8: 'CJZD', 9: 'GF'}
+
+Line "move 3 from 8 to 6"
+has this result:
+{1: 'RDVGD', 2: 'GWFPZTZPGBCVMZPWNNNHNJ', 3: '', 4: 'SRVSZPQFWP', 5: 'R', 6: 'TVBSCDZJ', 7: 'TJMQPBJ', 8: 'C', 9: 'GF'}
+
+Line "move 2 from 6 to 7"
+has this result:
+{1: 'RDVGD', 2: 'GWFPZTZPGBCVMZPWNNNHNJ', 3: '', 4: 'SRVSZPQFWP', 5: 'R', 6: 'TVBSCD', 7: 'TJMQPBJJZ', 8: 'C', 9: 'GF'}
+
+Line "move 6 from 7 to 8"
+has this result:
+{1: 'RDVGD', 2: 'GWFPZTZPGBCVMZPWNNNHNJ', 3: '', 4: 'SRVSZPQFWP', 5: 'R', 6: 'TVBSCD', 7: 'TJM', 8: 'CZJJBPQ', 9: 'GF'}
+
+Line "move 3 from 1 to 5"
+has this result:
+{1: 'RD', 2: 'GWFPZTZPGBCVMZPWNNNHNJ', 3: '', 4: 'SRVSZPQFWP', 5: 'RDGV', 6: 'TVBSCD', 7: 'TJM', 8: 'CZJJBPQ', 9: 'GF'}
+
+Line "move 4 from 5 to 9"
+has this result:
+{1: 'RD', 2: 'GWFPZTZPGBCVMZPWNNNHNJ', 3: '', 4: 'SRVSZPQFWP', 5: '', 6: 'TVBSCD', 7: 'TJM', 8: 'CZJJBPQ', 9: 'GFVGDR'}
+
+Line "move 15 from 2 to 1"
+has this result:
+{1: 'RDJNHNNNWPZMVCBGP', 2: 'GWFPZTZ', 3: '', 4: 'SRVSZPQFWP', 5: '', 6: 'TVBSCD', 7: 'TJM', 8: 'CZJJBPQ', 9: 'GFVGDR'}
+
+Line "move 4 from 6 to 4"
+has this result:
+{1: 'RDJNHNNNWPZMVCBGP', 2: 'GWFPZTZ', 3: '', 4: 'SRVSZPQFWPDCSB', 5: '', 6: 'TV', 7: 'TJM', 8: 'CZJJBPQ', 9: 'GFVGDR'}
+
+Line "move 2 from 6 to 3"
+has this result:
+{1: 'RDJNHNNNWPZMVCBGP', 2: 'GWFPZTZ', 3: 'VT', 4: 'SRVSZPQFWPDCSB', 5: '', 6: '', 7: 'TJM', 8: 'CZJJBPQ', 9: 'GFVGDR'}
+
+Line "move 1 from 3 to 7"
+has this result:
+{1: 'RDJNHNNNWPZMVCBGP', 2: 'GWFPZTZ', 3: 'V', 4: 'SRVSZPQFWPDCSB', 5: '', 6: '', 7: 'TJMT', 8: 'CZJJBPQ', 9: 'GFVGDR'}
+
+Line "move 4 from 1 to 2"
+has this result:
+{1: 'RDJNHNNNWPZMV', 2: 'GWFPZTZPGBC', 3: 'V', 4: 'SRVSZPQFWPDCSB', 5: '', 6: '', 7: 'TJMT', 8: 'CZJJBPQ', 9: 'GFVGDR'}
+
+Line "move 1 from 3 to 4"
+has this result:
+{1: 'RDJNHNNNWPZMV', 2: 'GWFPZTZPGBC', 3: '', 4: 'SRVSZPQFWPDCSBV', 5: '', 6: '', 7: 'TJMT', 8: 'CZJJBPQ', 9: 'GFVGDR'}
+
+Line "move 2 from 7 to 4"
+has this result:
+{1: 'RDJNHNNNWPZMV', 2: 'GWFPZTZPGBC', 3: '', 4: 'SRVSZPQFWPDCSBVTM', 5: '', 6: '', 7: 'TJ', 8: 'CZJJBPQ', 9: 'GFVGDR'}
+
+Line "move 5 from 9 to 3"
+has this result:
+{1: 'RDJNHNNNWPZMV', 2: 'GWFPZTZPGBC', 3: 'RDGVF', 4: 'SRVSZPQFWPDCSBVTM', 5: '', 6: '', 7: 'TJ', 8: 'CZJJBPQ', 9: 'G'}
+
+Line "move 2 from 7 to 3"
+has this result:
+{1: 'RDJNHNNNWPZMV', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'SRVSZPQFWPDCSBVTM', 5: '', 6: '', 7: '', 8: 'CZJJBPQ', 9: 'G'}
+
+Line "move 16 from 4 to 8"
+has this result:
+{1: 'RDJNHNNNWPZMV', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'S', 5: '', 6: '', 7: '', 8: 'CZJJBPQMTVBSCDPWFQPZSVR', 9: 'G'}
+
+Line "move 8 from 8 to 5"
+has this result:
+{1: 'RDJNHNNNWPZMV', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'S', 5: 'RVSZPQFW', 6: '', 7: '', 8: 'CZJJBPQMTVBSCDP', 9: 'G'}
+
+Line "move 2 from 1 to 5"
+has this result:
+{1: 'RDJNHNNNWPZ', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'S', 5: 'RVSZPQFWVM', 6: '', 7: '', 8: 'CZJJBPQMTVBSCDP', 9: 'G'}
+
+Line "move 1 from 9 to 6"
+has this result:
+{1: 'RDJNHNNNWPZ', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'S', 5: 'RVSZPQFWVM', 6: 'G', 7: '', 8: 'CZJJBPQMTVBSCDP', 9: ''}
+
+Line "move 1 from 6 to 5"
+has this result:
+{1: 'RDJNHNNNWPZ', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'S', 5: 'RVSZPQFWVMG', 6: '', 7: '', 8: 'CZJJBPQMTVBSCDP', 9: ''}
+
+Line "move 7 from 5 to 9"
+has this result:
+{1: 'RDJNHNNNWPZ', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'S', 5: 'RVSZ', 6: '', 7: '', 8: 'CZJJBPQMTVBSCDP', 9: 'GMVWFQP'}
+
+Line "move 3 from 1 to 8"
+has this result:
+{1: 'RDJNHNNN', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'S', 5: 'RVSZ', 6: '', 7: '', 8: 'CZJJBPQMTVBSCDPZPW', 9: 'GMVWFQP'}
+
+Line "move 1 from 8 to 4"
+has this result:
+{1: 'RDJNHNNN', 2: 'GWFPZTZPGBC', 3: 'RDGVFJT', 4: 'SW', 5: 'RVSZ', 6: '', 7: '', 8: 'CZJJBPQMTVBSCDPZP', 9: 'GMVWFQP'}
+
+Line "move 8 from 2 to 7"
+has this result:
+{1: 'RDJNHNNN', 2: 'GWF', 3: 'RDGVFJT', 4: 'SW', 5: 'RVSZ', 6: '', 7: 'CBGPZTZP', 8: 'CZJJBPQMTVBSCDPZP', 9: 'GMVWFQP'}
+
+Line "move 3 from 1 to 3"
+has this result:
+{1: 'RDJNH', 2: 'GWF', 3: 'RDGVFJTNNN', 4: 'SW', 5: 'RVSZ', 6: '', 7: 'CBGPZTZP', 8: 'CZJJBPQMTVBSCDPZP', 9: 'GMVWFQP'}
+
+Line "move 1 from 3 to 9"
+has this result:
+{1: 'RDJNH', 2: 'GWF', 3: 'RDGVFJTNN', 4: 'SW', 5: 'RVSZ', 6: '', 7: 'CBGPZTZP', 8: 'CZJJBPQMTVBSCDPZP', 9: 'GMVWFQPN'}
+
+Line "move 2 from 4 to 2"
+has this result:
+{1: 'RDJNH', 2: 'GWFWS', 3: 'RDGVFJTNN', 4: '', 5: 'RVSZ', 6: '', 7: 'CBGPZTZP', 8: 'CZJJBPQMTVBSCDPZP', 9: 'GMVWFQPN'}
+
+Line "move 7 from 8 to 5"
+has this result:
+{1: 'RDJNH', 2: 'GWFWS', 3: 'RDGVFJTNN', 4: '', 5: 'RVSZPZPDCSB', 6: '', 7: 'CBGPZTZP', 8: 'CZJJBPQMTV', 9: 'GMVWFQPN'}
+
+Line "move 7 from 9 to 1"
+has this result:
+{1: 'RDJNHNPQFWVM', 2: 'GWFWS', 3: 'RDGVFJTNN', 4: '', 5: 'RVSZPZPDCSB', 6: '', 7: 'CBGPZTZP', 8: 'CZJJBPQMTV', 9: 'G'}
+
+Line "move 6 from 3 to 5"
+has this result:
+{1: 'RDJNHNPQFWVM', 2: 'GWFWS', 3: 'RDG', 4: '', 5: 'RVSZPZPDCSBNNTJFV', 6: '', 7: 'CBGPZTZP', 8: 'CZJJBPQMTV', 9: 'G'}
+
+Line "move 6 from 7 to 4"
+has this result:
+{1: 'RDJNHNPQFWVM', 2: 'GWFWS', 3: 'RDG', 4: 'PZTZPG', 5: 'RVSZPZPDCSBNNTJFV', 6: '', 7: 'CB', 8: 'CZJJBPQMTV', 9: 'G'}
+
+Line "move 3 from 4 to 1"
+has this result:
+{1: 'RDJNHNPQFWVMGPZ', 2: 'GWFWS', 3: 'RDG', 4: 'PZT', 5: 'RVSZPZPDCSBNNTJFV', 6: '', 7: 'CB', 8: 'CZJJBPQMTV', 9: 'G'}
+
+Line "move 3 from 2 to 5"
+has this result:
+{1: 'RDJNHNPQFWVMGPZ', 2: 'GW', 3: 'RDG', 4: 'PZT', 5: 'RVSZPZPDCSBNNTJFVSWF', 6: '', 7: 'CB', 8: 'CZJJBPQMTV', 9: 'G'}
+
+Line "move 1 from 7 to 8"
+has this result:
+{1: 'RDJNHNPQFWVMGPZ', 2: 'GW', 3: 'RDG', 4: 'PZT', 5: 'RVSZPZPDCSBNNTJFVSWF', 6: '', 7: 'C', 8: 'CZJJBPQMTVB', 9: 'G'}
+
+Line "move 1 from 7 to 5"
+has this result:
+{1: 'RDJNHNPQFWVMGPZ', 2: 'GW', 3: 'RDG', 4: 'PZT', 5: 'RVSZPZPDCSBNNTJFVSWFC', 6: '', 7: '', 8: 'CZJJBPQMTVB', 9: 'G'}
+
+Line "move 1 from 9 to 8"
+has this result:
+{1: 'RDJNHNPQFWVMGPZ', 2: 'GW', 3: 'RDG', 4: 'PZT', 5: 'RVSZPZPDCSBNNTJFVSWFC', 6: '', 7: '', 8: 'CZJJBPQMTVBG', 9: ''}
+
+Line "move 2 from 2 to 4"
+has this result:
+{1: 'RDJNHNPQFWVMGPZ', 2: '', 3: 'RDG', 4: 'PZTWG', 5: 'RVSZPZPDCSBNNTJFVSWFC', 6: '', 7: '', 8: 'CZJJBPQMTVBG', 9: ''}
+
+Line "move 15 from 1 to 6"
+has this result:
+{1: '', 2: '', 3: 'RDG', 4: 'PZTWG', 5: 'RVSZPZPDCSBNNTJFVSWFC', 6: 'ZPGMVWFQPNHNJDR', 7: '', 8: 'CZJJBPQMTVBG', 9: ''}
+
+Line "move 8 from 5 to 9"
+has this result:
+{1: '', 2: '', 3: 'RDG', 4: 'PZTWG', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHNJDR', 7: '', 8: 'CZJJBPQMTVBG', 9: 'CFWSVFJT'}
+
+Line "move 3 from 3 to 4"
+has this result:
+{1: '', 2: '', 3: '', 4: 'PZTWGGDR', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHNJDR', 7: '', 8: 'CZJJBPQMTVBG', 9: 'CFWSVFJT'}
+
+Line "move 4 from 4 to 3"
+has this result:
+{1: '', 2: '', 3: 'RDGG', 4: 'PZTW', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHNJDR', 7: '', 8: 'CZJJBPQMTVBG', 9: 'CFWSVFJT'}
+
+Line "move 1 from 9 to 7"
+has this result:
+{1: '', 2: '', 3: 'RDGG', 4: 'PZTW', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHNJDR', 7: 'T', 8: 'CZJJBPQMTVBG', 9: 'CFWSVFJ'}
+
+Line "move 6 from 9 to 4"
+has this result:
+{1: '', 2: '', 3: 'RDGG', 4: 'PZTWJFVSWF', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHNJDR', 7: 'T', 8: 'CZJJBPQMTVBG', 9: 'C'}
+
+Line "move 1 from 9 to 2"
+has this result:
+{1: '', 2: 'C', 3: 'RDGG', 4: 'PZTWJFVSWF', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHNJDR', 7: 'T', 8: 'CZJJBPQMTVBG', 9: ''}
+
+Line "move 6 from 4 to 9"
+has this result:
+{1: '', 2: 'C', 3: 'RDGG', 4: 'PZTW', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHNJDR', 7: 'T', 8: 'CZJJBPQMTVBG', 9: 'FWSVFJ'}
+
+Line "move 2 from 4 to 6"
+has this result:
+{1: '', 2: 'C', 3: 'RDGG', 4: 'PZ', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHNJDRWT', 7: 'T', 8: 'CZJJBPQMTVBG', 9: 'FWSVFJ'}
+
+Line "move 5 from 6 to 9"
+has this result:
+{1: '', 2: 'C', 3: 'RDGG', 4: 'PZ', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHN', 7: 'T', 8: 'CZJJBPQMTVBG', 9: 'FWSVFJTWRDJ'}
+
+Line "move 1 from 3 to 1"
+has this result:
+{1: 'G', 2: 'C', 3: 'RDG', 4: 'PZ', 5: 'RVSZPZPDCSBNN', 6: 'ZPGMVWFQPNHN', 7: 'T', 8: 'CZJJBPQMTVBG', 9: 'FWSVFJTWRDJ'}
+
+Line "move 8 from 6 to 8"
+has this result:
+{1: 'G', 2: 'C', 3: 'RDG', 4: 'PZ', 5: 'RVSZPZPDCSBNN', 6: 'ZPGM', 7: 'T', 8: 'CZJJBPQMTVBGNHNPQFWV', 9: 'FWSVFJTWRDJ'}
+
+Line "move 12 from 5 to 3"
+has this result:
+{1: 'G', 2: 'C', 3: 'RDGNNBSCDPZPZSV', 4: 'PZ', 5: 'R', 6: 'ZPGM', 7: 'T', 8: 'CZJJBPQMTVBGNHNPQFWV', 9: 'FWSVFJTWRDJ'}
+
+Line "move 1 from 5 to 3"
+has this result:
+{1: 'G', 2: 'C', 3: 'RDGNNBSCDPZPZSVR', 4: 'PZ', 5: '', 6: 'ZPGM', 7: 'T', 8: 'CZJJBPQMTVBGNHNPQFWV', 9: 'FWSVFJTWRDJ'}
+
+Line "move 1 from 3 to 8"
+has this result:
+{1: 'G', 2: 'C', 3: 'RDGNNBSCDPZPZSV', 4: 'PZ', 5: '', 6: 'ZPGM', 7: 'T', 8: 'CZJJBPQMTVBGNHNPQFWVR', 9: 'FWSVFJTWRDJ'}
+
+Line "move 4 from 6 to 1"
+has this result:
+{1: 'GMGPZ', 2: 'C', 3: 'RDGNNBSCDPZPZSV', 4: 'PZ', 5: '', 6: '', 7: 'T', 8: 'CZJJBPQMTVBGNHNPQFWVR', 9: 'FWSVFJTWRDJ'}
+
+Line "move 11 from 3 to 8"
+has this result:
+{1: 'GMGPZ', 2: 'C', 3: 'RDGN', 4: 'PZ', 5: '', 6: '', 7: 'T', 8: 'CZJJBPQMTVBGNHNPQFWVRVSZPZPDCSBN', 9: 'FWSVFJTWRDJ'}
+
+Line "move 1 from 2 to 1"
+has this result:
+{1: 'GMGPZC', 2: '', 3: 'RDGN', 4: 'PZ', 5: '', 6: '', 7: 'T', 8: 'CZJJBPQMTVBGNHNPQFWVRVSZPZPDCSBN', 9: 'FWSVFJTWRDJ'}
+
+Line "move 23 from 8 to 2"
+has this result:
+{1: 'GMGPZC', 2: 'NBSCDPZPZSVRVWFQPNHNGBV', 3: 'RDGN', 4: 'PZ', 5: '', 6: '', 7: 'T', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJ'}
+
+Line "move 3 from 1 to 2"
+has this result:
+{1: 'GMG', 2: 'NBSCDPZPZSVRVWFQPNHNGBVCZP', 3: 'RDGN', 4: 'PZ', 5: '', 6: '', 7: 'T', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJ'}
+
+Line "move 1 from 1 to 9"
+has this result:
+{1: 'GM', 2: 'NBSCDPZPZSVRVWFQPNHNGBVCZP', 3: 'RDGN', 4: 'PZ', 5: '', 6: '', 7: 'T', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJG'}
+
+Line "move 2 from 2 to 3"
+has this result:
+{1: 'GM', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: 'RDGNPZ', 4: 'PZ', 5: '', 6: '', 7: 'T', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJG'}
+
+Line "move 6 from 3 to 6"
+has this result:
+{1: 'GM', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: '', 4: 'PZ', 5: '', 6: 'ZPNGDR', 7: 'T', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJG'}
+
+Line "move 1 from 7 to 6"
+has this result:
+{1: 'GM', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: '', 4: 'PZ', 5: '', 6: 'ZPNGDRT', 7: '', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJG'}
+
+Line "move 1 from 4 to 7"
+has this result:
+{1: 'GM', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: '', 4: 'P', 5: '', 6: 'ZPNGDRT', 7: 'Z', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJG'}
+
+Line "move 1 from 4 to 3"
+has this result:
+{1: 'GM', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: 'P', 4: '', 5: '', 6: 'ZPNGDRT', 7: 'Z', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJG'}
+
+Line "move 1 from 7 to 3"
+has this result:
+{1: 'GM', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: 'PZ', 4: '', 5: '', 6: 'ZPNGDRT', 7: '', 8: 'CZJJBPQMT', 9: 'FWSVFJTWRDJG'}
+
+Line "move 4 from 8 to 4"
+has this result:
+{1: 'GM', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: 'PZ', 4: 'TMQP', 5: '', 6: 'ZPNGDRT', 7: '', 8: 'CZJJB', 9: 'FWSVFJTWRDJG'}
+
+Line "move 2 from 1 to 8"
+has this result:
+{1: '', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: 'PZ', 4: 'TMQP', 5: '', 6: 'ZPNGDRT', 7: '', 8: 'CZJJBMG', 9: 'FWSVFJTWRDJG'}
+
+Line "move 3 from 8 to 1"
+has this result:
+{1: 'GMB', 2: 'NBSCDPZPZSVRVWFQPNHNGBVC', 3: 'PZ', 4: 'TMQP', 5: '', 6: 'ZPNGDRT', 7: '', 8: 'CZJJ', 9: 'FWSVFJTWRDJG'}
+
+Line "move 4 from 6 to 2"
+has this result:
+{1: 'GMB', 2: 'NBSCDPZPZSVRVWFQPNHNGBVCTRDG', 3: 'PZ', 4: 'TMQP', 5: '', 6: 'ZPN', 7: '', 8: 'CZJJ', 9: 'FWSVFJTWRDJG'}
+
+Line "move 7 from 9 to 1"
+has this result:
+{1: 'GMBGJDRWTJ', 2: 'NBSCDPZPZSVRVWFQPNHNGBVCTRDG', 3: 'PZ', 4: 'TMQP', 5: '', 6: 'ZPN', 7: '', 8: 'CZJJ', 9: 'FWSVF'}
+
+Line "move 1 from 9 to 6"
+has this result:
+{1: 'GMBGJDRWTJ', 2: 'NBSCDPZPZSVRVWFQPNHNGBVCTRDG', 3: 'PZ', 4: 'TMQP', 5: '', 6: 'ZPNF', 7: '', 8: 'CZJJ', 9: 'FWSV'}
+
+Line "move 2 from 2 to 3"
+has this result:
+{1: 'GMBGJDRWTJ', 2: 'NBSCDPZPZSVRVWFQPNHNGBVCTR', 3: 'PZGD', 4: 'TMQP', 5: '', 6: 'ZPNF', 7: '', 8: 'CZJJ', 9: 'FWSV'}
+
+Line "move 3 from 9 to 4"
+has this result:
+{1: 'GMBGJDRWTJ', 2: 'NBSCDPZPZSVRVWFQPNHNGBVCTR', 3: 'PZGD', 4: 'TMQPVSW', 5: '', 6: 'ZPNF', 7: '', 8: 'CZJJ', 9: 'F'}
+
+Line "move 1 from 9 to 3"
+has this result:
+{1: 'GMBGJDRWTJ', 2: 'NBSCDPZPZSVRVWFQPNHNGBVCTR', 3: 'PZGDF', 4: 'TMQPVSW', 5: '', 6: 'ZPNF', 7: '', 8: 'CZJJ', 9: ''}
+
+Line "move 10 from 2 to 8"
+has this result:
+{1: 'GMBGJDRWTJ', 2: 'NBSCDPZPZSVRVWFQ', 3: 'PZGDF', 4: 'TMQPVSW', 5: '', 6: 'ZPNF', 7: '', 8: 'CZJJRTCVBGNHNP', 9: ''}
+
+Line "move 16 from 2 to 5"
+has this result:
+{1: 'GMBGJDRWTJ', 2: '', 3: 'PZGDF', 4: 'TMQPVSW', 5: 'QFWVRVSZPZPDCSBN', 6: 'ZPNF', 7: '', 8: 'CZJJRTCVBGNHNP', 9: ''}
+
+Line "move 2 from 3 to 6"
+has this result:
+{1: 'GMBGJDRWTJ', 2: '', 3: 'PZG', 4: 'TMQPVSW', 5: 'QFWVRVSZPZPDCSBN', 6: 'ZPNFFD', 7: '', 8: 'CZJJRTCVBGNHNP', 9: ''}
+
+Line "move 6 from 1 to 8"
+has this result:
+{1: 'GMBG', 2: '', 3: 'PZG', 4: 'TMQPVSW', 5: 'QFWVRVSZPZPDCSBN', 6: 'ZPNFFD', 7: '', 8: 'CZJJRTCVBGNHNPJTWRDJ', 9: ''}
+
+Line "move 1 from 1 to 5"
+has this result:
+{1: 'GMB', 2: '', 3: 'PZG', 4: 'TMQPVSW', 5: 'QFWVRVSZPZPDCSBNG', 6: 'ZPNFFD', 7: '', 8: 'CZJJRTCVBGNHNPJTWRDJ', 9: ''}
+
+Line "move 8 from 8 to 5"
+has this result:
+{1: 'GMB', 2: '', 3: 'PZG', 4: 'TMQPVSW', 5: 'QFWVRVSZPZPDCSBNGJDRWTJPN', 6: 'ZPNFFD', 7: '', 8: 'CZJJRTCVBGNH', 9: ''}
+
+Line "move 11 from 5 to 9"
+has this result:
+{1: 'GMB', 2: '', 3: 'PZG', 4: 'TMQPVSW', 5: 'QFWVRVSZPZPDCS', 6: 'ZPNFFD', 7: '', 8: 'CZJJRTCVBGNH', 9: 'NPJTWRDJGNB'}
+
+Line "move 2 from 1 to 8"
+has this result:
+{1: 'G', 2: '', 3: 'PZG', 4: 'TMQPVSW', 5: 'QFWVRVSZPZPDCS', 6: 'ZPNFFD', 7: '', 8: 'CZJJRTCVBGNHBM', 9: 'NPJTWRDJGNB'}
+
+Line "move 1 from 1 to 8"
+has this result:
+{1: '', 2: '', 3: 'PZG', 4: 'TMQPVSW', 5: 'QFWVRVSZPZPDCS', 6: 'ZPNFFD', 7: '', 8: 'CZJJRTCVBGNHBMG', 9: 'NPJTWRDJGNB'}
+
+Line "move 4 from 4 to 6"
+has this result:
+{1: '', 2: '', 3: 'PZG', 4: 'TMQ', 5: 'QFWVRVSZPZPDCS', 6: 'ZPNFFDWSVP', 7: '', 8: 'CZJJRTCVBGNHBMG', 9: 'NPJTWRDJGNB'}
+
+Line "move 3 from 3 to 9"
+has this result:
+{1: '', 2: '', 3: '', 4: 'TMQ', 5: 'QFWVRVSZPZPDCS', 6: 'ZPNFFDWSVP', 7: '', 8: 'CZJJRTCVBGNHBMG', 9: 'NPJTWRDJGNBGZP'}
+
+Line "move 14 from 9 to 3"
+has this result:
+{1: '', 2: '', 3: 'PZGBNGJDRWTJPN', 4: 'TMQ', 5: 'QFWVRVSZPZPDCS', 6: 'ZPNFFDWSVP', 7: '', 8: 'CZJJRTCVBGNHBMG', 9: ''}
+
+Line "move 15 from 8 to 5"
+has this result:
+{1: '', 2: '', 3: 'PZGBNGJDRWTJPN', 4: 'TMQ', 5: 'QFWVRVSZPZPDCSGMBHNGBVCTRJJZC', 6: 'ZPNFFDWSVP', 7: '', 8: '', 9: ''}
+
+Line "move 9 from 5 to 4"
+has this result:
+{1: '', 2: '', 3: 'PZGBNGJDRWTJPN', 4: 'TMQCZJJRTCVB', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: 'ZPNFFDWSVP', 7: '', 8: '', 9: ''}
+
+Line "move 7 from 6 to 1"
+has this result:
+{1: 'PVSWDFF', 2: '', 3: 'PZGBNGJDRWTJPN', 4: 'TMQCZJJRTCVB', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: 'ZPN', 7: '', 8: '', 9: ''}
+
+Line "move 1 from 6 to 3"
+has this result:
+{1: 'PVSWDFF', 2: '', 3: 'PZGBNGJDRWTJPNN', 4: 'TMQCZJJRTCVB', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: 'ZP', 7: '', 8: '', 9: ''}
+
+Line "move 4 from 4 to 7"
+has this result:
+{1: 'PVSWDFF', 2: '', 3: 'PZGBNGJDRWTJPNN', 4: 'TMQCZJJR', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: 'ZP', 7: 'BVCT', 8: '', 9: ''}
+
+Line "move 2 from 6 to 2"
+has this result:
+{1: 'PVSWDFF', 2: 'PZ', 3: 'PZGBNGJDRWTJPNN', 4: 'TMQCZJJR', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: '', 7: 'BVCT', 8: '', 9: ''}
+
+Line "move 4 from 7 to 4"
+has this result:
+{1: 'PVSWDFF', 2: 'PZ', 3: 'PZGBNGJDRWTJPNN', 4: 'TMQCZJJRTCVB', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: '', 7: '', 8: '', 9: ''}
+
+Line "move 4 from 1 to 4"
+has this result:
+{1: 'PVS', 2: 'PZ', 3: 'PZGBNGJDRWTJPNN', 4: 'TMQCZJJRTCVBFFDW', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: '', 7: '', 8: '', 9: ''}
+
+Line "move 10 from 4 to 3"
+has this result:
+{1: 'PVS', 2: 'PZ', 3: 'PZGBNGJDRWTJPNNWDFFBVCTRJ', 4: 'TMQCZJ', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: '', 7: '', 8: '', 9: ''}
+
+Line "move 14 from 3 to 6"
+has this result:
+{1: 'PVS', 2: 'PZ', 3: 'PZGBNGJDRWT', 4: 'TMQCZJ', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: 'JRTCVBFFDWNNPJ', 7: '', 8: '', 9: ''}
+
+Line "move 5 from 4 to 1"
+has this result:
+{1: 'PVSJZCQM', 2: 'PZ', 3: 'PZGBNGJDRWT', 4: 'T', 5: 'QFWVRVSZPZPDCSGMBHNG', 6: 'JRTCVBFFDWNNPJ', 7: '', 8: '', 9: ''}
+
+Line "move 6 from 5 to 7"
+has this result:
+{1: 'PVSJZCQM', 2: 'PZ', 3: 'PZGBNGJDRWT', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFDWNNPJ', 7: 'GNHBMG', 8: '', 9: ''}
+
+Line "move 1 from 2 to 6"
+has this result:
+{1: 'PVSJZCQM', 2: 'P', 3: 'PZGBNGJDRWT', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFDWNNPJZ', 7: 'GNHBMG', 8: '', 9: ''}
+
+Line "move 3 from 7 to 2"
+has this result:
+{1: 'PVSJZCQM', 2: 'PGMB', 3: 'PZGBNGJDRWT', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFDWNNPJZ', 7: 'GNH', 8: '', 9: ''}
+
+Line "move 2 from 2 to 3"
+has this result:
+{1: 'PVSJZCQM', 2: 'PG', 3: 'PZGBNGJDRWTBM', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFDWNNPJZ', 7: 'GNH', 8: '', 9: ''}
+
+Line "move 3 from 7 to 8"
+has this result:
+{1: 'PVSJZCQM', 2: 'PG', 3: 'PZGBNGJDRWTBM', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFDWNNPJZ', 7: '', 8: 'HNG', 9: ''}
+
+Line "move 2 from 8 to 2"
+has this result:
+{1: 'PVSJZCQM', 2: 'PGGN', 3: 'PZGBNGJDRWTBM', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFDWNNPJZ', 7: '', 8: 'H', 9: ''}
+
+Line "move 2 from 2 to 7"
+has this result:
+{1: 'PVSJZCQM', 2: 'PG', 3: 'PZGBNGJDRWTBM', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFDWNNPJZ', 7: 'NG', 8: 'H', 9: ''}
+
+Line "move 6 from 6 to 2"
+has this result:
+{1: 'PVSJZCQM', 2: 'PGZJPNNW', 3: 'PZGBNGJDRWTBM', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFD', 7: 'NG', 8: 'H', 9: ''}
+
+Line "move 1 from 8 to 7"
+has this result:
+{1: 'PVSJZCQM', 2: 'PGZJPNNW', 3: 'PZGBNGJDRWTBM', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFD', 7: 'NGH', 8: '', 9: ''}
+
+Line "move 8 from 2 to 7"
+has this result:
+{1: 'PVSJZCQM', 2: '', 3: 'PZGBNGJDRWTBM', 4: 'T', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFD', 7: 'NGHWNNPJZGP', 8: '', 9: ''}
+
+Line "move 1 from 4 to 1"
+has this result:
+{1: 'PVSJZCQMT', 2: '', 3: 'PZGBNGJDRWTBM', 4: '', 5: 'QFWVRVSZPZPDCS', 6: 'JRTCVBFFD', 7: 'NGHWNNPJZGP', 8: '', 9: ''}
+
+Line "move 5 from 5 to 3"
+has this result:
+{1: 'PVSJZCQMT', 2: '', 3: 'PZGBNGJDRWTBMSCDPZ', 4: '', 5: 'QFWVRVSZP', 6: 'JRTCVBFFD', 7: 'NGHWNNPJZGP', 8: '', 9: ''}
+
+Line "move 3 from 3 to 2"
+has this result:
+{1: 'PVSJZCQMT', 2: 'ZPD', 3: 'PZGBNGJDRWTBMSC', 4: '', 5: 'QFWVRVSZP', 6: 'JRTCVBFFD', 7: 'NGHWNNPJZGP', 8: '', 9: ''}
+
+Line "move 5 from 1 to 3"
+has this result:
+{1: 'PVSJ', 2: 'ZPD', 3: 'PZGBNGJDRWTBMSCTMQCZ', 4: '', 5: 'QFWVRVSZP', 6: 'JRTCVBFFD', 7: 'NGHWNNPJZGP', 8: '', 9: ''}
+
+Line "move 7 from 5 to 8"
+has this result:
+{1: 'PVSJ', 2: 'ZPD', 3: 'PZGBNGJDRWTBMSCTMQCZ', 4: '', 5: 'QF', 6: 'JRTCVBFFD', 7: 'NGHWNNPJZGP', 8: 'PZSVRVW', 9: ''}
+
+Line "move 6 from 6 to 3"
+has this result:
+{1: 'PVSJ', 2: 'ZPD', 3: 'PZGBNGJDRWTBMSCTMQCZDFFBVC', 4: '', 5: 'QF', 6: 'JRT', 7: 'NGHWNNPJZGP', 8: 'PZSVRVW', 9: ''}
+
+Line "move 1 from 5 to 9"
+has this result:
+{1: 'PVSJ', 2: 'ZPD', 3: 'PZGBNGJDRWTBMSCTMQCZDFFBVC', 4: '', 5: 'Q', 6: 'JRT', 7: 'NGHWNNPJZGP', 8: 'PZSVRVW', 9: 'F'}
+
+Line "move 10 from 7 to 9"
+has this result:
+{1: 'PVSJ', 2: 'ZPD', 3: 'PZGBNGJDRWTBMSCTMQCZDFFBVC', 4: '', 5: 'Q', 6: 'JRT', 7: 'N', 8: 'PZSVRVW', 9: 'FPGZJPNNWHG'}
+
+Line "move 26 from 3 to 4"
+has this result:
+{1: 'PVSJ', 2: 'ZPD', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: 'Q', 6: 'JRT', 7: 'N', 8: 'PZSVRVW', 9: 'FPGZJPNNWHG'}
+
+Line "move 1 from 5 to 1"
+has this result:
+{1: 'PVSJQ', 2: 'ZPD', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: '', 6: 'JRT', 7: 'N', 8: 'PZSVRVW', 9: 'FPGZJPNNWHG'}
+
+Line "move 6 from 8 to 2"
+has this result:
+{1: 'PVSJQ', 2: 'ZPDWVRVSZ', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: '', 6: 'JRT', 7: 'N', 8: 'P', 9: 'FPGZJPNNWHG'}
+
+Line "move 9 from 2 to 9"
+has this result:
+{1: 'PVSJQ', 2: '', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: '', 6: 'JRT', 7: 'N', 8: 'P', 9: 'FPGZJPNNWHGZSVRVWDPZ'}
+
+Line "move 1 from 7 to 5"
+has this result:
+{1: 'PVSJQ', 2: '', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: 'N', 6: 'JRT', 7: '', 8: 'P', 9: 'FPGZJPNNWHGZSVRVWDPZ'}
+
+Line "move 1 from 8 to 5"
+has this result:
+{1: 'PVSJQ', 2: '', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: 'NP', 6: 'JRT', 7: '', 8: '', 9: 'FPGZJPNNWHGZSVRVWDPZ'}
+
+Line "move 2 from 6 to 2"
+has this result:
+{1: 'PVSJQ', 2: 'TR', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: 'NP', 6: 'J', 7: '', 8: '', 9: 'FPGZJPNNWHGZSVRVWDPZ'}
+
+Line "move 20 from 9 to 6"
+has this result:
+{1: 'PVSJQ', 2: 'TR', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: 'NP', 6: 'JZPDWVRVSZGHWNNPJZGPF', 7: '', 8: '', 9: ''}
+
+Line "move 1 from 1 to 6"
+has this result:
+{1: 'PVSJ', 2: 'TR', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZP', 5: 'NP', 6: 'JZPDWVRVSZGHWNNPJZGPFQ', 7: '', 8: '', 9: ''}
+
+Line "move 1 from 4 to 2"
+has this result:
+{1: 'PVSJ', 2: 'TRP', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZ', 5: 'NP', 6: 'JZPDWVRVSZGHWNNPJZGPFQ', 7: '', 8: '', 9: ''}
+
+Line "move 1 from 5 to 8"
+has this result:
+{1: 'PVSJ', 2: 'TRP', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZ', 5: 'N', 6: 'JZPDWVRVSZGHWNNPJZGPFQ', 7: '', 8: 'P', 9: ''}
+
+Line "move 1 from 5 to 7"
+has this result:
+{1: 'PVSJ', 2: 'TRP', 3: '', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZ', 5: '', 6: 'JZPDWVRVSZGHWNNPJZGPFQ', 7: 'N', 8: 'P', 9: ''}
+
+Line "move 3 from 1 to 3"
+has this result:
+{1: 'P', 2: 'TRP', 3: 'JSV', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZ', 5: '', 6: 'JZPDWVRVSZGHWNNPJZGPFQ', 7: 'N', 8: 'P', 9: ''}
+
+Line "move 1 from 3 to 6"
+has this result:
+{1: 'P', 2: 'TRP', 3: 'JS', 4: 'CVBFFDZCQMTCSMBTWRDJGNBGZ', 5: '', 6: 'JZPDWVRVSZGHWNNPJZGPFQV', 7: 'N', 8: 'P', 9: ''}
+
+Line "move 12 from 4 to 8"
+has this result:
+{1: 'P', 2: 'TRP', 3: 'JS', 4: 'CVBFFDZCQMTCS', 5: '', 6: 'JZPDWVRVSZGHWNNPJZGPFQV', 7: 'N', 8: 'PZGBNGJDRWTBM', 9: ''}
+
+Line "move 11 from 4 to 5"
+has this result:
+{1: 'P', 2: 'TRP', 3: 'JS', 4: 'CV', 5: 'SCTMQCZDFFB', 6: 'JZPDWVRVSZGHWNNPJZGPFQV', 7: 'N', 8: 'PZGBNGJDRWTBM', 9: ''}
+
+Line "move 1 from 7 to 5"
+has this result:
+{1: 'P', 2: 'TRP', 3: 'JS', 4: 'CV', 5: 'SCTMQCZDFFBN', 6: 'JZPDWVRVSZGHWNNPJZGPFQV', 7: '', 8: 'PZGBNGJDRWTBM', 9: ''}
+
+Line "move 1 from 2 to 8"
+has this result:
+{1: 'P', 2: 'TR', 3: 'JS', 4: 'CV', 5: 'SCTMQCZDFFBN', 6: 'JZPDWVRVSZGHWNNPJZGPFQV', 7: '', 8: 'PZGBNGJDRWTBMP', 9: ''}
+
+Line "move 1 from 1 to 8"
+has this result:
+{1: '', 2: 'TR', 3: 'JS', 4: 'CV', 5: 'SCTMQCZDFFBN', 6: 'JZPDWVRVSZGHWNNPJZGPFQV', 7: '', 8: 'PZGBNGJDRWTBMPP', 9: ''}
+
+Line "move 2 from 2 to 5"
+has this result:
+{1: '', 2: '', 3: 'JS', 4: 'CV', 5: 'SCTMQCZDFFBNRT', 6: 'JZPDWVRVSZGHWNNPJZGPFQV', 7: '', 8: 'PZGBNGJDRWTBMPP', 9: ''}
+
+Line "move 8 from 6 to 2"
+has this result:
+{1: '', 2: 'VQFPGZJP', 3: 'JS', 4: 'CV', 5: 'SCTMQCZDFFBNRT', 6: 'JZPDWVRVSZGHWNN', 7: '', 8: 'PZGBNGJDRWTBMPP', 9: ''}
+
+Line "move 5 from 6 to 4"
+has this result:
+{1: '', 2: 'VQFPGZJP', 3: 'JS', 4: 'CVNNWHG', 5: 'SCTMQCZDFFBNRT', 6: 'JZPDWVRVSZ', 7: '', 8: 'PZGBNGJDRWTBMPP', 9: ''}
+
+Line "move 2 from 5 to 3"
+has this result:
+{1: '', 2: 'VQFPGZJP', 3: 'JSTR', 4: 'CVNNWHG', 5: 'SCTMQCZDFFBN', 6: 'JZPDWVRVSZ', 7: '', 8: 'PZGBNGJDRWTBMPP', 9: ''}
+
+Line "move 12 from 8 to 4"
+has this result:
+{1: '', 2: 'VQFPGZJP', 3: 'JSTR', 4: 'CVNNWHGPPMBTWRDJGNB', 5: 'SCTMQCZDFFBN', 6: 'JZPDWVRVSZ', 7: '', 8: 'PZG', 9: ''}
+
+Line "move 5 from 2 to 6"
+has this result:
+{1: '', 2: 'VQF', 3: 'JSTR', 4: 'CVNNWHGPPMBTWRDJGNB', 5: 'SCTMQCZDFFBN', 6: 'JZPDWVRVSZPJZGP', 7: '', 8: 'PZG', 9: ''}
+
+Line "move 3 from 8 to 1"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JSTR', 4: 'CVNNWHGPPMBTWRDJGNB', 5: 'SCTMQCZDFFBN', 6: 'JZPDWVRVSZPJZGP', 7: '', 8: '', 9: ''}
+
+Line "move 11 from 6 to 8"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JSTR', 4: 'CVNNWHGPPMBTWRDJGNB', 5: 'SCTMQCZDFFBN', 6: 'JZPD', 7: '', 8: 'PGZJPZSVRVW', 9: ''}
+
+Line "move 10 from 4 to 6"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JSTR', 4: 'CVNNWHGPP', 5: 'SCTMQCZDFFBN', 6: 'JZPDBNGJDRWTBM', 7: '', 8: 'PGZJPZSVRVW', 9: ''}
+
+Line "move 5 from 4 to 6"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JSTR', 4: 'CVNN', 5: 'SCTMQCZDFFBN', 6: 'JZPDBNGJDRWTBMPPGHW', 7: '', 8: 'PGZJPZSVRVW', 9: ''}
+
+Line "move 12 from 6 to 5"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JSTR', 4: 'CVNN', 5: 'SCTMQCZDFFBNWHGPPMBTWRDJ', 6: 'JZPDBNG', 7: '', 8: 'PGZJPZSVRVW', 9: ''}
+
+Line "move 22 from 5 to 6"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JSTR', 4: 'CVNN', 5: 'SC', 6: 'JZPDBNGJDRWTBMPPGHWNBFFDZCQMT', 7: '', 8: 'PGZJPZSVRVW', 9: ''}
+
+Line "move 3 from 6 to 5"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JSTR', 4: 'CVNN', 5: 'SCTMQ', 6: 'JZPDBNGJDRWTBMPPGHWNBFFDZC', 7: '', 8: 'PGZJPZSVRVW', 9: ''}
+
+Line "move 3 from 8 to 5"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JSTR', 4: 'CVNN', 5: 'SCTMQWVR', 6: 'JZPDBNGJDRWTBMPPGHWNBFFDZC', 7: '', 8: 'PGZJPZSV', 9: ''}
+
+Line "move 1 from 3 to 8"
+has this result:
+{1: 'GZP', 2: 'VQF', 3: 'JST', 4: 'CVNN', 5: 'SCTMQWVR', 6: 'JZPDBNGJDRWTBMPPGHWNBFFDZC', 7: '', 8: 'PGZJPZSVR', 9: ''}
+
+Line "move 4 from 8 to 1"
+has this result:
+{1: 'GZPRVSZ', 2: 'VQF', 3: 'JST', 4: 'CVNN', 5: 'SCTMQWVR', 6: 'JZPDBNGJDRWTBMPPGHWNBFFDZC', 7: '', 8: 'PGZJP', 9: ''}
+
+Line "move 6 from 1 to 7"
+has this result:
+{1: 'G', 2: 'VQF', 3: 'JST', 4: 'CVNN', 5: 'SCTMQWVR', 6: 'JZPDBNGJDRWTBMPPGHWNBFFDZC', 7: 'ZSVRPZ', 8: 'PGZJP', 9: ''}
+
+Line "move 5 from 6 to 9"
+has this result:
+{1: 'G', 2: 'VQF', 3: 'JST', 4: 'CVNN', 5: 'SCTMQWVR', 6: 'JZPDBNGJDRWTBMPPGHWNB', 7: 'ZSVRPZ', 8: 'PGZJP', 9: 'CZDFF'}
+
