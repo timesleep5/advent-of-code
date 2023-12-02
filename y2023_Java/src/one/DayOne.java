@@ -15,12 +15,14 @@ public class DayOne extends Day {
         System.out.println("Part II result: " + dayOne.partTwo());
     }
 
+    @Override
     public int partOne() {
         partOne = true;
         resultPartOne = computeSumOfAllNumbers();
         return resultPartOne;
     }
 
+    @Override
     public int partTwo() {
         partOne = false;
         resultPartTwo = computeSumOfAllNumbers();
