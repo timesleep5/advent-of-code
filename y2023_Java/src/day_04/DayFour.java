@@ -4,8 +4,7 @@ import _general.Day;
 
 
 public class DayFour extends Day {
-    private int[][] winningNumbers;
-    private int[][] ownNumbers;
+    private Scratchcard[] scratchcards;
 
     public static void main(String[] args) {
         DayFour dayFour = new DayFour();
@@ -14,66 +13,62 @@ public class DayFour extends Day {
     }
 
     public DayFour() {
-        winningNumbers = getNumbers(false);
-        ownNumbers = getNumbers(true);
+        scratchcards = new Scratchcard[input.length];
+        buildScratchcards();
     }
 
     @Override
     public int partOne() {
-        sumUpAllPoints();
+        resultPartOne = sumUpAllPoints();
         return resultPartOne;
     }
 
     @Override
     public int partTwo() {
-        return 0;
+        createAllCopies();
+        resultPartTwo = sumUpAllCopies();
+        return resultPartTwo;
     }
 
-    private int[][] getNumbers(boolean ownNumbers) {
-        int[][] numbers = new int[input.length][];
-        String[] numberStrings;
+
+    private void buildScratchcards() {
         for (int line = 0; line < input.length; line++) {
-            numberStrings = ownNumbers ? getOwnNumberStrings(input[line]) : getWinningNumberStrings(input[line]);
-            numbers[line] = parseNumberStrings(numberStrings);
-        }
-        return numbers;
-    }
-
-    private String[] getWinningNumberStrings(String line) {
-        return line.split(" \\| ")[0].split(":")[1].split("(?<=\\G.{" + 3 + "})");
-    }
-
-    private String[] getOwnNumberStrings(String line) {
-        return line.split(" \\|")[1].split("(?<=\\G.{" + 3 + "})");
-    }
-
-    private int[] parseNumberStrings(String[] winningNumberStrings) {
-        int[] winningNumbers = new int[winningNumberStrings.length];
-        for (int number = 0; number < winningNumberStrings.length; number++) {
-            winningNumbers[number] = Integer.parseInt(winningNumberStrings[number].strip());
-        }
-        return winningNumbers;
-    }
-
-    private void sumUpAllPoints() {
-        int pointsForLine;
-        for (int line = 0; line < winningNumbers.length; line++) {
-            pointsForLine = 0;
-            for (int number : winningNumbers[line]) {
-                if (ownNumbersContain(number, line)) {
-                    pointsForLine = pointsForLine == 0 ? 1 : pointsForLine * 2;
-                }
-            }
-            resultPartOne += pointsForLine;
+            scratchcards[line] = new Scratchcard(input[line]);
         }
     }
 
-    private boolean ownNumbersContain(int number, int line) {
-        for (int ownNumber : ownNumbers[line]) {
-            if (ownNumber == number) {
-                return true;
+    private int sumUpAllPoints() {
+        int sum = 0;
+        for (Scratchcard scratchcard : scratchcards) {
+            sum += scratchcard.getPoints();
+
+        }
+        return sum;
+    }
+
+
+    private void createAllCopies() {
+        for (Scratchcard card : scratchcards) {
+            for (int copy = 1; copy <= card.getNumberOfCopies(); copy++) {
+                createCopysFromCardPoints(card);
             }
         }
-        return false;
+    }
+
+    private void createCopysFromCardPoints(Scratchcard card) {
+        int orderRange = card.getMatchingNumbersCount();
+        int orderStart = card.getOrder();
+        int orderLimit = Math.min(orderStart + orderRange, scratchcards.length);
+        for (int order = orderStart; order < orderLimit; order++) {
+            scratchcards[order].addCopy();
+        }
+    }
+
+    private int sumUpAllCopies() {
+        int sum = 0;
+        for (Scratchcard scratchcard : scratchcards) {
+            sum += scratchcard.getNumberOfCopies();
+        }
+        return sum;
     }
 }
