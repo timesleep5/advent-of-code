@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class DayOne extends Day {
-    private final List<String> digitsAsWords = Arrays.asList("day_01", "day_02", "day_03", "four", "five", "six", "seven", "eight", "nine");
+    private final List<String> digitsAsWords = Arrays.asList("one", "two", "three", "four", "five", "six", "seven", "eight", "nine");
     private boolean partOne;
 
     public static void main(String[] args) {
