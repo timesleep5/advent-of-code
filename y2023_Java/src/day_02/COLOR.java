@@ -1,4 +1,4 @@
-package two;
+package day_02;
 
 enum COLOR {
     RED(12),

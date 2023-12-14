@@ -1,4 +1,4 @@
-package two;
+package day_02;
 
 record CubeAmount(COLOR color, int amount) {
 

@@ -1,6 +1,6 @@
-package two;
+package day_02;
 
-import general.Day;
+import _general.Day;
 
 import java.util.ArrayList;
 import java.util.Collections;
