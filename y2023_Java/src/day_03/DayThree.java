@@ -42,8 +42,6 @@ public class DayThree extends Day {
     public int partTwo() {
         resultPartTwo = sumUpAllGearRatios();
         return resultPartTwo;
-        // 1_205_517_858 too high
-        // 78_301_689 too low
     }
 
     private int sumUpAllGearRatios() {
