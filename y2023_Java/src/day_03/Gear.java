@@ -11,23 +11,22 @@ public class Gear {
 
     Gear(EngineMatrix engineMatrix, int x, int y) {
         this.engineMatrix = engineMatrix;
+        partNumbers = new ArrayList<>();
         findDistinctPartNumbers(x, y);
     }
 
     private void findDistinctPartNumbers(int x, int y) {
-        partNumbers = new ArrayList<>();
-        newNumberPossible = true;
-        for (int yValue = y - 1; yValue < y + 2; yValue++) {
-            for (int xValue = x - 1; xValue < x + 2; xValue++) {
+        for (int yValue = y - 1; yValue <= y + 1; yValue++) {
+            newNumberPossible = true;
+            for (int xValue = x - 1; xValue <= x + 1; xValue++) {
                 if (engineMatrix.withinBoundaries(xValue, yValue)) {
-                    addPartNumberIfFinished(xValue, yValue);
+                    lookForFinishedPartNumber(xValue, yValue);
                 }
             }
-            newNumberPossible = true;
         }
     }
 
-    private void addPartNumberIfFinished(int x, int y) {
+    private void lookForFinishedPartNumber(int x, int y) {
         if (!Character.isDigit(engineMatrix.getPosition(x, y))) {
             newNumberPossible = true;
         } else if (newNumberPossible) {
@@ -39,7 +38,7 @@ public class Gear {
     private int findPartNumberAround(int x, int y) {
         StringBuilder numberBuilder = new StringBuilder();
         int xValue = findStartX(x, y);
-        while (Character.isDigit(engineMatrix.getPosition(xValue, y))) {
+        while (engineMatrix.withinBoundaries(xValue, y) && Character.isDigit(engineMatrix.getPosition(xValue, y))) {
             numberBuilder.append(engineMatrix.getPosition(xValue, y));
             xValue++;
         }
@@ -47,12 +46,15 @@ public class Gear {
     }
 
     private int findStartX(int x, int y) {
-        for (int xValue = x; xValue >= 1; xValue--) {
-            if (!Character.isDigit(engineMatrix.getPosition(xValue - 1, y))) {
-                return xValue;
+        int startX = x;
+        for (int checkedX = x; checkedX >= 0; checkedX--) {
+            if (Character.isDigit(engineMatrix.getPosition(checkedX, y))) {
+                startX = checkedX;
+            } else {
+                break;
             }
         }
-        return x;
+        return startX;
     }
 
     int getGearRatio() {

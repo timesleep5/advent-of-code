@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DayThree extends Day {
-    private final int PART_NUMBERS_FOR_GEAR = 2;
+    private final int PART_NUMBER_COUNT_FOR_GEAR = 2;
     private final EngineMatrix engineMatrix;
     private boolean onNumber;
     private boolean newNumberPossible;
@@ -68,19 +68,18 @@ public class DayThree extends Day {
     }
 
     private boolean isGear(int x, int y) {
-        return engineMatrix.getPosition(x, y) == '*' && countAdjacentPartNumbers(x, y) == PART_NUMBERS_FOR_GEAR;
+        return engineMatrix.getPosition(x, y) == '*' && countAdjacentPartNumbers(x, y) == PART_NUMBER_COUNT_FOR_GEAR;
     }
 
     private int countAdjacentPartNumbers(int x, int y) {
         partNumberCount = 0;
-        newNumberPossible = true;
-        for (int yValue = y - 1; yValue < y + 2; yValue++) {
-            for (int xValue = x - 1; xValue < x + 2; xValue++) {
+        for (int yValue = y - 1; yValue <= y + 1; yValue++) {
+            newNumberPossible = true;
+            for (int xValue = x - 1; xValue <= x + 1; xValue++) {
                 if (engineMatrix.withinBoundaries(xValue, yValue)) {
                     incrementCounterIfNewNumberStarts(xValue, yValue);
                 }
             }
-            newNumberPossible = true;
         }
         return partNumberCount;
     }

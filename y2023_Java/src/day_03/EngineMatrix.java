@@ -1,5 +1,7 @@
 package day_03;
 
+import java.sql.SQLOutput;
+
 public class EngineMatrix {
     private final char[][] matrix;
 
@@ -21,18 +23,11 @@ public class EngineMatrix {
     }
 
     char getPosition(int x, int y) {
-        if (withinBoundaries(x, y)) {
-            return matrix[y][x];
-        } else {
-            return 0;
-        }
+        return matrix[y][x];
     }
 
     int getWidth(int y) {
-        if (withinBoundaries(0, y)) {
-            return matrix[y].length;
-        }
-        return 0;
+        return matrix[y].length;
     }
 
     int getHeight() {
