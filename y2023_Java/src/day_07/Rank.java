@@ -1,6 +1,7 @@
 package day_07;
 
 public enum Rank {
+    JOKER(1),
     TWO(2),
     THREE(3),
     FOUR(4),

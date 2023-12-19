@@ -18,4 +18,9 @@ public class CamelCard {
         CamelCard card = (CamelCard) o;
         return this.rank == card.rank;
     }
+
+    @Override
+    public String toString() {
+        return rank.toString();
+    }
 }
