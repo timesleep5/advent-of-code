@@ -14,8 +14,12 @@ public enum Rank {
     QUEEN(12),
     KING(13),
     ACE(14);
-    private int order;
+    private final int order;
     Rank(int order) {
         this.order = order;
+    }
+
+    boolean isHigherThan(Rank rank) {
+        return this.order > rank.order;
     }
 }
