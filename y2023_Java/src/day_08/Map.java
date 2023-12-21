@@ -9,8 +9,9 @@ public class Map {
     private final String END_NAME = "ZZZ";
     private final String[] input;
     private final Node[] nodes;
-    private final List<Node> currentNodes;
+    private List<Node> currentNodes;
     private Node currentNode;
+    private int[] cycleLengths;
 
     Map(String[] input) {
         this.input = input;
@@ -18,6 +19,7 @@ public class Map {
         connectNodes();
         currentNode = findNodeWithName(START_NAME);
         currentNodes = getStartingNodes();
+        cycleLengths = new int[currentNodes.size()];
     }
 
     // Part I
@@ -31,38 +33,40 @@ public class Map {
     }
 
     private void executeInstructionsForCurrentNode(char[] instructions) {
-        for (char instruction: instructions) {
+        for (char instruction : instructions) {
             currentNode = currentNode.getNodeOfInstruction(instruction);
         }
     }
 
     // Part II
-    int countRoundsOfInstructionsForAllNodes(char[] instructions) {
+    int[] countRoundsOfInstructionsForAllNodes(char[] instructions) {
         int rounds = 0;
-        while (!allNodesFinished()) {
-            executeInstructionsForAllNodes(instructions);
+        while (!allCycleLengthsFinished()) {
             rounds++;
+            executeInstructionsForAllNodes(instructions);
+            checkForFinishedCycle(rounds);
         }
-        return rounds;
+        return cycleLengths;
     }
 
-    private boolean allNodesFinished() {
-        for (Node node: currentNodes) {
-            if (!node.nameEndsWith("Z")) {
-                return false;
+    private void checkForFinishedCycle(int rounds) {
+        for (int nodeIndex = 0; nodeIndex < currentNodes.size(); nodeIndex++) {
+            if (currentNodes.get(nodeIndex).nameEndsWith("Z")) {
+                cycleLengths[nodeIndex] = rounds;
             }
+        }
+    }
+
+    private boolean allCycleLengthsFinished() {
+        for (int cycleLength : cycleLengths) {
+            if (cycleLength == 0) return false;
         }
         return true;
     }
 
     private void executeInstructionsForAllNodes(char[] instructions) {
-        for (char instruction: instructions) {
+        for (char instruction : instructions) {
             currentNodes.replaceAll(node -> node.getNodeOfInstruction(instruction));
-//            for (int nodeIndex = 0; nodeIndex < currentNodes.size(); nodeIndex++) {
-//                Node node = currentNodes.get(nodeIndex);
-//                Node nextNode = node.getNodeOfInstruction(instruction);
-//                currentNodes.set(nodeIndex, nextNode);
-//            }
         }
     }
 
@@ -102,7 +106,7 @@ public class Map {
 
     private List<Node> getStartingNodes() {
         List<Node> startingNodes = new ArrayList<>();
-        for (Node node: nodes) {
+        for (Node node : nodes) {
             if (node.nameEndsWith("A")) {
                 startingNodes.add(node);
             }

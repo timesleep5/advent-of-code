@@ -11,7 +11,7 @@ class DayEight extends Day {
     public static void main(String[] args) {
         DayEight dayEight = new DayEight();
         System.out.println("Part I result: " + dayEight.partOne());
-        System.out.println("Part II result: " + dayEight.partTwo());
+        dayEight.partTwo();
     }
 
     DayEight() {
@@ -29,8 +29,9 @@ class DayEight extends Day {
 
     @Override
     public int partTwo() {
-        resultPartTwo = countInstructionsToExitForAllNodes();
-        return resultPartTwo;
+        long result = countInstructionsToExitForAllNodes();
+        System.out.println("Part II result: " + result);
+        return 0;
     }
 
     private int countInstructionsToExit() {
@@ -38,9 +39,18 @@ class DayEight extends Day {
         return totalRounds * instructions.length;
     }
 
-    private int countInstructionsToExitForAllNodes() {
-        int totalRounds = map.countRoundsOfInstructionsForAllNodes(instructions);
-        return totalRounds * instructions.length;
+    private long countInstructionsToExitForAllNodes() {
+        int[] cycleLengths = map.countRoundsOfInstructionsForAllNodes(instructions);
+        long multipleOfCycles = getMultiple(cycleLengths);
+        return multipleOfCycles * instructions.length;
+    }
+
+    private long getMultiple(int[] numbers) {
+        long multiple = 1;
+        for (int number : numbers) {
+            multiple *= number;
+        }
+        return multiple;
     }
 
     private char[] getInstructions() {
