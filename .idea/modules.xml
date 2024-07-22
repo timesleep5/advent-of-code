@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AdventOfCode.iml" filepath="$PROJECT_DIR$/.idea/AdventOfCode.iml" />
+      <module fileurl="file://U:/Daten/Programmierung/PyCharm/GrundlagenSoftwareEntwicklung/.idea/GrundlagenSoftwareEntwicklung.iml" filepath="U:/Daten/Programmierung/PyCharm/GrundlagenSoftwareEntwicklung/.idea/GrundlagenSoftwareEntwicklung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/y2023_Java/y2023_Java.iml" filepath="$PROJECT_DIR$/y2023_Java/y2023_Java.iml" />
+    </modules>
+  </component>
+</project>
