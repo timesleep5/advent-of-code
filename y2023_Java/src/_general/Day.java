@@ -3,7 +3,7 @@ package _general;
 import java.util.Objects;
 
 public abstract class Day {
-    private final String INPUT_FILENAME = "input.txt";
+    private static final String INPUT_FILENAME = "input.txt";
     protected String[] input;
     protected int resultPartOne;
     protected int resultPartTwo;
