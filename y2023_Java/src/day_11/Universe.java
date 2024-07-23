@@ -5,14 +5,20 @@ import java.util.LinkedList;
 
 class Universe {
     private static final Character GALAXY = '#';
-    private ArrayList<ArrayList<Character>> map;
+    private final ArrayList<ArrayList<Character>> map;
+    private final ArrayList<Integer> expandedRows;
+    private final ArrayList<Integer> expandedColumns;
 
     Universe(String[] input) {
+        map = new ArrayList<>();
+        expandedRows = new ArrayList<>();
+        expandedColumns = new ArrayList<>();
         createMap(input);
+        findExpandedRows();
+        findExpandedColumns();
     }
 
     private void createMap(String[] input) {
-        var map = new ArrayList<ArrayList<Character>>();
         for (String line : input) {
             ArrayList<Character> row = new ArrayList<>();
             for (char c : line.toCharArray()) {
@@ -20,21 +26,41 @@ class Universe {
             }
             map.add(row);
         }
-        this.map = map;
     }
 
-    void expandRow(int rowIndex) {
-        var expansionRow = new ArrayList<>(map.get(rowIndex));
-        map.add(rowIndex, expansionRow);
-    }
-
-    void expandColumn(int columnIndex) {
-        var expansionColumn = getColumn(columnIndex);
+    private void findExpandedRows() {
         for (int row = 0; row < map.size(); row++) {
-            var currentRow = map.get(row);
-            var currentChar = expansionColumn.get(row);
-            currentRow.add(columnIndex, currentChar);
+            if (!rowContainsGalaxies(row)) {
+                expandedRows.add(row);
+            }
         }
+    }
+
+    private void findExpandedColumns() {
+        for (int column = 0; column < map.get(0).size(); column++) {
+            if (!columnContainsGalaxies(column)) {
+                expandedColumns.add(column);
+            }
+        }
+    }
+
+    int expansionsBetween(GalaxyPair pair) {
+        int minX = Math.min(pair.first().x(), pair.second().x());
+        int maxX = Math.max(pair.first().x(), pair.second().x());
+        int minY = Math.min(pair.first().y(), pair.second().y());
+        int maxY = Math.max(pair.first().y(), pair.second().y());
+        int expansions = 0;
+        for (int expandedRow : expandedRows) {
+            if (expandedRow >= minY && expandedRow <= maxY) {
+                expansions++;
+            }
+        }
+        for (int expandedColumn : expandedColumns) {
+            if (expandedColumn >= minX && expandedColumn <= maxX) {
+                expansions++;
+            }
+        }
+        return expansions;
     }
 
     boolean rowContainsGalaxies(int rowIndex) {
@@ -61,19 +87,11 @@ class Universe {
             for (int column = 0; column < map.get(row).size(); column++) {
                 var space = map.get(row).get(column);
                 if (space.equals(GALAXY)) {
-                    galaxies.add(new Galaxy(row, column));
+                    galaxies.add(new Galaxy(column, row));
                 }
             }
         }
         return galaxies;
-    }
-
-    int verticalSize() {
-        return map.size();
-    }
-
-    int horizontalSize() {
-        return map.get(0).size();
     }
 
     @Override

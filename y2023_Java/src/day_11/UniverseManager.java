@@ -1,69 +1,25 @@
 package day_11;
 
+import java.math.BigInteger;
 import java.util.HashSet;
-import java.util.LinkedList;
 
 class UniverseManager {
     private final Universe universe;
     private final HashSet<GalaxyPair> galaxyPairs;
-    private int shortestPathSum;
+    private final int expansionFactor;
+    private BigInteger shortestPathSum;
 
-    UniverseManager(String[] input) {
+    UniverseManager(String[] input, int expansionFactor) {
         universe = new Universe(input);
         galaxyPairs = new HashSet<>();
+        shortestPathSum = BigInteger.ZERO;
+        this.expansionFactor = expansionFactor;
     }
 
-    int getShortestPathSum() {
-        expand();
+    BigInteger getShortestPathSum() {
         collectPairs();
         calculateShortestPaths();
         return shortestPathSum;
-    }
-
-    private void expand() {
-        expandRows();
-        expandColumns();
-    }
-
-
-    private void expandRows() {
-        var rowsToExpand = searchRowsToExpand();
-        int shiftOfPreviousExpansions = 0;
-        for (int rowToExpand : rowsToExpand) {
-            int actualRowToExpand = rowToExpand + shiftOfPreviousExpansions;
-            universe.expandRow(actualRowToExpand);
-            shiftOfPreviousExpansions++;
-        }
-    }
-
-    private LinkedList<Integer> searchRowsToExpand() {
-        var rowsToExpand = new LinkedList<Integer>();
-        for (int row = 0; row < universe.verticalSize(); row++) {
-            if (!universe.rowContainsGalaxies(row)) {
-                rowsToExpand.add(row);
-            }
-        }
-        return rowsToExpand;
-    }
-
-    private void expandColumns() {
-        var columnsToExpand = searchColumnsToExpand();
-        int shiftOfPreviousExpansions = 0;
-        for (int columnToExpand : columnsToExpand) {
-            int actualColumnToExpand = columnToExpand + shiftOfPreviousExpansions;
-            universe.expandColumn(actualColumnToExpand);
-            shiftOfPreviousExpansions++;
-        }
-    }
-
-    private LinkedList<Integer> searchColumnsToExpand() {
-        var columnsToExpand = new LinkedList<Integer>();
-        for (int column = 0; column < universe.horizontalSize(); column++) {
-            if (!universe.columnContainsGalaxies(column)) {
-                columnsToExpand.add(column);
-            }
-        }
-        return columnsToExpand;
     }
 
     private void collectPairs() {
@@ -75,13 +31,16 @@ class UniverseManager {
                 }
             }
         }
-        System.out.println(galaxyPairs.size()); // should be 96580
-
     }
 
     private void calculateShortestPaths() {
         for (GalaxyPair galaxyPair : galaxyPairs) {
-            shortestPathSum += galaxyPair.shortestPath();
+            int naivePath = galaxyPair.shortestPath();
+            int expansionsInPath = universe.expansionsBetween(galaxyPair);
+            BigInteger additionalStepsForExpansions = BigInteger.valueOf(expansionsInPath)
+                    .multiply(BigInteger.valueOf(expansionFactor - 1)); // since 1 step per expansion is already contained in naive path
+            BigInteger totalPath = BigInteger.valueOf(naivePath).add(additionalStepsForExpansions);
+            shortestPathSum = shortestPathSum.add(totalPath);
         }
     }
 
@@ -90,5 +49,3 @@ class UniverseManager {
         return universe.toString();
     }
 }
-
-
