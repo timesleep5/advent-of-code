@@ -1,17 +1,12 @@
-from Day_12.DayTwelve import DayTwelve
+from y2022_Python.Day_12.DayTwelve import DayTwelve
 
+if __name__ == '__main__':
+    day = DayTwelve()
 
-instructions = DayTwelve.get_input('input.txt')
+    # Part I
+    result_part_one = day.result_part_one()
+    print(f'Part I: {result_part_one}')
 
-
-# Part 1
-day_twelve = DayTwelve(instructions)
-day_twelve.add_neighbors_to_positions()
-
-shortest_path = day_twelve.find_shortest_path()
-print(f'shortest path to mountain top: {shortest_path}')
-
-# print(day_twelve)
-
-# 1065 too high
-
+    # Part II
+    result_part_two = day.result_part_two()
+    print(f'Part II: {result_part_two}')
