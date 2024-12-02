@@ -7,6 +7,7 @@ public class Pipe {
     private final int colIndex;
     private final CONNECTION_OUT connectionOut;
     private final Maze maze;
+    private Pipe nextPipe;
 
     Pipe(int rowIndex, int colIndex, Maze maze, CONNECTION_IN connectionIn) {
         this.rowIndex = rowIndex;
@@ -43,8 +44,8 @@ public class Pipe {
             case TO_WEST -> newColIndex--;
             case TO_EAST -> newColIndex++;
         }
-
-        return new Pipe(newRowIndex, newColIndex, maze, newConnectionIn);
+        nextPipe = new Pipe(newRowIndex, newColIndex, maze, newConnectionIn);
+        return nextPipe;
     }
 
     private char getStartSymbol(int rowIndex, int colIndex) {
@@ -66,5 +67,21 @@ public class Pipe {
         else if (connectionWest && connectionEast) return '-';
         else
             throw new IllegalArgumentException("starting Pipe at " + rowIndex + ", " + colIndex + " has no connection");
+    }
+
+    Pipe getNextPipe() {
+        return nextPipe;
+    }
+
+    boolean hasNextPipe() {
+        return nextPipe != null;
+    }
+
+    public int getRowIndex() {
+        return rowIndex;
+    }
+
+    public int getColIndex() {
+        return colIndex;
     }
 }

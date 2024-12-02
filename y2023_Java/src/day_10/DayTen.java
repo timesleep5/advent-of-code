@@ -11,7 +11,7 @@ public class DayTen extends Day {
     }
 
     DayTen() {
-        char[][] map = createMap();
+        char[][] map = new MazeParser(input).createMap();
         maze = new Maze(map);
     }
 
@@ -23,14 +23,7 @@ public class DayTen extends Day {
 
     @Override
     public int partTwo() {
-        return 0;
-    }
-
-    char[][] createMap() {
-        char[][] map = new char[input.length][];
-        for (int line = 0; line < input.length; line++) {
-            map[line] = input[line].toCharArray();
-        }
-        return map;
+        resultPartTwo = maze.countEnclosedTiles();
+        return resultPartTwo; //3871 too high, not 814
     }
 }

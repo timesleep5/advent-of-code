@@ -1,7 +1,12 @@
 package day_10;
 
+import java.util.Arrays;
+
 public class Maze {
+    private static final char PIPE_SYMBOL = '*';
+    private static final char EMPTY_TILE_SYMBOL = '.';
     private final char[][] map;
+    private char[][] pipeMap;
     private final Pipe startPipe;
 
     Maze(char[][] map) {
@@ -50,5 +55,82 @@ public class Maze {
         else if (east == '7' || east == '-' || east == 'J') return CONNECTION_IN.FROM_WEST;
         else
             throw new IllegalArgumentException("starting Pipe at " + rowIndex + ", " + colIndex + " has no connection");
+    }
+
+    int countEnclosedTiles() {
+        buildPipeMap();
+        int count = 0;
+        int rowLength = pipeMap.length;
+        int colLength = pipeMap[0].length;
+        for (int rowIndex = 0; rowIndex < rowLength; rowIndex++) {
+            for (int colIndex = 0; colIndex < colLength; colIndex++) {
+                if (pipeMap[rowIndex][colIndex] == EMPTY_TILE_SYMBOL) {
+                    int pipesNorth = pipesInColumn(colIndex, 0, rowIndex);
+                    int pipesSouth = pipesInColumn(colIndex, rowIndex + 1, colLength);
+                    int pipesWest = pipesInRow(rowIndex, 0, colIndex);
+                    int pipesEast = pipesInRow(rowIndex, colIndex + 1, rowLength);
+
+                    if ((pipesNorth % 2 == 1 || pipesSouth % 2 == 1 || pipesWest % 2 == 1 || pipesEast % 2 == 1)
+                            && (pipesNorth > 1 && pipesSouth > 1 && pipesWest > 1 && pipesEast > 1)) {
+                        pipeMap[rowIndex][colIndex] = 'I';
+                        count++;
+                    } else {
+                        pipeMap[rowIndex][colIndex] = 'O';
+                    }
+                }
+            }
+        }
+        printPipeMaze();
+        return count;
+    }
+
+    private void buildPipeMap() {
+        pipeMap = emptyMap();
+        Pipe currentPipe = startPipe;
+        while (currentPipe != null) {
+            int row = currentPipe.getRowIndex();
+            int col = currentPipe.getColIndex();
+            pipeMap[row][col] = map[row][col];
+            currentPipe = currentPipe.getNextPipe();
+        }
+        printPipeMaze();
+    }
+
+    private char[][] emptyMap() {
+        char[][] emptyMap = new char[map.length][map[0].length];
+        for (int rowIndex = 0; rowIndex < map.length; rowIndex++) {
+            Arrays.fill(emptyMap[rowIndex], EMPTY_TILE_SYMBOL);
+        }
+        return emptyMap;
+    }
+
+    private int pipesInColumn(int colIndex, int start, int end) {
+        if (end <= start) return 0;
+        int count = 0;
+        for (int i = start; i < end; i++) {
+            if (pipeMap[i][colIndex] == '-') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    private int pipesInRow(int rowIndex, int start, int end) {
+        if (end <= start) return 0;
+        int count = 0;
+        for (int i = start; i < end; i++) {
+            if (pipeMap[rowIndex][i] == '|') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    private void printPipeMaze() {
+        for (char[] line : pipeMap) {
+            String printed = Arrays.toString(line).replace(", ", "");
+            System.out.println(printed);
+        }
+        System.out.println();
     }
 }
