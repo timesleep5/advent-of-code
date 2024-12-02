@@ -1,11 +1,11 @@
-﻿using AdventOfCode.Day_01;
-using AdventofCode.General;
+﻿using AdventOfCode.Day_02;
+using AdventofCode._General;
 
 namespace AdventOfCode;
 
-internal class Program {
+internal abstract class Program {
     public static void Main() {
-        Day day = new DayOne();
+        Day day = new DayTwo();
         Console.WriteLine($"Part I: {day.PartOne()}");
         Console.WriteLine($"Part II: {day.PartTwo()}");
     }

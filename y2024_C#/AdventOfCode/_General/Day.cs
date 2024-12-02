@@ -1,9 +1,7 @@
-using System.Runtime.CompilerServices;
-
-namespace AdventofCode.General;
+namespace AdventofCode._General;
 
 public abstract class Day {
-    private const string InputDirectory = "/home/korbinian/code/Python/advent-of-code/y2024_C#/AdventOfCode/Inputs";
+    private const string InputDirectory = "/home/korbinian/code/Python/advent-of-code/y2024_C#/AdventOfCode/_Inputs";
     protected List<string> Input;
     protected int ResultPartOne;
     protected int ResultPartTwo;

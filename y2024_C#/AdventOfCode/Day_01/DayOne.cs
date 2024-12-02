@@ -1,4 +1,4 @@
-using AdventofCode.General;
+using AdventofCode._General;
 
 namespace AdventOfCode.Day_01;
 
