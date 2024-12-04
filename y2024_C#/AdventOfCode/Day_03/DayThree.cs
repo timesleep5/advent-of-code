@@ -25,7 +25,7 @@ public class DayThree : Day
         var sb = new StringBuilder();
         foreach (var memoryString in Input)
         {
-            sb.Append(memoryString.Trim());
+            sb.Append(memoryString);
         }
 
         return sb.ToString();

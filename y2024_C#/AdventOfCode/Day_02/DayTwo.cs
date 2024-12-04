@@ -12,7 +12,6 @@ public class DayTwo : Day {
 
     private void Parse() {
         foreach (var levels in Input
-                     .Select(line => line.Trim())
                      .Select(line => line.Split(" "))
                      .Select(integerStrings => integerStrings
                          .Select(int.Parse)

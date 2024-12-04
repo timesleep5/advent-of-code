@@ -15,7 +15,6 @@ public class DayOne : Day {
 
     private void Parse() {
         foreach (var integerStrings in Input
-                     .Select(line => line.Trim())
                      .Select(trimmedLine => trimmedLine.Split("   "))) {
             _leftList.Add(int.Parse(integerStrings[0]));
             _rightList.Add(int.Parse(integerStrings[1]));
