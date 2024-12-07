@@ -11,8 +11,6 @@ public abstract class Day {
     public Day() {
         String inputPath = getInputPath();
         input = new FileInput(inputPath).getFileInput();
-        resultPartOne = 0;
-        resultPartTwo = 0;
     }
 
     protected String getInputPath() {
