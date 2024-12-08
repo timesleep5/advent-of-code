@@ -4,28 +4,28 @@ using AdventOfCode._Utils;
 namespace AdventOfCode.Day_04;
 
 public class DayFour : Day {
-    private readonly Map _map;
+    private readonly CrossWordMap _crossWordMap;
     private readonly List<IState> _partOneStartStates;
     private readonly List<Mas> _partTwoStartStates;
 
     public DayFour() : base("input_04.txt") {
-        _map = new Map(Input);
+        _crossWordMap = new CrossWordMap(Input);
         _partOneStartStates = GetPartOneStartStates();
         _partTwoStartStates = GetPartTwoStartStates();
     }
 
     private List<IState> GetPartOneStartStates() {
-        var startPositions = _map.GetAll('X');
+        var startPositions = _crossWordMap.GetAll('X');
         var startStates = startPositions
-            .Select(IState (startPosition) => new WordState([startPosition], _map))
+            .Select(IState (startPosition) => new WordState([startPosition], _crossWordMap))
             .ToList();
         return startStates;
     }
 
     private List<Mas> GetPartTwoStartStates() {
-        var startPositions = _map.GetAll('A');
+        var startPositions = _crossWordMap.GetAll('A');
         var startStates = startPositions
-            .Select(startPosition => new Mas(startPosition, _map))
+            .Select(startPosition => new Mas(startPosition, _crossWordMap))
             .ToList();
         return startStates;
     }

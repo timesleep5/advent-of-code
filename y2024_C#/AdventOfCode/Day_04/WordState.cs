@@ -6,11 +6,11 @@ public class WordState : IState {
     private const string Word = "XMAS";
     private const int WordLength = 4;
     private readonly int[][] _baseDirections = [[1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1], [0, -1], [1, -1]];
-    private readonly Map _map;
+    private readonly CrossWordMap _crossWordMap;
     private readonly List<Position> _letterPositions;
 
-    public WordState(List<Position> letterPositions, Map map) {
-        _map = map;
+    public WordState(List<Position> letterPositions, CrossWordMap crossWordMap) {
+        _crossWordMap = crossWordMap;
         _letterPositions = letterPositions;
         IntegrityCheck();
     }
@@ -29,7 +29,7 @@ public class WordState : IState {
             var newRow = currentPosition.Row + direction[0];
             var newColumn = currentPosition.Column + direction[1];
             var newPosition = new Position(newRow, newColumn);
-            if (_map.WithinBounds(newPosition) && _map.Get(newPosition) == nextRequiredLetter) {
+            if (_crossWordMap.InsideOfMap(newPosition) && _crossWordMap.Get(newPosition) == nextRequiredLetter) {
                 var nextState = NewWordState(newPosition);
                 nextStates.Add(nextState);
             }
@@ -56,7 +56,7 @@ public class WordState : IState {
 
     private WordState NewWordState(Position position) {
         var newLetterPositions = new List<Position>(_letterPositions) { position };
-        var nextState = new WordState(newLetterPositions, _map);
+        var nextState = new WordState(newLetterPositions, _crossWordMap);
         return nextState;
     }
 

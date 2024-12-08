@@ -1,19 +1,20 @@
 using AdventofCode._General;
+using AdventOfCode._Utils;
 
 namespace AdventOfCode.Day_06;
 
 public class DaySix : Day {
-    private readonly Map _map;
+    private readonly ObstacleMap _obstacleMap;
     private readonly Position _startPosition;
     private readonly Direction _startDirection;
     private readonly Walker _walker;
 
     public DaySix() : base("input_06.txt") {
-        _map = new Map(Input);
-        _startPosition = _map.GetStartPosition();
-        _startDirection = _map.GetStartDirection();
+        _obstacleMap = new ObstacleMap(Input);
+        _startPosition = _obstacleMap.GetStartPosition();
+        _startDirection = _obstacleMap.GetStartDirection();
 
-        _walker = new Walker(_map, _startPosition, _startDirection);
+        _walker = new Walker(_obstacleMap, _startPosition, _startDirection);
         _walker.Walk();
     }
 
@@ -38,14 +39,14 @@ public class DaySix : Day {
     private void CountPossibleObstacles() {
         var possibleObstaclePositions = _walker.UniqueVisitedPositions;
         var possibleObstaclesCount = possibleObstaclePositions
-            .Select(possibleObstaclePosition => _map.WithObstacleAt(possibleObstaclePosition))
+            .Select(possibleObstaclePosition => _obstacleMap.WithObstacleAt(possibleObstaclePosition))
             .Select(NewWalker)
             .Count(walker => walker.Loops());
 
         ResultPartTwo = possibleObstaclesCount;
     }
 
-    private Walker NewWalker(Map map) {
-        return new Walker(map, _startPosition, _startDirection);
+    private Walker NewWalker(ObstacleMap obstacleMap) {
+        return new Walker(obstacleMap, _startPosition, _startDirection);
     }
 }

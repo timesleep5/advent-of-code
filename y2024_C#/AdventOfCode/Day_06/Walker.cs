@@ -1,7 +1,9 @@
+using AdventOfCode._Utils;
+
 namespace AdventOfCode.Day_06;
 
 public class Walker {
-    private readonly Map _map;
+    private readonly ObstacleMap _obstacleMap;
     private readonly DirectionChanger _directionChanger;
     private readonly List<Position> _visitedPositions;
     private readonly HashSet<State> _pastStates;
@@ -11,8 +13,8 @@ public class Walker {
 
     public HashSet<Position> UniqueVisitedPositions => [.._visitedPositions];
 
-    public Walker(Map map, Position startPosition, Direction startDirection) {
-        _map = map;
+    public Walker(ObstacleMap obstacleMap, Position startPosition, Direction startDirection) {
+        _obstacleMap = obstacleMap;
         _visitedPositions = [startPosition];
         _currentPosition = startPosition;
         _pastStates = [new State(startPosition, startDirection)];
@@ -23,7 +25,7 @@ public class Walker {
     public void Walk() {
         while (true) {
             var nextPosition = NextPosition();
-            if (_map.InsideOfMap(nextPosition)) {
+            if (_obstacleMap.InsideOfMap(nextPosition)) {
                 TakeNextStep(nextPosition);
             }
             else {
@@ -33,7 +35,7 @@ public class Walker {
     }
 
     private void TakeNextStep(Position nextPosition) {
-        while (_map.IsObstacle(nextPosition)) {
+        while (_obstacleMap.IsObstacle(nextPosition)) {
             TurnRight();
             nextPosition = NextPosition();
         }
@@ -55,7 +57,7 @@ public class Walker {
     public bool Loops() {
         while (true) {
             var nextPosition = NextPosition();
-            if (_map.InsideOfMap(nextPosition)) {
+            if (_obstacleMap.InsideOfMap(nextPosition)) {
                 TakeNextStep(nextPosition);
                 UpdateInLoop();
                 if (_inLoop) {
