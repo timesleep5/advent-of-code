@@ -6,12 +6,13 @@ using AdventOfCode.Day_04;
 using AdventOfCode.Day_05;
 using AdventOfCode.Day_06;
 using AdventOfCode.Day_07;
+using AdventOfCode.Day_08;
 
 namespace AdventOfCode;
 
 internal abstract class Program {
     public static void Main() {
-        Day day = new DaySeven();
+        Day day = new DayEight();
         Console.WriteLine($"Part I: {day.PartOne()}");
         Console.WriteLine($"Part II: {day.PartTwo()}");
     }
