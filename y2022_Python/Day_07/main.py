@@ -1,6 +1,6 @@
 import sys
 
-from Day_7.DaySeven import DaySeven
+from y2022_Python.Day_07.DaySeven import DaySeven
 
 day_seven = DaySeven('input.txt')
 total_disk_size = 70_000_000

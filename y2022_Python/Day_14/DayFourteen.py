@@ -8,7 +8,7 @@ from y2022_Python._general.Day import Day
 class DayFourteen(Day):
     def __init__(self):
         super().__init__()
-        self.cave = CaveParser(self.input.splitlines()).build()
+        self.cave = CaveParser(self.input).build()
         self.sand_spawner = SandSpawner(self.cave)
 
     @override
@@ -20,7 +20,7 @@ class DayFourteen(Day):
 
     @override
     def result_part_two(self):
-        cave_with_floor = CaveParser(self.input.splitlines()).build(with_floor=True)
+        cave_with_floor = CaveParser(self.input).build(with_floor=True)
         self.sand_spawner = SandSpawner(cave_with_floor)
         finished = False
         while not finished:

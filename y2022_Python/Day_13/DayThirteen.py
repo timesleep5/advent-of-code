@@ -9,7 +9,7 @@ from y2022_Python._general.Day import Day
 class DayThirteen(Day):
     def __init__(self):
         super().__init__()
-        parser = Parser(self.input)
+        parser = Parser('\n'.join(self.input))
         self.pairs = parser.parse_pairs()
         self.packets = parser.parse_packets()
 

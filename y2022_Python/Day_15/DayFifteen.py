@@ -12,7 +12,7 @@ class DayFifteen(Day):
     def __init__(self):
         super().__init__()
         self.sensors = (SensorParser()
-                        .set_input(self.input.splitlines())
+                        .set_input(self.input)
                         .parse())
         self.beacon_detector = BeaconDetector()
 

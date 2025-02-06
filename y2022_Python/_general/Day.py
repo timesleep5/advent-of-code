@@ -6,7 +6,7 @@ class Day(ABC):
     def __init__(self):
         self.input: str
         with open('input.txt') as file:
-            self.input = file.read()
+            self.input = file.read().splitlines()
 
     def result_part_one(self):
         raise NotImplementedError

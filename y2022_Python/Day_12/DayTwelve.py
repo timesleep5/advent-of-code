@@ -48,7 +48,7 @@ class Hill:
         return ord(new_level) <= ord(level) + 1
 
 
-hill = Hill(Day().input.splitlines())
+hill = Hill(Day().input)
 
 
 @dataclass(frozen=True)
@@ -67,7 +67,6 @@ class DayTwelve(Day):
     def __init__(self):
         super().__init__()
         self.search = BreadthFirstSearch()
-        self.hill = Hill(self.input)
 
     @override
     def result_part_one(self):

@@ -1,4 +1,4 @@
-from DayEight import DayEight
+from y2022_Python.Day_08.DayEight import DayEight
 
 day_eight = DayEight('input.txt', 98, 98)
 tree_map = day_eight.get_input()

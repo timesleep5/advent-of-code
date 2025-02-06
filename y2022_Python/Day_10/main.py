@@ -1,4 +1,4 @@
-from Day_10.DayTen import DayTen
+from y2022_Python.Day_10.DayTen import DayTen
 
 instructions = DayTen.get_input('input.txt')
 

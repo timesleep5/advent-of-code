@@ -1,6 +1,6 @@
 import math
 
-from Day_11.DayEleven import DayEleven
+from y2022_Python.Day_11.DayEleven import DayEleven
 
 instructions = DayEleven.get_input('input.txt')
 
