@@ -15,9 +15,9 @@ public abstract class Day {
         return Objects.requireNonNull(getClass().getResource(INPUT_FILENAME)).getPath();
     }
 
-    protected abstract int partOne();
+    protected abstract String partOne();
 
-    protected abstract int partTwo();
+    protected abstract String partTwo();
 
     protected void printResults() {
         System.out.println("Part One: " + partOne());

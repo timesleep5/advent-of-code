@@ -15,12 +15,14 @@ public class DayOne extends Day {
     }
 
     @Override
-    protected int partOne() {
-        return codeBreaker.countTargetNumberPositions();
+    protected String partOne() {
+        var count = codeBreaker.countTargetNumberPositions();
+        return String.valueOf(count);
     }
 
     @Override
-    protected int partTwo() {
-        return codeBreaker.countTargetNumberPositionsIncludingInBetween(); // 5987 too high
+    protected String partTwo() {
+        var count = codeBreaker.countTargetNumberPositionsIncludingInBetween();
+        return String.valueOf(count);
     }
 }
