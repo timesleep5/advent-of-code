@@ -21,6 +21,6 @@ public class DayTwo extends Day {
 
     @Override
     protected String partTwo() {
-        return invalidIdFinder.sumUpInvalidStrictIds(); // 66500951798
+        return invalidIdFinder.sumUpInvalidStrictIds();
     }
 }
