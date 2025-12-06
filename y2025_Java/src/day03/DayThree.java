@@ -24,5 +24,6 @@ public class DayThree extends Day {
     @Override
     protected String partTwo() {
         var maxJoltageSum = powerDistributor.sumUpMaxJoltages(12);
-        return String.valueOf(maxJoltageSum);    }
+        return String.valueOf(maxJoltageSum);
+    }
 }
