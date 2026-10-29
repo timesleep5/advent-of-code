@@ -1,33 +1,27 @@
-#include <iostream>
-#include <algorithm>
-#include <cstdint>
-#include "../general/Day.h"
-#include "../general/StringManipulation.h"
-#include "Password.cpp"
+#include "DayTwo.h"
 
-class DayTwo : public Day {
-  public:
-    DayTwo() : Day("day_02/") {};
-    string calculateResultPartOne() override;
-    string calculateResultPartTwo() override;
-};
+#include "Password.h"
+
+string DayTwo::name() const {
+    return "Day 2";
+}
 
 string DayTwo::calculateResultPartOne() {
-  int counter = 0;
-  for (string line: input) {
-    if (Password(line).isValid()) {
-      counter++;
+    int counter = 0;
+    for (string line: input.read()) {
+        if (Password(line).isValid()) {
+            counter++;
+        }
     }
-  }
-  return to_string(counter);
+    return to_string(counter);
 }
 
 string DayTwo::calculateResultPartTwo() {
-  int counter = 0;
-  for (string line: input) {
-    if (Password(line).isValid2()) {
-      counter++;
+    int counter = 0;
+    for (string line: input.read()) {
+        if (Password(line).isValid2()) {
+            counter++;
+        }
     }
-  }
-  return to_string(counter);
+    return to_string(counter);
 }
