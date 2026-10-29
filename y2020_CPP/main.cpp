@@ -1,7 +1,8 @@
-#include "day_01/DayOne.h"
+#include "day_02/DayTwo.h"
 
 int main() {
-    DayOne day;
+    DayTwo day;
+    day.printName();
     day.printResultPartOne();
     day.printResultPartTwo();
     return 0;

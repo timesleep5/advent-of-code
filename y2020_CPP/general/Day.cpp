@@ -5,24 +5,13 @@
 
 #include <iostream>
 
-Day::Day(const string &directory) {
-    this->directory = directory;
-    input = getInput();
+#include "FileReader.h"
+
+Day::Day(const string &directory) : input(FileReader{directory}.getInput()) {
 }
 
-Day::~Day() = default;
-
-vector<string> Day::getInput() const {
-    string path = ROOT_PATH + directory + INPUT_FILE;
-    ifstream file(path);
-    string line;
-    vector<string> lines;
-    while (getline(file, line)) {
-        cout << line << endl;
-        lines.push_back(line);
-    }
-
-    return lines;
+void Day::printName() const {
+    cout << name() << endl;
 }
 
 void Day::printResultPartOne() {

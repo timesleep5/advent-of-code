@@ -10,6 +10,12 @@ add_executable(adventofcode-2020
         day_01/DayOne.cpp
         day_02/DayTwo.cpp
         day_02/Password.cpp
+        general/FileReader.cpp
+        general/Input.cpp
+)
+
+target_compile_definitions(adventofcode-2020 PRIVATE
+        AOC_SOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}"
 )
 
 set_target_properties(adventofcode-2020 PROPERTIES OUTPUT_NAME main)
