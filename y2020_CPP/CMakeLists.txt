@@ -7,6 +7,8 @@ add_executable(adventofcode-2020
         main.cpp
         general/Day.cpp
         general/StringManipulation.cpp
+        general/FileReader.cpp
+        general/Input.cpp
         day_01/DayOne.cpp
         day_02/DayTwo.cpp
         day_02/Password.cpp

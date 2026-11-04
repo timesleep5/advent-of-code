@@ -1,7 +1,8 @@
 #pragma once
-#include <string>
 
+#include <string>
 #include "Input.h"
+
 using namespace std;
 
 class Day {

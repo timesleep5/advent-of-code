@@ -12,5 +12,8 @@ class Input {
 
 public:
     Input(const vector<string> &lines);
-    vector<string> read() const;
+
+    [[nodiscard]] vector<string> read() const;
+
+    [[nodiscard]] char at(int row, int col) const;
 };
