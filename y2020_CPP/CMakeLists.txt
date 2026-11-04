@@ -12,8 +12,9 @@ add_executable(adventofcode-2020
         day_01/DayOne.cpp
         day_02/DayTwo.cpp
         day_02/Password.cpp
-        general/FileReader.cpp
-        general/Input.cpp
+        day_03/TrajectoryPlanner.cpp
+        day_03/TreeMap.cpp
+        day_03/DayThree.cpp
 )
 
 target_compile_definitions(adventofcode-2020 PRIVATE
