@@ -18,6 +18,10 @@ add_executable(adventofcode-2020
         day_04/DayFour.cpp
         day_04/PassportParser.cpp
         day_04/PassportValidator.cpp
+        day_05/DayFive.cpp
+        day_05/SeatParser.cpp
+        day_05/Seat.cpp
+        day_05/SeatIdChecker.cpp
 )
 
 target_compile_definitions(adventofcode-2020 PRIVATE
