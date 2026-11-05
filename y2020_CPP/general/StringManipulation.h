@@ -7,5 +7,5 @@ class StringManipulation {
 public:
     static void trim(string &toTrim);
 
-    static vector<string> split(string &toSplit, string &delimiter);
+    static vector<string> split(const string &toSplit, const string &delimiter);
 };

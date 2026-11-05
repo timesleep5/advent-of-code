@@ -3,14 +3,20 @@
 //
 #include "StringManipulation.h"
 
-#include <algorithm>
 #include <string>
 
 void StringManipulation::trim(string &toTrim) {
-    toTrim.erase(remove_if(toTrim.begin(), toTrim.end(), ::isspace), toTrim.end());
+    const auto first = toTrim.find_first_not_of(" \t\n\r\f\v");
+    if (first == string::npos) {
+        toTrim.clear();
+        return;
+    }
+
+    const auto last = toTrim.find_last_not_of(" \t\n\r\f\v");
+    toTrim = toTrim.substr(first, last - first + 1);
 }
 
-vector<string> StringManipulation::split(string &toSplit, string &delimiter) {
+vector<string> StringManipulation::split(const string &toSplit, const string &delimiter) {
     vector<string> parts;
     string partialString = toSplit + "";
     string part;
