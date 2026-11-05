@@ -15,6 +15,9 @@ add_executable(adventofcode-2020
         day_03/TrajectoryPlanner.cpp
         day_03/TreeMap.cpp
         day_03/DayThree.cpp
+        day_04/DayFour.cpp
+        day_04/PassportParser.cpp
+        day_04/PassportValidator.cpp
 )
 
 target_compile_definitions(adventofcode-2020 PRIVATE
